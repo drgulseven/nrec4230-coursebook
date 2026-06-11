@@ -1,0 +1,97 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
+  warning: false
+  message: false
+
+website:
+  title: "NREC4230 Agricultural Finance"
+  description: "Local Quarto coursebook for NREC4230 Agricultural Finance."
+  navbar:
+    title: "NREC4230"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Part I"
+        href: part-i-agricultural-risk-management/index.qmd
+      - text: "Part II"
+        href: part-ii-agricultural-finance/index.qmd
+      - text: "Appendices"
+        menu:
+          - text: "Formula Sheet"
+            href: appendices/formulas.qmd
+          - text: "Glossary"
+            href: appendices/glossary.qmd
+          - text: "Practice Problems"
+            href: appendices/practice-problems.qmd
+          - text: "Python Code Guide"
+            href: appendices/python-code-guide.qmd
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - text: "Course Home"
+        href: index.qmd
+      - section: "Part I: Agricultural Risk Management"
+        contents:
+          - text: "Part I Overview"
+            href: part-i-agricultural-risk-management/index.qmd
+          - text: "01. Understanding Agricultural Risk"
+            href: part-i-agricultural-risk-management/lecture-01-understanding-agricultural-risk.qmd
+          - text: "02. On-Farm Risk Management Tools"
+            href: part-i-agricultural-risk-management/lecture-02-on-farm-risk-management-tools.qmd
+          - text: "03. Finance-Related Risk Management Tools"
+            href: part-i-agricultural-risk-management/lecture-03-finance-related-risk-management-tools.qmd
+          - text: "04. Market-Related Risk Management Tools"
+            href: part-i-agricultural-risk-management/lecture-04-market-related-risk-management-tools.qmd
+          - text: "05. Government-Based Risk Management Tools"
+            href: part-i-agricultural-risk-management/lecture-05-government-based-risk-management-tools.qmd
+          - text: "06. Integrated ARM Plan for Oman"
+            href: part-i-agricultural-risk-management/lecture-06-integrated-arm-plan-for-oman.qmd
+      - section: "Part II: Agricultural Finance"
+        contents:
+          - text: "Part II Overview"
+            href: part-ii-agricultural-finance/index.qmd
+          - text: "07. Introduction to Agricultural Finance"
+            href: part-ii-agricultural-finance/lecture-07-introduction-to-agricultural-finance.qmd
+          - text: "08. Financial Institutions and Intermediation"
+            href: part-ii-agricultural-finance/lecture-08-financial-institutions-and-intermediation.qmd
+          - text: "09. Time Value of Money I"
+            href: part-ii-agricultural-finance/lecture-09-time-value-of-money-i.qmd
+          - text: "10. Time Value of Money II"
+            href: part-ii-agricultural-finance/lecture-10-time-value-of-money-ii.qmd
+          - text: "11. Agricultural Accounting"
+            href: part-ii-agricultural-finance/lecture-11-agricultural-accounting.qmd
+          - text: "12. Financial Ratio Analysis"
+            href: part-ii-agricultural-finance/lecture-12-financial-ratio-analysis.qmd
+          - text: "13. Investment Appraisal"
+            href: part-ii-agricultural-finance/lecture-13-investment-appraisal.qmd
+          - text: "14. Futures, Hedging, and Basis Risk"
+            href: part-ii-agricultural-finance/lecture-14-futures-hedging-and-basis-risk.qmd
+          - text: "15. Agricultural Insurance Design"
+            href: part-ii-agricultural-finance/lecture-15-agricultural-insurance-design.qmd
+          - text: "16. Project and Research Application"
+            href: part-ii-agricultural-finance/lecture-16-project-and-research-application.qmd
+      - section: "Appendices"
+        contents:
+          - text: "Formula Sheet"
+            href: appendices/formulas.qmd
+          - text: "Glossary"
+            href: appendices/glossary.qmd
+          - text: "Practice Problems"
+            href: appendices/practice-problems.qmd
+          - text: "Python Code Guide"
+            href: appendices/python-code-guide.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    smooth-scroll: true
+    css: styles.css

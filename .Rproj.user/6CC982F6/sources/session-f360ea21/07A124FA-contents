@@ -1,0 +1,532 @@
+---
+title: "Lecture 10: Time Value of Money II"
+description: "NREC4230 Agricultural Finance lecture note on annuities, loan amortization, compounding frequency, APR, EAR, and farm loan applications."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Distinguish between an ordinary annuity and an annuity due.
+2. Calculate the present value and future value of annuities.
+3. Calculate equal loan payments using the amortization formula.
+4. Construct and interpret a simple loan amortization schedule.
+5. Explain the difference between APR and effective annual rate.
+6. Apply annuity and loan formulas to agricultural finance decisions.
+
+---
+
+## 1. Why annuities matter in agricultural finance
+
+Many agricultural finance decisions involve repeated payments rather than one single payment. Farmers may repay a loan every month, save a fixed amount each season, lease machinery through periodic payments, or receive regular income from a long-term contract.
+
+These repeated equal payments are called **annuities**.
+
+Examples in agriculture include:
+
+- annual repayment of a tractor loan
+- monthly repayment of a greenhouse investment loan
+- yearly savings for farm equipment replacement
+- lease payments for irrigation machinery
+- regular instalments on land purchase financing
+- repeated insurance premium payments
+
+::: {.callout-note}
+## Key idea
+An annuity is a series of equal payments made at regular intervals. The timing of payments matters because money has time value.
+:::
+
+---
+
+## 2. Ordinary annuity and annuity due
+
+There are two common types of annuities.
+
+| Type | Timing of payment | Agricultural example |
+|---|---|---|
+| Ordinary annuity | Payment occurs at the end of each period | Loan repayment made at the end of each year |
+| Annuity due | Payment occurs at the beginning of each period | Land rent paid at the start of each year |
+
+The difference looks small, but it changes the value of the cash flow. An annuity due has a higher present value and future value because each payment is received or paid one period earlier.
+
+---
+
+## 3. Future value of an ordinary annuity
+
+The future value of an ordinary annuity shows how much a series of equal payments will accumulate to at the end of the period.
+
+$$
+FV_A = PMT \times \frac{(1+r)^n - 1}{r}
+$$
+
+where:
+
+- $FV_A$ = future value of annuity
+- $PMT$ = periodic payment
+- $r$ = interest rate per period
+- $n$ = number of periods
+
+### Example 1: saving for farm equipment
+
+A farmer saves OMR 1,000 at the end of each year for 4 years. The annual interest rate is 6%.
+
+$$
+FV_A = 1000 \times \frac{(1.06)^4 - 1}{0.06}
+$$
+
+$$
+FV_A = 1000 \times 4.3746 = 4374.62
+$$
+
+After 4 years, the farmer will have approximately **OMR 4,374.62**.
+
+::: {.callout-tip}
+## Interpretation
+The total deposits are OMR 4,000, but the future value is higher because the earlier deposits earn interest.
+:::
+
+---
+
+## 4. Present value of an ordinary annuity
+
+The present value of an ordinary annuity shows how much a series of equal future payments is worth today.
+
+$$
+PV_A = PMT \times \frac{1 - (1+r)^{-n}}{r}
+$$
+
+where:
+
+- $PV_A$ = present value of annuity
+- $PMT$ = periodic payment
+- $r$ = discount rate per period
+- $n$ = number of periods
+
+### Example 2: valuing lease payments
+
+A farmer can lease irrigation equipment by paying OMR 1,200 at the end of each year for 5 years. The discount rate is 8%.
+
+$$
+PV_A = 1200 \times \frac{1 - (1.08)^{-5}}{0.08}
+$$
+
+$$
+PV_A = 1200 \times 3.9927 = 4791.25
+$$
+
+The present value of the lease payments is approximately **OMR 4,791.25**.
+
+This means that paying OMR 1,200 per year for 5 years is financially equivalent to paying about OMR 4,791 today, using an 8% discount rate.
+
+---
+
+## 5. Annuity due
+
+An annuity due is paid at the beginning of each period. Because each payment occurs one period earlier, the ordinary annuity formula is multiplied by $(1+r)$.
+
+### Future value of annuity due
+
+$$
+FV_{AD} = PMT \times \frac{(1+r)^n - 1}{r} \times (1+r)
+$$
+
+### Present value of annuity due
+
+$$
+PV_{AD} = PMT \times \frac{1 - (1+r)^{-n}}{r} \times (1+r)
+$$
+
+### Example 3: ordinary annuity vs annuity due
+
+A farmer pays OMR 1,000 per year for 3 years. The interest rate is 5%.
+
+Ordinary annuity future value:
+
+$$
+FV_A = 1000 \times \frac{(1.05)^3 - 1}{0.05} = 3152.50
+$$
+
+Annuity due future value:
+
+$$
+FV_{AD} = 3152.50 \times 1.05 = 3310.13
+$$
+
+The annuity due is larger because the payments are made earlier and earn interest for longer.
+
+---
+
+## 6. Loan amortization
+
+Many agricultural loans are repaid in equal instalments. These instalments usually include both **interest** and **principal repayment**.
+
+The equal payment is calculated using:
+
+$$
+PMT = PV \times \frac{r}{1 - (1+r)^{-n}}
+$$
+
+where:
+
+- $PMT$ = equal periodic payment
+- $PV$ = loan amount today
+- $r$ = interest rate per period
+- $n$ = number of payments
+
+### Example 4: tractor loan
+
+A farmer borrows OMR 20,000 to buy a tractor. The loan is repaid over 5 years with equal annual payments. The annual interest rate is 7%.
+
+$$
+PMT = 20000 \times \frac{0.07}{1 - (1.07)^{-5}}
+$$
+
+$$
+PMT = 4877.82
+$$
+
+The farmer must pay approximately **OMR 4,877.82 per year**.
+
+---
+
+## 7. Amortization schedule
+
+An amortization schedule separates each payment into interest and principal.
+
+Interest in each period is calculated as:
+
+$$
+Interest_t = Beginning\ Balance_t \times r
+$$
+
+Principal repayment is:
+
+$$
+Principal_t = PMT - Interest_t
+$$
+
+Ending balance is:
+
+$$
+Ending\ Balance_t = Beginning\ Balance_t - Principal_t
+$$
+
+### Example 5: first two years of tractor loan
+
+Loan amount = OMR 20,000  
+Annual interest rate = 7%  
+Annual payment = OMR 4,877.82
+
+| Year | Beginning balance | Interest | Payment | Principal repaid | Ending balance |
+|---:|---:|---:|---:|---:|---:|
+| 1 | 20,000.00 | 1,400.00 | 4,877.82 | 3,477.82 | 16,522.18 |
+| 2 | 16,522.18 | 1,156.55 | 4,877.82 | 3,721.27 | 12,800.91 |
+
+At the beginning, a larger part of the payment goes to interest. Later, as the loan balance falls, a larger part goes to principal.
+
+::: {.callout-warning}
+## Common mistake
+Students often multiply the original loan amount by the interest rate every year. In amortization, interest is calculated on the remaining balance, not always on the original loan amount.
+:::
+
+---
+
+## 8. Python example: amortization table
+
+The same calculation can be done using Python.
+
+```{python}
+#| echo: true
+#| eval: true
+
+loan = 20000
+r = 0.07
+n = 5
+
+payment = loan * r / (1 - (1 + r) ** (-n))
+balance = loan
+
+schedule = []
+for year in range(1, n + 1):
+    interest = balance * r
+    principal = payment - interest
+    end_balance = balance - principal
+    schedule.append([year, balance, interest, payment, principal, end_balance])
+    balance = end_balance
+
+import pandas as pd
+
+amortization = pd.DataFrame(
+    schedule,
+    columns=["Year", "Beginning Balance", "Interest", "Payment", "Principal", "Ending Balance"]
+)
+
+amortization.round(2)
+```
+
+This table helps students see how loan repayment changes over time.
+
+---
+
+## 9. Total interest paid
+
+Total interest paid over the life of the loan is:
+
+$$
+Total\ Interest = (PMT \times n) - PV
+$$
+
+For the tractor loan:
+
+$$
+Total\ Interest = (4877.82 \times 5) - 20000
+$$
+
+$$
+Total\ Interest = 4389.10
+$$
+
+The farmer pays approximately **OMR 4,389.10** in total interest.
+
+::: {.callout-note}
+## Interpretation
+A lower annual payment does not always mean a cheaper loan. A longer loan may reduce annual pressure but increase total interest cost.
+:::
+
+---
+
+## 10. Compounding frequency
+
+Interest can be compounded annually, semi-annually, quarterly, monthly, or daily.
+
+The future value with multiple compounding periods is:
+
+$$
+FV = PV \times \left(1 + \frac{r}{m}\right)^{mn}
+$$
+
+where:
+
+- $m$ = number of compounding periods per year
+- $n$ = number of years
+
+### Example 6: annual vs monthly compounding
+
+A farmer deposits OMR 1,000 for 2 years at 8% annual interest.
+
+Annual compounding:
+
+$$
+FV = 1000(1.08)^2 = 1166.40
+$$
+
+Monthly compounding:
+
+$$
+FV = 1000\left(1 + \frac{0.08}{12}\right)^{24}
+$$
+
+$$
+FV = 1172.89
+$$
+
+Monthly compounding produces a higher future value because interest is added more frequently.
+
+---
+
+## 11. APR and effective annual rate
+
+The **annual percentage rate** or APR is the quoted annual rate. It does not always show the true annual cost if compounding occurs more than once per year.
+
+The **effective annual rate** or EAR shows the true annual rate after compounding.
+
+$$
+EAR = \left(1 + \frac{APR}{m}\right)^m - 1
+$$
+
+### Example 7: credit with monthly compounding
+
+A farm input supplier offers credit at 18% APR, compounded monthly.
+
+$$
+EAR = \left(1 + \frac{0.18}{12}\right)^{12} - 1
+$$
+
+$$
+EAR = 0.1956
+$$
+
+The effective annual rate is **19.56%**, not 18%.
+
+::: {.callout-warning}
+## Common mistake
+APR and EAR are not the same when interest is compounded more than once per year.
+:::
+
+---
+
+## 12. Agricultural interpretation of APR and EAR
+
+APR and EAR matter in agricultural finance because farmers often compare credit from different sources:
+
+- bank loans
+- input supplier credit
+- microfinance loans
+- machinery leasing
+- informal credit
+- deferred payment contracts
+
+A loan with a low quoted APR may still be expensive if fees are high or compounding is frequent.
+
+| Credit source | Quoted rate | Compounding | True cost issue |
+|---|---:|---|---|
+| Bank loan | 8% | Annual | Easier to compare |
+| Input supplier credit | 12% | Monthly | EAR is higher than APR |
+| Microfinance loan | 2% per month | Monthly | Annualized cost may be high |
+| Informal loan | 5% per month | Monthly | Very high effective annual cost |
+
+---
+
+## 13. Worked example: choosing between two farm loans
+
+A farmer needs OMR 10,000 to buy greenhouse equipment.
+
+| Loan option | Terms |
+|---|---|
+| Option A | 8% annual interest, repaid over 4 years |
+| Option B | 6% annual interest, repaid over 6 years |
+
+### Option A
+
+$$
+PMT_A = 10000 \times \frac{0.08}{1 - (1.08)^{-4}} = 3019.21
+$$
+
+Total payment:
+
+$$
+3019.21 \times 4 = 12076.84
+$$
+
+Total interest:
+
+$$
+12076.84 - 10000 = 2076.84
+$$
+
+### Option B
+
+$$
+PMT_B = 10000 \times \frac{0.06}{1 - (1.06)^{-6}} = 2033.63
+$$
+
+Total payment:
+
+$$
+2033.63 \times 6 = 12201.78
+$$
+
+Total interest:
+
+$$
+12201.78 - 10000 = 2201.78
+$$
+
+### Interpretation
+
+Option B has a lower annual payment, but slightly higher total interest. Option A is cheaper in total interest, but creates greater yearly repayment pressure.
+
+| Option | Annual payment | Total interest | Interpretation |
+|---|---:|---:|---|
+| A | 3,019.21 | 2,076.84 | Lower total interest, higher annual pressure |
+| B | 2,033.63 | 2,201.78 | Lower annual pressure, higher total interest |
+
+The better option depends on the farmer's cash flow and risk tolerance.
+
+---
+
+## 14. Oman application
+
+Suppose a farmer in Oman is investing in protected agriculture. The farmer expects greenhouse income to be seasonal and uncertain. A short loan may reduce total interest cost, but it can create repayment stress if prices are low during the first two years.
+
+A longer loan may be reasonable if:
+
+- the project has stable long-term cash flows
+- the farmer needs lower annual payments
+- early income is uncertain
+- the equipment has a long useful life
+
+However, a longer loan may be risky if:
+
+- total interest cost becomes too high
+- the technology becomes obsolete
+- output prices are volatile
+- water or energy costs rise unexpectedly
+
+::: {.callout-tip}
+## Finance interpretation
+Loan choice is not only about the interest rate. It is also about repayment timing, cash-flow risk, and the productive life of the asset.
+:::
+
+---
+
+## 15. Common mistakes
+
+::: {.callout-warning}
+## Mistake 1: Confusing annuity with single payment
+A single future payment uses PV or FV formulas. Repeated equal payments use annuity formulas.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Ignoring payment timing
+Payments at the beginning of the period are annuity due payments. Payments at the end are ordinary annuity payments.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Comparing only annual payments
+A loan with lower annual payments may have higher total interest because it lasts longer.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Treating APR as true cost
+APR is a quoted rate. EAR shows the true annual cost when compounding is more frequent.
+:::
+
+---
+
+## 16. Practice questions
+
+### Short-answer questions
+
+1. What is the difference between an ordinary annuity and an annuity due?
+2. Why is the future value of an annuity due higher than the future value of an ordinary annuity?
+3. What is loan amortization?
+4. Why does the interest portion of a loan payment decline over time?
+5. Why is EAR usually higher than APR when compounding is more frequent than annual?
+
+### Applied questions
+
+1. A farmer saves OMR 800 at the end of each year for 5 years at 6% interest. Calculate the future value.
+2. A farmer receives OMR 1,500 at the end of each year for 4 years. The discount rate is 7%. Calculate the present value.
+3. A farmer borrows OMR 15,000 at 9% annual interest for 5 years. Calculate the annual loan payment.
+4. A loan has 12% APR compounded monthly. Calculate the EAR.
+5. Compare two loans: OMR 8,000 at 7% for 3 years and OMR 8,000 at 5% for 5 years. Which has lower annual payment? Which has lower total interest?
+
+---
+
+## 17. Key takeaways
+
+- An annuity is a series of equal payments at regular intervals.
+- Ordinary annuities are paid at the end of each period.
+- Annuities due are paid at the beginning of each period.
+- Loan amortization separates each payment into interest and principal.
+- The interest portion is larger at the beginning of a loan because the outstanding balance is larger.
+- More frequent compounding increases future value and increases the effective cost of borrowing.
+- APR is a quoted annual rate; EAR is the true annual rate after compounding.
+- In agricultural finance, loan choice should consider both total interest cost and cash-flow risk.
+
+---
+
+## Source note
+
+This lecture note is prepared for NREC4230 Agricultural Finance using the course materials on time value of money, annuities, compounding, APR, EAR, and agricultural loan applications.

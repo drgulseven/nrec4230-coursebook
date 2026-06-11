@@ -1,0 +1,558 @@
+---
+title: "Lecture 16: Project and Research Application"
+description: "NREC4230 Agricultural Finance lecture note on applying agricultural finance concepts in a small research project, including article review, data analysis, AI-aware writing, and reproducible reporting."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Design a small applied project in agricultural finance.
+2. Connect a research question to financial theory and agricultural risk management.
+3. Review an academic article in a structured and critical way.
+4. Prepare basic financial calculations, tables, and graphs for a project report.
+5. Use AI tools ethically without replacing their own analysis.
+6. Present findings in a clear, evidence-based format.
+
+---
+
+## 1. Why a project matters in agricultural finance
+
+Agricultural finance is an applied field. The purpose of the course is not only to memorize formulas, but to use financial reasoning to evaluate real decisions in agriculture.
+
+Examples of agricultural finance questions include:
+
+- Should a farmer borrow to invest in a greenhouse?
+- How does a higher interest rate affect farm investment?
+- When is insurance financially useful for farmers?
+- How can futures markets reduce price risk?
+- How do financial ratios reveal farm business weakness?
+- How can government support reduce agricultural risk?
+
+A good project connects one practical agricultural problem to one or more finance tools from the course.
+
+::: {.callout-note}
+## Key idea
+A project is not a collection of definitions. It should answer one focused question using concepts, calculations, and evidence.
+:::
+
+---
+
+## 2. The project logic
+
+A strong NREC4230 project follows a simple logic:
+
+```{mermaid}
+flowchart LR
+  A[Problem] --> B[Research question]
+  B --> C[Finance concept]
+  C --> D[Data or numerical case]
+  D --> E[Analysis]
+  E --> F[Interpretation]
+  F --> G[Conclusion]
+```
+
+For example:
+
+| Step | Example |
+|---|---|
+| Problem | Greenhouse farmers face high investment costs |
+| Research question | Is a greenhouse investment financially feasible? |
+| Finance concept | NPV, IRR, payback period, sensitivity analysis |
+| Data or numerical case | Initial cost, annual revenue, operating cost, discount rate |
+| Analysis | Calculate NPV and test changes in revenue and cost |
+| Interpretation | Identify whether the investment is financially attractive |
+| Conclusion | Recommend invest, reject, or revise project design |
+
+---
+
+## 3. Choosing a topic
+
+A project topic should be narrow enough to analyze in a short report.
+
+### Good topic examples
+
+| Broad area | Focused project topic |
+|---|---|
+| Farm investment | Financial feasibility of a small greenhouse tomato project in Oman |
+| Agricultural credit | Effect of interest rate changes on loan repayment capacity |
+| Insurance | Comparing yield insurance and rainfall index insurance for wheat farmers |
+| Futures markets | How a short futures hedge protects a wheat producer from price decline |
+| Farm accounting | Financial ratio analysis of a hypothetical dairy farm |
+| Risk management | Designing an integrated ARM plan for a date farm |
+| Food security finance | Cost analysis of a government grain reserve program |
+
+### Weak topic examples
+
+| Weak topic | Problem |
+|---|---|
+| Agricultural finance | Too broad |
+| Insurance | Too general |
+| Oman agriculture | No finance question |
+| Futures markets | No agricultural application |
+| Climate change | Too broad unless linked to financial risk |
+
+::: {.callout-warning}
+## Common mistake
+Do not choose a topic first and search for formulas later. Start with a decision problem: investment, borrowing, insurance, hedging, or risk management.
+:::
+
+---
+
+## 4. Building a research question
+
+A research question should be specific, answerable, and linked to course tools.
+
+### Formula for a good research question
+
+A useful structure is:
+
+> How does **X** affect **Y** in **agricultural context Z**?
+
+Examples:
+
+- How does the discount rate affect the feasibility of a greenhouse investment?
+- How does a rainfall index insurance contract affect net compensation for wheat farmers?
+- How does a short futures hedge change expected revenue for a wheat producer?
+- How does debt financing affect repayment capacity in a dairy farm?
+
+### Research question checklist
+
+| Question | Yes/No |
+|---|---|
+| Does the question focus on one main issue? |  |
+| Can it be answered with course concepts? |  |
+| Can it include at least one calculation? |  |
+| Can the result be explained in economic terms? |  |
+| Is it relevant to agriculture? |  |
+
+---
+
+## 5. Reviewing an academic article
+
+One useful project approach is to review a recent article from an agricultural finance, agricultural economics, or risk-management journal.
+
+The review should not be a simple summary. It should explain the article's question, method, findings, and relevance to the course.
+
+### Article review structure
+
+| Section | Guiding question |
+|---|---|
+| Citation | What is the full reference? |
+| Research problem | What problem does the article study? |
+| Research question | What question does the article answer? |
+| Data | What data does the article use? |
+| Method | What analytical method is used? |
+| Main findings | What are the key results? |
+| Course connection | Which NREC4230 concepts are relevant? |
+| Critical comment | What is one strength and one limitation? |
+| Application | How could the idea apply to Oman or GCC agriculture? |
+
+::: {.callout-tip}
+## Critical reading
+A good review does not only say what the article found. It also explains whether the approach is convincing and why the findings matter.
+:::
+
+---
+
+## 6. Suggested project report format
+
+A short applied report can follow this structure.
+
+| Section | Suggested length | Content |
+|---|---:|---|
+| Title page | 1 page | Title, course, student name, ID, date |
+| Introduction | 0.5 to 1 page | Problem, motivation, research question |
+| Background | 1 page | Agricultural context and relevant finance concept |
+| Data or case assumptions | 0.5 to 1 page | Values, assumptions, source of numbers |
+| Method | 1 page | Formula or analytical approach |
+| Results | 1 to 2 pages | Tables, calculations, graphs |
+| Discussion | 1 page | Interpretation and limitations |
+| Conclusion | 0.5 page | Answer to the research question |
+| References | As needed | Academic and data sources |
+| Appendix | Optional | Extra calculations or code |
+
+The report should be concise. Quality of reasoning is more important than length.
+
+---
+
+## 7. Data and assumptions
+
+Students may use real data, published data, or a clearly stated numerical case. If real data are not available, a well-designed hypothetical case is acceptable for learning financial methods.
+
+### Types of acceptable data
+
+| Data type | Example | Use |
+|---|---|---|
+| Real farm data | Cost and revenue records | Ratio analysis, cash-flow analysis |
+| Public statistics | Price or production data | Market trend analysis |
+| Published article data | Values from a paper | Article-based project |
+| Scenario data | Assumed investment cost and revenue | NPV, IRR, insurance design |
+| Class data | Instructor-provided case | Practice and assessment |
+
+::: {.callout-warning}
+## Common mistake
+Never present invented numbers as real data. If numbers are assumed for a case study, clearly write: "Assumptions used for teaching analysis."
+:::
+
+---
+
+## 8. Worked example: investment feasibility project
+
+Suppose a farmer considers a small greenhouse project.
+
+### Assumptions
+
+| Item | Value |
+|---|---:|
+| Initial investment | OMR 8,000 |
+| Annual net cash inflow | OMR 2,200 |
+| Project life | 5 years |
+| Discount rate | 8% |
+| Salvage value | OMR 1,000 |
+
+### NPV formula
+
+$$
+NPV = -I_0 + \sum_{t=1}^{T} \frac{CF_t}{(1+r)^t} + \frac{SV}{(1+r)^T}
+$$
+
+where:
+
+- $I_0$ is the initial investment
+- $CF_t$ is annual net cash flow
+- $r$ is the discount rate
+- $SV$ is salvage value
+- $T$ is project life
+
+### Python calculation
+
+```{python}
+initial_investment = 8000
+annual_cash_flow = 2200
+salvage_value = 1000
+discount_rate = 0.08
+project_life = 5
+
+npv = -initial_investment
+for t in range(1, project_life + 1):
+    npv += annual_cash_flow / ((1 + discount_rate) ** t)
+npv += salvage_value / ((1 + discount_rate) ** project_life)
+
+round(npv, 2)
+```
+
+### Interpretation
+
+If NPV is positive, the project adds financial value at the selected discount rate. If NPV is negative, the project does not recover the opportunity cost of capital under these assumptions.
+
+::: {.callout-note}
+## Interpretation rule
+Do not stop at the number. Explain what the number means for the farmer's investment decision.
+:::
+
+---
+
+## 9. Worked example: insurance comparison project
+
+A wheat farmer evaluates two insurance contracts.
+
+| Item | Value |
+|---|---:|
+| Farm size | 40 acres |
+| Expected yield | 2.5 tons/acre |
+| Expected price | OMR 120/ton |
+| Actual yield | 1.8 tons/acre |
+| Actual price | OMR 110/ton |
+| Revenue insurance guarantee | 80% of expected revenue |
+| Deductible | OMR 500 |
+| Premium | OMR 700 |
+| Rainfall index payout | OMR 2,500 |
+| Rainfall index premium | OMR 400 |
+
+### Revenue insurance calculation
+
+Expected revenue:
+
+$$
+40 \times 2.5 \times 120 = 12{,}000
+$$
+
+Guaranteed revenue:
+
+$$
+0.80 \times 12{,}000 = 9{,}600
+$$
+
+Actual revenue:
+
+$$
+40 \times 1.8 \times 110 = 7{,}920
+$$
+
+Gross indemnity:
+
+$$
+9{,}600 - 7{,}920 = 1{,}680
+$$
+
+Final indemnity after deductible:
+
+$$
+1{,}680 - 500 = 1{,}180
+$$
+
+Net compensation after premium:
+
+$$
+1{,}180 - 700 = 480
+$$
+
+Index insurance net compensation:
+
+$$
+2{,}500 - 400 = 2{,}100
+$$
+
+### Interpretation
+
+In this scenario, index insurance gives higher net compensation. However, this does not mean it is always better. If rainfall triggers a payout but the farmer has no actual loss, the contract may overpay. If the farmer has a loss but the index is not triggered, the contract may underpay. This mismatch is called basis risk.
+
+---
+
+## 10. Worked example: futures hedging project
+
+A producer expects to sell 100 tons of wheat in three months.
+
+| Item | Value |
+|---|---:|
+| Expected output | 100 tons |
+| Current futures price | OMR 130/ton |
+| Harvest spot price | OMR 115/ton |
+| Harvest futures price | OMR 118/ton |
+
+The farmer uses a short futures hedge.
+
+### No hedge
+
+$$
+\text{Revenue} = 100 \times 115 = 11{,}500
+$$
+
+### Futures gain
+
+$$
+\text{Futures gain per ton} = 130 - 118 = 12
+$$
+
+$$
+\text{Total futures gain} = 100 \times 12 = 1{,}200
+$$
+
+### Hedged revenue
+
+$$
+\text{Hedged revenue} = 11{,}500 + 1{,}200 = 12{,}700
+$$
+
+### Interpretation
+
+The hedge improved realized revenue relative to no hedge. However, the hedge did not perfectly lock in the original futures price because the futures price and spot price did not converge fully. This is basis risk.
+
+---
+
+## 11. Tables and graphs for the report
+
+A project should include at least one table and, where useful, one graph.
+
+### Good tables
+
+| Table type | Example |
+|---|---|
+| Assumptions table | Investment cost, revenue, discount rate |
+| Results table | NPV under different discount rates |
+| Comparison table | Insurance A vs Insurance B |
+| Sensitivity table | Low, baseline, high price scenarios |
+
+### Good graphs
+
+| Graph type | Example |
+|---|---|
+| Line graph | NPV under different discount rates |
+| Bar chart | Net compensation by insurance policy |
+| Scenario chart | Revenue under no hedge, full hedge, partial hedge |
+
+### Example Python graph
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+results = pd.DataFrame({
+    "Scenario": ["No hedge", "Hedged"],
+    "Revenue": [11500, 12700]
+})
+
+plt.figure()
+plt.bar(results["Scenario"], results["Revenue"])
+plt.ylabel("Revenue (OMR)")
+plt.title("Revenue with and without futures hedge")
+plt.show()
+```
+
+---
+
+## 12. AI-aware project work
+
+AI tools may help students brainstorm, outline, edit grammar, and check calculations. However, AI must not replace the student's own analysis.
+
+### Acceptable AI use
+
+| Acceptable use | Example |
+|---|---|
+| Brainstorming | Suggest possible project topics |
+| Explanation | Explain NPV or basis risk |
+| Grammar support | Improve clarity of writing |
+| Code debugging | Fix an error in Python code |
+| Formatting | Improve table presentation |
+
+### Unacceptable AI use
+
+| Unacceptable use | Problem |
+|---|---|
+| Submitting AI-written report as own work | Academic integrity violation |
+| Inventing references | Fabrication |
+| Creating fake data | Misrepresentation |
+| Hiding AI use when disclosure is required | Lack of transparency |
+| Using AI output without checking calculations | Risk of wrong analysis |
+
+::: {.callout-warning}
+## AI caution
+AI can produce confident but incorrect answers. Students are responsible for every number, reference, interpretation, and conclusion in the submitted project.
+:::
+
+---
+
+## 13. Suggested AI disclosure statement
+
+Students may include a short disclosure statement if AI tools were used.
+
+Example:
+
+> I used AI tools for brainstorming, grammar checking, and improving the clarity of selected paragraphs. All calculations, interpretations, references, and final conclusions were checked and approved by me.
+
+If AI was not used:
+
+> I did not use AI tools in preparing this project.
+
+---
+
+## 14. Citation and reference practice
+
+A project should cite any academic article, report, dataset, or website used.
+
+### What must be cited?
+
+| Source type | Cite? |
+|---|---|
+| Journal article | Yes |
+| FAO, World Bank, IFAD, OECD report | Yes |
+| Dataset | Yes |
+| Website data | Yes |
+| Class lecture note | Usually yes if used directly |
+| Own calculations from stated assumptions | No external citation needed |
+
+::: {.callout-warning}
+## Common mistake
+Do not cite a source that you have not read. Do not use references generated by AI unless you verify them.
+:::
+
+---
+
+## 15. Project presentation structure
+
+A short presentation can follow this sequence:
+
+| Slide | Content |
+|---:|---|
+| 1 | Title and student information |
+| 2 | Research problem and question |
+| 3 | Agricultural context |
+| 4 | Method or formula |
+| 5 | Data or assumptions |
+| 6 | Main results table |
+| 7 | Graph or scenario comparison |
+| 8 | Interpretation |
+| 9 | Limitations |
+| 10 | Conclusion |
+
+Presentation slides should be simple. Each slide should answer one question.
+
+---
+
+## 16. Common project mistakes
+
+::: {.callout-warning}
+## Mistake 1: Topic too broad
+"Agricultural finance in Oman" is too broad. "NPV analysis of a small greenhouse investment in Oman" is better.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Formula without interpretation
+A correct NPV calculation is not enough. The report must explain what the NPV means for the investment decision.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Unclear assumptions
+Every assumed value should be listed clearly. Readers should know where each number came from.
+:::
+
+::: {.callout-warning}
+## Mistake 4: No sensitivity analysis
+Agricultural finance decisions are uncertain. Testing one alternative scenario improves the report.
+:::
+
+::: {.callout-warning}
+## Mistake 5: Weak conclusion
+The conclusion should answer the research question directly.
+:::
+
+---
+
+## 17. Practice task
+
+Choose one of the following mini-projects and prepare a one-page outline.
+
+1. Financial feasibility of a greenhouse tomato investment.
+2. Comparison of yield insurance and rainfall index insurance.
+3. Futures hedge for a wheat producer.
+4. Loan repayment capacity of a dairy farm.
+5. Integrated risk-management plan for a date farm.
+6. Financial ratio analysis of a farm business.
+
+Your outline should include:
+
+- title
+- research question
+- finance concept
+- required data or assumptions
+- planned calculation
+- expected table or graph
+- possible conclusion
+
+---
+
+## 18. Key takeaways
+
+- A strong project answers one focused agricultural finance question.
+- The project should connect agricultural context, finance concepts, calculations, and interpretation.
+- Good reports clearly state assumptions and avoid pretending that hypothetical numbers are real data.
+- Tables and graphs should support the argument, not decorate the report.
+- AI tools may support writing and learning, but students remain responsible for accuracy and integrity.
+- The final conclusion should directly answer the research question.
+
+---
+
+## Source note
+
+This lecture note is adapted for teaching purposes in NREC4230 from course materials on agricultural finance, agricultural risk management, project guidelines, and applied classroom examples.

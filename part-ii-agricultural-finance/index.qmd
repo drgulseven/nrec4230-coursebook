@@ -1,0 +1,22 @@
+---
+title: "Part II: Agricultural Finance"
+---
+
+## Overview
+
+Part II develops the financial tools needed to analyze agricultural decisions.
+
+Topics include financial institutions, time value of money, annuities, agricultural accounting, financial ratios, investment appraisal, futures hedging, basis risk, agricultural insurance design, and research applications.
+
+## Lectures
+
+7. Introduction to Agricultural Finance
+8. Financial Institutions and Intermediation
+9. Time Value of Money I
+10. Time Value of Money II
+11. Agricultural Accounting
+12. Financial Ratio Analysis
+13. Investment Appraisal
+14. Futures, Hedging, and Basis Risk
+15. Agricultural Insurance Design
+16. Project and Research Application

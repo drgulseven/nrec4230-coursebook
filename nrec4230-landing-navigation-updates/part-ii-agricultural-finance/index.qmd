@@ -1,0 +1,81 @@
+---
+title: "Part II: Agricultural Finance"
+description: "Part II of NREC4230, covering financial institutions, time value of money, accounting, ratios, investment appraisal, futures, hedging, insurance design, and project applications."
+---
+
+# Part II: Agricultural Finance
+
+Part II develops the financial tools needed for farm, agribusiness, and agricultural policy decisions. It connects core finance concepts with applied agricultural examples.
+
+The purpose of this part is to help students understand:
+
+- how farmers and agribusinesses make financial decisions
+- how credit and financial institutions support agriculture
+- how to value cash flows over time
+- how to read basic farm financial statements
+- how to evaluate investment projects
+- how futures, hedging, and insurance manage agricultural risk
+- how to prepare a simple applied research project
+
+::: {.callout-note}
+## Main idea
+Agricultural finance connects risk, time, money, investment, and institutions. A good agricultural finance decision must consider both expected return and risk exposure.
+:::
+
+## Part II lecture sequence
+
+| Lecture | Title | Main focus |
+|---:|---|---|
+| [07](lecture-07-introduction-to-agricultural-finance.qmd) | Introduction to Agricultural Finance | Definition, types of finance, circular flow, food security, finance principles |
+| [08](lecture-08-financial-institutions-and-intermediation.qmd) | Financial Institutions and Intermediation | Banks, development finance, microfinance, Islamic finance, leasing, insurance, credit analysis |
+| [09](lecture-09-time-value-of-money-i.qmd) | Time Value of Money I | Simple interest, compound interest, FV, PV, FVIF, PVIF, discounting |
+| [10](lecture-10-time-value-of-money-ii.qmd) | Time Value of Money II | Annuities, annuity due, amortization, APR, EAR, loan repayment |
+| [11](lecture-11-agricultural-accounting.qmd) | Agricultural Accounting | Accounting equation, double entry, journal entries, income statement, balance sheet, cash flow |
+| [12](lecture-12-financial-ratio-analysis.qmd) | Financial Ratio Analysis | Liquidity, solvency, profitability, efficiency, DSCR, stress testing |
+| [13](lecture-13-investment-appraisal.qmd) | Investment Appraisal | Payback, ARR, NPV, NPW, BCR, IRR, sensitivity analysis |
+| [14](lecture-14-futures-hedging-and-basis-risk.qmd) | Futures, Hedging, and Basis Risk | Spot, forwards, futures, short hedge, basis risk, partial hedge, optimal hedge ratio |
+| [15](lecture-15-agricultural-insurance-design.qmd) | Agricultural Insurance Design | Yield insurance, revenue insurance, rainfall index insurance, premiums, deductibles, caps, basis risk |
+| [16](lecture-16-project-and-research-application.qmd) | Project and Research Application | Article review, applied calculations, AI-aware project work, tables, graphs, presentation |
+
+## Main finance themes
+
+| Theme | Related lectures |
+|---|---|
+| Foundations of agricultural finance | 07, 08 |
+| Time value of money and loan calculations | 09, 10 |
+| Farm accounting and financial diagnosis | 11, 12 |
+| Investment decision making | 13 |
+| Market risk and hedging | 14 |
+| Insurance design and basis risk | 15 |
+| Research and project application | 16 |
+
+## How to study Part II
+
+A useful study sequence is:
+
+1. Read **Lectures 07 and 08** to understand the finance system.
+2. Study **Lectures 09 and 10** carefully because most calculations depend on TVM.
+3. Use **Lectures 11 and 12** to connect accounting information to financial ratios.
+4. Use **Lecture 13** to evaluate investment projects.
+5. Use **Lectures 14 and 15** to study risk-transfer tools.
+6. Use **Lecture 16** to prepare the course project.
+
+## Calculation-heavy topics
+
+Students should be especially comfortable with:
+
+- future value and present value
+- annuity and loan repayment
+- amortization schedules
+- APR and EAR
+- financial ratios
+- NPV, BCR, and IRR
+- futures hedge gain or loss
+- basis risk
+- insurance indemnity and net compensation
+
+The [formula sheet](../appendices/formulas.qmd) and [practice problems](../appendices/practice-problems.qmd) should be used together with these lectures.
+
+## Link to Part I
+
+Part II builds on the risk concepts introduced in [Part I](../part-i-agricultural-risk-management/index.qmd). The tools in Part II are used to evaluate, finance, transfer, or manage agricultural risks.

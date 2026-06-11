@@ -1,0 +1,65 @@
+---
+title: "Part I: Agricultural Risk Management"
+description: "Part I of NREC4230, covering agricultural risk concepts and agricultural risk management tools."
+---
+
+# Part I: Agricultural Risk Management
+
+Part I introduces agricultural risk management as the foundation of agricultural finance. Farmers, agribusinesses, lenders, insurers, and governments all face risk when agricultural outcomes are uncertain.
+
+The purpose of this part is to help students understand:
+
+- how agricultural risks are classified
+- why some risks are farm-level while others are systemic
+- how different risk-management tools work
+- how tools can be combined into an integrated ARM plan
+
+::: {.callout-note}
+## Main idea
+Agricultural risk management is not only about avoiding losses. It is also about making better investment, credit, insurance, marketing, and policy decisions under uncertainty.
+:::
+
+## Part I lecture sequence
+
+| Lecture | Title | Main focus |
+|---:|---|---|
+| [01](lecture-01-understanding-agricultural-risk.qmd) | Understanding Agricultural Risk | Risk, uncertainty, constraints, trends, exposure, vulnerability, systemic and idiosyncratic risk |
+| [02](lecture-02-on-farm-risk-management-tools.qmd) | On-Farm Risk Management Tools | Climate-smart agriculture, diversification, asset and income strategies |
+| [03](lecture-03-finance-related-risk-management-tools.qmd) | Finance-Related Risk Management Tools | Insurance, weather index insurance, microfinance, adverse selection, moral hazard, basis risk |
+| [04](lecture-04-market-related-risk-management-tools.qmd) | Market-Related Risk Management Tools | Contract farming, commodity exchanges, futures, warehouse receipt systems |
+| [05](lecture-05-government-based-risk-management-tools.qmd) | Government-Based Risk Management Tools | Public foodgrain reserves, disaster assistance, social protection, productive safety nets |
+| [06](lecture-06-integrated-arm-plan-for-oman.qmd) | Integrated ARM Plan for Oman | Risk register, scoring, tool matching, integrated plan design |
+
+## The four ARM tool groups
+
+| Tool group | Main tools | Typical decision level |
+|---|---|---|
+| On-farm and community-level tools | Climate-smart agriculture, diversification, asset and income strategies | Farmer, household, community |
+| Finance-related tools | Agricultural insurance, weather index insurance, microfinance | Farmer, lender, insurer |
+| Market-related tools | Contract farming, futures markets, warehouse receipts | Farmer, trader, processor, cooperative |
+| Government-based tools | Foodgrain reserves, disaster assistance, safety nets | Government, policy institutions |
+
+## How to study Part I
+
+A useful study sequence is:
+
+1. Start with **Lecture 01** to understand basic risk concepts.
+2. Use **Lectures 02 to 05** to learn individual tool groups.
+3. Use **Lecture 06** to combine tools into an integrated plan.
+4. Review the [glossary](../appendices/glossary.qmd) for terminology.
+5. Solve relevant questions in the [practice problems appendix](../appendices/practice-problems.qmd).
+
+## Key applied skills
+
+After completing Part I, students should be able to:
+
+- classify agricultural risks correctly
+- distinguish risk from constraint
+- explain systemic and idiosyncratic risk
+- identify suitable ARM tools for a given farm situation
+- calculate simple insurance, warehouse receipt, disaster relief, and risk-scoring examples
+- prepare a basic ARM plan for an agricultural activity in Oman
+
+## Link to Part II
+
+Part I explains the risk environment. [Part II](../part-ii-agricultural-finance/index.qmd) develops the financial tools needed to evaluate farm decisions, credit, investment, insurance contracts, and hedging strategies.

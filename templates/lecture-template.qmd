@@ -1,0 +1,55 @@
+---
+title: "Lecture XX: Title"
+description: "NREC4230 Agricultural Finance lecture note."
+---
+
+## Learning objectives
+
+After completing this lecture, students should be able to:
+
+1. Define the main concepts.
+2. Explain the agricultural finance or risk-management logic.
+3. Apply the method to a numerical example.
+4. Interpret the result in an agricultural context.
+
+## Key concepts
+
+| Concept | Meaning |
+|---|---|
+| Concept 1 | Definition |
+| Concept 2 | Definition |
+
+## Main explanation
+
+Write the main teaching content here.
+
+## Worked example
+
+### Problem
+
+Write a short applied problem.
+
+### Solution
+
+Show the calculation step by step.
+
+## Oman application
+
+Explain how the concept applies to Oman or GCC agriculture.
+
+::: {.callout-warning}
+## Common mistake
+Write one common student mistake here.
+:::
+
+## Practice questions
+
+1. Question 1.
+2. Question 2.
+3. Question 3.
+
+## Key takeaways
+
+1. Takeaway 1.
+2. Takeaway 2.
+3. Takeaway 3.

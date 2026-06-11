@@ -1,0 +1,539 @@
+---
+title: "Lecture 15: Agricultural Insurance Design"
+description: "NREC4230 Agricultural Finance lecture note on yield insurance, revenue insurance, index insurance, deductibles, payout caps, premiums, and basis risk."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Explain the purpose of agricultural insurance in farm finance.
+2. Distinguish between yield insurance, revenue insurance, and index insurance.
+3. Calculate indemnity payments, net compensation, deductibles, and payout caps.
+4. Explain basis risk in index insurance.
+5. Compare simple and complex insurance contracts from the farmer's perspective.
+6. Design a basic rainfall index insurance schedule for agricultural risk management.
+
+---
+
+## 1. Why agricultural insurance matters
+
+Agricultural insurance is a financial tool that helps farmers manage losses caused by uncertain events. These losses may come from drought, flood, pest outbreak, disease, extreme temperature, yield decline, or price decline.
+
+Insurance does not eliminate risk. It transfers part of the financial loss from the farmer to an insurer in exchange for a premium.
+
+::: {.callout-note}
+## Key idea
+Agricultural insurance converts an uncertain and potentially large loss into a smaller known cost: the insurance premium.
+:::
+
+Agricultural insurance is closely related to agricultural finance because it affects:
+
+- income stability
+- loan repayment capacity
+- willingness to invest
+- access to credit
+- resilience after shocks
+- farm business continuity
+
+A farmer with insurance may be more willing to invest in better seeds, irrigation, livestock, machinery, or greenhouse technology because part of the downside risk is covered.
+
+---
+
+## 2. Basic insurance terms
+
+| Term | Meaning | Example |
+|---|---|---|
+| Insured farmer | Farmer who buys insurance | A wheat farmer buys drought insurance |
+| Insurer | Company or institution providing coverage | Insurance company or public insurance scheme |
+| Premium | Price paid for insurance | OMR 700 paid before the season |
+| Indemnity | Compensation paid after a covered loss | OMR 3,000 paid after drought damage |
+| Deductible | Loss amount retained by the farmer | First OMR 500 of loss is not covered |
+| Coverage rate | Share of loss covered by insurance | 80% of eligible revenue loss |
+| Trigger | Event or condition that activates payment | Rainfall falls below 80 units |
+| Payout cap | Maximum payment allowed | Maximum payout is OMR 4,000 |
+| Basis risk | Mismatch between actual loss and insurance payout | Index pays low amount despite high farm loss |
+
+---
+
+## 3. Main types of agricultural insurance
+
+### 3.1 Yield insurance
+
+Yield insurance compensates the farmer when actual yield falls below a guaranteed yield.
+
+A simple formula is:
+
+$$
+\text{Yield Loss} = \text{Guaranteed Yield} - \text{Actual Yield}
+$$
+
+$$
+\text{Indemnity} = \text{Yield Loss} \times \text{Area} \times \text{Price} \times \text{Coverage Rate}
+$$
+
+Yield insurance is closely connected to actual farm production. It usually requires field verification, which may increase administrative costs.
+
+### 3.2 Revenue insurance
+
+Revenue insurance protects against a fall in farm revenue. It can cover yield risk, price risk, or both.
+
+$$
+\text{Expected Revenue} = \text{Expected Yield} \times \text{Expected Price} \times \text{Area}
+$$
+
+$$
+\text{Actual Revenue} = \text{Actual Yield} \times \text{Actual Price} \times \text{Area}
+$$
+
+$$
+\text{Revenue Shortfall} = \text{Guaranteed Revenue} - \text{Actual Revenue}
+$$
+
+Revenue insurance is useful when both production and price risk matter.
+
+### 3.3 Index insurance
+
+Index insurance does not directly measure each farmer's loss. Instead, it pays based on an external index such as rainfall, temperature, vegetation, or area yield.
+
+Examples:
+
+- rainfall index insurance
+- temperature index insurance
+- area yield index insurance
+- satellite vegetation index insurance
+- livestock mortality index insurance
+
+Index insurance is simpler and faster, but it creates basis risk.
+
+::: {.callout-warning}
+## Common mistake
+Index insurance does not pay because the farmer personally lost output. It pays because the index crossed a contract threshold.
+:::
+
+---
+
+## 4. Yield insurance example
+
+A farmer cultivates 40 acres of wheat.
+
+| Item | Value |
+|---|---:|
+| Guaranteed yield | 2.5 tons per acre |
+| Actual yield | 1.8 tons per acre |
+| Market price | OMR 130 per ton |
+| Coverage rate | 75% |
+| Deductible | OMR 500 |
+| Premium | OMR 900 |
+
+### Step 1: Calculate yield loss per acre
+
+$$
+\text{Yield Loss per Acre} = 2.5 - 1.8 = 0.7 \text{ tons}
+$$
+
+### Step 2: Calculate total physical loss
+
+$$
+\text{Total Physical Loss} = 0.7 \times 40 = 28 \text{ tons}
+$$
+
+### Step 3: Calculate revenue value of loss
+
+$$
+\text{Revenue Loss} = 28 \times 130 = 3640 \text{ OMR}
+$$
+
+### Step 4: Apply coverage rate
+
+$$
+\text{Covered Loss} = 3640 \times 0.75 = 2730 \text{ OMR}
+$$
+
+### Step 5: Apply deductible
+
+$$
+\text{Gross Indemnity} = 2730 - 500 = 2230 \text{ OMR}
+$$
+
+### Step 6: Subtract premium to obtain net compensation
+
+$$
+\text{Net Compensation} = 2230 - 900 = 1330 \text{ OMR}
+$$
+
+The farmer receives OMR 2,230 from the insurer, but after considering the premium, the net financial benefit is OMR 1,330.
+
+---
+
+## 5. Revenue insurance example
+
+A farmer in Oman cultivates 60 acres of wheat.
+
+| Item | Value |
+|---|---:|
+| Expected yield | 2.8 tons per acre |
+| Expected price | OMR 140 per ton |
+| Actual yield | 1.9 tons per acre |
+| Actual price | OMR 125 per ton |
+| Guarantee rate | 80% |
+| Deductible | OMR 600 |
+| Premium | OMR 1,200 |
+| Payout cap | OMR 5,500 |
+
+### Step 1: Expected revenue
+
+$$
+\text{Expected Revenue} = 60 \times 2.8 \times 140 = 23520 \text{ OMR}
+$$
+
+### Step 2: Guaranteed revenue
+
+$$
+\text{Guaranteed Revenue} = 23520 \times 0.80 = 18816 \text{ OMR}
+$$
+
+### Step 3: Actual revenue
+
+$$
+\text{Actual Revenue} = 60 \times 1.9 \times 125 = 14250 \text{ OMR}
+$$
+
+### Step 4: Revenue shortfall
+
+$$
+\text{Revenue Shortfall} = 18816 - 14250 = 4566 \text{ OMR}
+$$
+
+### Step 5: Apply deductible
+
+$$
+\text{Indemnity before Cap} = 4566 - 600 = 3966 \text{ OMR}
+$$
+
+### Step 6: Apply payout cap
+
+$$
+\text{Final Indemnity} = \min(3966, 5500) = 3966 \text{ OMR}
+$$
+
+### Step 7: Net compensation
+
+$$
+\text{Net Compensation} = 3966 - 1200 = 2766 \text{ OMR}
+$$
+
+The payout cap does not bind because OMR 3,966 is below the maximum payout of OMR 5,500.
+
+::: {.callout-tip}
+## Interpretation
+Revenue insurance is more comprehensive than yield insurance because it can respond to both lower yield and lower price.
+:::
+
+---
+
+## 6. Binding contract features
+
+Insurance contracts often include several conditions. A feature is **binding** if it changes the payout in the observed situation.
+
+Using the previous example:
+
+| Feature | Does it bind? | Explanation |
+|---|---|---|
+| Revenue guarantee rule | Yes | It creates eligibility because actual revenue is below guaranteed revenue |
+| Deductible | Yes | It reduces payout from OMR 4,566 to OMR 3,966 |
+| Payout cap | No | Final payout before cap is below OMR 5,500 |
+
+The deductible is the binding limiting feature. It shifts part of the loss back to the farmer.
+
+---
+
+## 7. Rainfall index insurance example
+
+Now suppose the farmer buys rainfall index insurance instead of revenue insurance.
+
+| Item | Value |
+|---|---:|
+| Normal rainfall | 100 units |
+| Actual rainfall | 74 units |
+| Premium | OMR 700 |
+| Deductible | none |
+
+The contract pays according to rainfall deficit.
+
+| Rainfall deficit | Payout |
+|---|---:|
+| Less than 10% | OMR 0 |
+| 10% to 20% | OMR 1,000 |
+| More than 20% to 35% | OMR 2,500 |
+| More than 35% | OMR 4,000 |
+
+### Step 1: Calculate rainfall deficit
+
+$$
+\text{Rainfall Deficit} = \frac{100 - 74}{100} = 0.26 = 26\%
+$$
+
+### Step 2: Identify payout band
+
+A 26% rainfall deficit falls in the **more than 20% to 35%** band.
+
+$$
+\text{Indemnity} = 2500 \text{ OMR}
+$$
+
+### Step 3: Net compensation
+
+$$
+\text{Net Compensation} = 2500 - 700 = 1800 \text{ OMR}
+$$
+
+The farmer receives OMR 2,500, but after paying the premium the net compensation is OMR 1,800.
+
+---
+
+## 8. Comparing revenue insurance and index insurance
+
+| Feature | Revenue insurance | Rainfall index insurance |
+|---|---|---|
+| Measures actual farm loss | Yes | No |
+| Requires farm-level data | Yes | No or limited |
+| Administrative cost | Higher | Lower |
+| Speed of payout | Slower | Faster |
+| Basis risk | Lower | Higher |
+| Contract simplicity | Lower | Higher |
+| Suitable for small farmers | Possible but costly | Often more practical |
+
+In the example:
+
+| Policy | Final indemnity | Premium | Net compensation |
+|---|---:|---:|---:|
+| Revenue insurance | OMR 3,966 | OMR 1,200 | OMR 2,766 |
+| Rainfall index insurance | OMR 2,500 | OMR 700 | OMR 1,800 |
+
+Revenue insurance provides stronger protection in this case, but it is more complex and requires farm-level information.
+
+---
+
+## 9. Basis risk
+
+Basis risk is the mismatch between actual farm loss and index-based payout.
+
+There are two common types:
+
+| Type | Explanation | Example |
+|---|---|---|
+| Farmer loses but receives low or no payout | The index does not trigger enough | Farm has crop disease, but rainfall was normal |
+| Farmer receives payout without large loss | The index triggers, but farm damage is small | Rainfall was low, but farmer had irrigation |
+
+### Example: same rainfall, different farm losses
+
+Two farmers experience the same rainfall outcome: 74 units. Both have the same rainfall index contract. Therefore, both receive OMR 2,500.
+
+However:
+
+| Farmer | Yield | Actual damage | Index payout |
+|---|---:|---|---:|
+| Farmer A | 1.9 tons per acre | Large loss | OMR 2,500 |
+| Farmer B | 2.3 tons per acre | Smaller loss | OMR 2,500 |
+
+The index payout is identical because rainfall is identical. But the true losses differ. This is basis risk.
+
+::: {.callout-note}
+## Key idea
+Index insurance is simple because it ignores individual farm differences. That same simplicity creates basis risk.
+:::
+
+---
+
+## 10. Designing a simple index insurance contract
+
+Suppose an insurer wants a rainfall index contract with these goals:
+
+1. The policy should be simple.
+2. The maximum payout cannot exceed OMR 4,000.
+3. Moderate rainfall deficits should receive meaningful support.
+4. Severe loss protection should remain limited compared with more complete revenue insurance.
+
+A possible design is:
+
+| Rainfall deficit | Payout |
+|---|---:|
+| Less than 10% | OMR 0 |
+| 10% to 20% | OMR 1,500 |
+| More than 20% to 35% | OMR 3,000 |
+| More than 35% | OMR 3,800 |
+
+Assume premium is OMR 500.
+
+### Moderate rainfall deficit: 26%
+
+A 26% deficit gives a payout of OMR 3,000.
+
+$$
+\text{Net Compensation} = 3000 - 500 = 2500 \text{ OMR}
+$$
+
+### Severe rainfall deficit: 45%
+
+A 45% deficit gives a payout of OMR 3,800.
+
+$$
+\text{Net Compensation} = 3800 - 500 = 3300 \text{ OMR}
+$$
+
+This design is simple and capped below OMR 4,000. It may perform well in moderate years but remains limited in severe years.
+
+---
+
+## 11. Insurance design trade-offs
+
+Insurance design is a balance between farmer protection and insurer sustainability.
+
+| Design choice | Better farmer protection | Better insurer control |
+|---|---|---|
+| Higher coverage rate | Yes | No |
+| Lower deductible | Yes | No |
+| Higher payout cap | Yes | No |
+| Lower premium | Yes | No |
+| More farm-level verification | Yes | Higher cost |
+| Simpler index trigger | Faster payout | More basis risk |
+
+A good policy is not necessarily the policy with the highest payout. It should be understandable, affordable, financially sustainable, and aligned with actual agricultural risk.
+
+---
+
+## 12. Python example
+
+The following Python code calculates revenue insurance and rainfall index insurance payouts.
+
+```{python}
+# Revenue insurance example
+acres = 60
+expected_yield = 2.8
+expected_price = 140
+actual_yield = 1.9
+actual_price = 125
+guarantee_rate = 0.80
+deductible = 600
+premium_a = 1200
+cap = 5500
+
+expected_revenue = acres * expected_yield * expected_price
+guaranteed_revenue = expected_revenue * guarantee_rate
+actual_revenue = acres * actual_yield * actual_price
+shortfall = max(guaranteed_revenue - actual_revenue, 0)
+indemnity_a = min(max(shortfall - deductible, 0), cap)
+net_a = indemnity_a - premium_a
+
+expected_revenue, guaranteed_revenue, actual_revenue, indemnity_a, net_a
+```
+
+```{python}
+# Rainfall index insurance example
+normal_rainfall = 100
+actual_rainfall = 74
+premium_b = 700
+
+def rainfall_payout(deficit_pct):
+    if deficit_pct < 0.10:
+        return 0
+    elif deficit_pct <= 0.20:
+        return 1000
+    elif deficit_pct <= 0.35:
+        return 2500
+    else:
+        return 4000
+
+deficit_pct = (normal_rainfall - actual_rainfall) / normal_rainfall
+indemnity_b = rainfall_payout(deficit_pct)
+net_b = indemnity_b - premium_b
+
+deficit_pct, indemnity_b, net_b
+```
+
+---
+
+## 13. Oman application
+
+Agricultural insurance design in Oman should consider local production conditions.
+
+| Sector | Possible risk | Possible insurance design |
+|---|---|---|
+| Greenhouse vegetables | Heat stress and water shortage | Temperature or water-cost index insurance |
+| Wheat trials | Yield and price uncertainty | Revenue insurance or area yield insurance |
+| Dates | Cyclone, pest, and quality risk | Yield or weather-linked insurance |
+| Dairy | Feed price and disease risk | Livestock insurance and feed-cost risk tools |
+| Fisheries | Weather and income volatility | Disaster-linked assistance or parametric insurance |
+
+For Oman, a useful teaching point is that index insurance may be easier to administer, but farm-level heterogeneity matters. Farms with different irrigation systems, cooling technologies, soils, and management quality may experience different losses even under the same weather index.
+
+---
+
+## 14. Common mistakes
+
+::: {.callout-warning}
+## Mistake 1: Ignoring the premium
+Students often compare indemnities only. Net compensation should subtract the premium.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Forgetting the deductible
+The deductible reduces the payout and shifts part of the loss back to the farmer.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Applying the payout cap too early
+First calculate the eligible payout. Then apply the cap.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Treating index insurance as farm-level loss insurance
+Index insurance pays according to an index, not according to the actual loss of each farmer.
+:::
+
+::: {.callout-warning}
+## Mistake 5: Assuming simple contracts are always better
+Simple contracts are easier to understand and administer, but they may create more basis risk.
+:::
+
+---
+
+## 15. Practice questions
+
+### Short-answer questions
+
+1. What is the difference between yield insurance and revenue insurance?
+2. Why does index insurance usually have lower administrative cost?
+3. What is basis risk?
+4. Why is a deductible included in many insurance contracts?
+5. Why might a farmer prefer index insurance even if it has basis risk?
+
+### Calculation questions
+
+1. A farmer has guaranteed yield of 3 tons per acre and actual yield of 2.2 tons per acre on 25 acres. The price is OMR 120 per ton. Coverage rate is 70%. Deductible is OMR 400. Premium is OMR 600. Calculate final indemnity and net compensation.
+
+2. A rainfall index policy has normal rainfall of 80 units and actual rainfall of 60 units. The contract pays OMR 1,200 for a 10% to 20% deficit, OMR 2,400 for more than 20% to 35%, and OMR 3,500 for more than 35%. Premium is OMR 500. Calculate rainfall deficit, indemnity, and net compensation.
+
+3. A revenue insurance policy has expected revenue of OMR 20,000 and a guarantee rate of 85%. Actual revenue is OMR 14,500. Deductible is OMR 700 and cap is OMR 4,000. Calculate the final indemnity.
+
+4. Two farms face the same rainfall deficit, but one farm has irrigation and the other does not. Explain why index insurance may overpay one farmer and underpay the other.
+
+---
+
+## 16. Key takeaways
+
+- Agricultural insurance helps farmers transfer part of production and revenue risk.
+- Yield insurance is linked to physical production loss.
+- Revenue insurance is linked to the shortfall between guaranteed and actual revenue.
+- Index insurance is linked to an external index such as rainfall or temperature.
+- Deductibles, premiums, caps, and coverage rates strongly affect farmer protection.
+- Net compensation equals indemnity minus premium.
+- Index insurance is simpler and faster, but it creates basis risk.
+- Good insurance design balances farmer protection, affordability, simplicity, and insurer sustainability.
+
+---
+
+## Source note
+
+This lecture note is adapted for teaching purposes in NREC4230 from FAO/PARM agricultural risk management materials, class discussion materials, and agricultural finance applications developed for the course.

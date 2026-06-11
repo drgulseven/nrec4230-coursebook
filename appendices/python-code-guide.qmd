@@ -1,0 +1,839 @@
+---
+title: "Python Code Guide"
+description: "NREC4230 Agricultural Finance appendix with Python examples for financial calculations, risk management, hedging, insurance, investment appraisal, and simple plots."
+format:
+  html:
+    toc: true
+    toc-depth: 3
+execute:
+  eval: false
+  echo: true
+  warning: false
+  message: false
+---
+
+## Purpose
+
+This appendix provides reusable Python examples for **NREC4230 Agricultural Finance**. The examples support the two main parts of the course:
+
+1. Agricultural Risk Management
+2. Agricultural Finance
+
+The code is written for simple teaching use. Students can run it in a Quarto document, Jupyter Notebook, Google Colab, or a `.py` script.
+
+::: {.callout-note}
+## Teaching note
+The code blocks in this appendix are set not to run automatically. This keeps the Quarto website fast and stable. Students can copy the code into a notebook, or the instructor can set `eval: true` for selected examples.
+:::
+
+---
+
+## 1. Recommended Python setup
+
+Install the basic packages once:
+
+```bash
+py -m pip install jupyter pandas numpy matplotlib openpyxl plotly
+```
+
+Check the installation:
+
+```python
+import sys
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+print(sys.version)
+print("pandas:", pd.__version__)
+print("numpy:", np.__version__)
+```
+
+---
+
+## 2. Using Python inside Quarto
+
+A Python code chunk in Quarto looks like this:
+
+````markdown
+```{python}
+import pandas as pd
+import numpy as np
+
+x = 10
+y = 20
+x + y
+```
+````
+
+To hide warnings and messages:
+
+````markdown
+```{python}
+#| warning: false
+#| message: false
+
+import pandas as pd
+```
+````
+
+To show code but avoid running it:
+
+````markdown
+```{python}
+#| eval: false
+
+print("This code is shown but not executed.")
+```
+````
+
+---
+
+## 3. Basic financial functions
+
+### Future value
+
+Formula:
+
+$$
+FV = PV(1+r)^n
+$$
+
+```python
+
+def future_value(pv, r, n):
+    """Compute future value from present value."""
+    return pv * (1 + r) ** n
+
+fv = future_value(pv=1000, r=0.08, n=2)
+print(round(fv, 2))
+```
+
+### Present value
+
+Formula:
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+```python
+
+def present_value(fv, r, n):
+    """Compute present value from future value."""
+    return fv / (1 + r) ** n
+
+pv = present_value(fv=1000, r=0.08, n=2)
+print(round(pv, 2))
+```
+
+### FVIF and PVIF table
+
+```python
+import pandas as pd
+
+rates = [0.04, 0.06, 0.08, 0.10]
+years = list(range(1, 11))
+
+rows = []
+for r in rates:
+    for n in years:
+        rows.append({
+            "rate": r,
+            "year": n,
+            "FVIF": (1 + r) ** n,
+            "PVIF": 1 / (1 + r) ** n
+        })
+
+factor_table = pd.DataFrame(rows)
+factor_table.head()
+```
+
+---
+
+## 4. Simple and compound interest
+
+### Simple interest
+
+Formula:
+
+$$
+I = P \times r \times t
+$$
+
+```python
+
+def simple_interest(principal, rate, time):
+    interest = principal * rate * time
+    total = principal + interest
+    return interest, total
+
+interest, total = simple_interest(10000, 0.08, 0.5)
+print("Interest:", round(interest, 2))
+print("Total repayment:", round(total, 2))
+```
+
+### Compound interest
+
+```python
+
+def compound_amount(principal, rate, years, compounds_per_year=1):
+    return principal * (1 + rate / compounds_per_year) ** (compounds_per_year * years)
+
+annual = compound_amount(1000, 0.08, 2, 1)
+semi_annual = compound_amount(1000, 0.08, 2, 2)
+monthly = compound_amount(1000, 0.08, 2, 12)
+
+print(round(annual, 2))
+print(round(semi_annual, 2))
+print(round(monthly, 2))
+```
+
+---
+
+## 5. Annuities and loan amortization
+
+### Present value of an ordinary annuity
+
+Formula:
+
+$$
+PVA = PMT \left[\frac{1-(1+r)^{-n}}{r}\right]
+$$
+
+```python
+
+def pv_annuity(payment, r, n):
+    return payment * (1 - (1 + r) ** (-n)) / r
+
+pv = pv_annuity(payment=1000, r=0.08, n=5)
+print(round(pv, 2))
+```
+
+### Future value of an ordinary annuity
+
+Formula:
+
+$$
+FVA = PMT \left[\frac{(1+r)^n-1}{r}\right]
+$$
+
+```python
+
+def fv_annuity(payment, r, n):
+    return payment * ((1 + r) ** n - 1) / r
+
+fv = fv_annuity(payment=1000, r=0.08, n=5)
+print(round(fv, 2))
+```
+
+### Loan payment
+
+Formula:
+
+$$
+PMT = \frac{PV \times r}{1-(1+r)^{-n}}
+$$
+
+```python
+
+def loan_payment(principal, r, n):
+    return principal * r / (1 - (1 + r) ** (-n))
+
+payment = loan_payment(20000, 0.10, 3)
+print(round(payment, 2))
+```
+
+### Amortization schedule
+
+```python
+import pandas as pd
+
+principal = 20000
+r = 0.10
+n = 3
+payment = loan_payment(principal, r, n)
+
+balance = principal
+rows = []
+
+for year in range(1, n + 1):
+    interest = balance * r
+    principal_paid = payment - interest
+    balance = balance - principal_paid
+    rows.append({
+        "Year": year,
+        "Payment": payment,
+        "Interest": interest,
+        "Principal Paid": principal_paid,
+        "Ending Balance": max(balance, 0)
+    })
+
+schedule = pd.DataFrame(rows)
+schedule.round(2)
+```
+
+---
+
+## 6. APR and EAR
+
+Formula:
+
+$$
+EAR = \left(1+\frac{APR}{m}\right)^m - 1
+$$
+
+```python
+
+def effective_annual_rate(apr, m):
+    return (1 + apr / m) ** m - 1
+
+for m in [1, 2, 4, 12, 365]:
+    ear = effective_annual_rate(0.18, m)
+    print(m, round(ear * 100, 2), "%")
+```
+
+---
+
+## 7. Farm accounting with Python
+
+### Basic journal entries
+
+```python
+import pandas as pd
+
+journal = pd.DataFrame({
+    "Date": ["Jan 1", "Jan 2", "Jan 5"],
+    "Account Debit": ["Cash", "Equipment", "Accounts Receivable"],
+    "Debit": [40000, 7000, 4500],
+    "Account Credit": ["Owner Equity", "Cash", "Sales Revenue"],
+    "Credit": [40000, 7000, 4500]
+})
+
+journal
+```
+
+### Income statement
+
+```python
+revenue = 18000
+variable_costs = 9500
+fixed_costs = 3200
+interest_expense = 600
+
+net_income = revenue - variable_costs - fixed_costs - interest_expense
+
+income_statement = pd.DataFrame({
+    "Item": ["Revenue", "Variable costs", "Fixed costs", "Interest expense", "Net income"],
+    "Amount OMR": [revenue, -variable_costs, -fixed_costs, -interest_expense, net_income]
+})
+
+income_statement
+```
+
+---
+
+## 8. Financial ratio analysis
+
+```python
+farm = {
+    "current_assets": 12500,
+    "current_liabilities": 5000,
+    "total_assets": 68000,
+    "total_liabilities": 28000,
+    "equity": 40000,
+    "revenue": 42000,
+    "net_income": 6200,
+    "cash_available_for_debt_service": 10500,
+    "annual_debt_service": 7500
+}
+
+current_ratio = farm["current_assets"] / farm["current_liabilities"]
+debt_to_asset = farm["total_liabilities"] / farm["total_assets"]
+debt_to_equity = farm["total_liabilities"] / farm["equity"]
+profit_margin = farm["net_income"] / farm["revenue"]
+dscr = farm["cash_available_for_debt_service"] / farm["annual_debt_service"]
+
+ratios = pd.DataFrame({
+    "Ratio": ["Current ratio", "Debt-to-asset", "Debt-to-equity", "Profit margin", "DSCR"],
+    "Value": [current_ratio, debt_to_asset, debt_to_equity, profit_margin, dscr]
+})
+
+ratios.round(3)
+```
+
+---
+
+## 9. Investment appraisal
+
+### Net present value
+
+Formula:
+
+$$
+NPV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} - C_0
+$$
+
+```python
+
+def npv(rate, cash_flows):
+    """Compute NPV. cash_flows[0] is usually the initial investment."""
+    total = 0
+    for t, cf in enumerate(cash_flows):
+        total += cf / (1 + rate) ** t
+    return total
+
+cash_flows = [-20000, 6000, 7000, 8000, 9000]
+project_npv = npv(0.08, cash_flows)
+print(round(project_npv, 2))
+```
+
+### Benefit-cost ratio
+
+```python
+benefits = [7000, 8000, 9000, 10000]
+costs = [3000, 3500, 4000, 4500]
+r = 0.08
+
+pv_benefits = sum(b / (1 + r) ** t for t, b in enumerate(benefits, start=1))
+pv_costs = sum(c / (1 + r) ** t for t, c in enumerate(costs, start=1))
+bcr = pv_benefits / pv_costs
+
+print(round(pv_benefits, 2))
+print(round(pv_costs, 2))
+print(round(bcr, 2))
+```
+
+### Internal rate of return by bisection
+
+```python
+
+def irr_bisection(cash_flows, low=-0.99, high=1.0, tolerance=1e-7, max_iter=1000):
+    """Approximate IRR using bisection."""
+    for _ in range(max_iter):
+        mid = (low + high) / 2
+        value = npv(mid, cash_flows)
+        if abs(value) < tolerance:
+            return mid
+        if npv(low, cash_flows) * value < 0:
+            high = mid
+        else:
+            low = mid
+    return mid
+
+cash_flows = [-20000, 6000, 7000, 8000, 9000]
+project_irr = irr_bisection(cash_flows)
+print(round(project_irr * 100, 2), "%")
+```
+
+### Sensitivity table for NPV
+
+```python
+rates = [0.04, 0.06, 0.08, 0.10, 0.12]
+cash_flows = [-20000, 6000, 7000, 8000, 9000]
+
+sensitivity = pd.DataFrame({
+    "Discount Rate": rates,
+    "NPV": [npv(r, cash_flows) for r in rates]
+})
+
+sensitivity.round(2)
+```
+
+---
+
+## 10. Agricultural risk scoring
+
+A simple teaching risk score can combine probability and severity.
+
+```python
+risks = pd.DataFrame({
+    "Risk": ["Drought", "Pest outbreak", "Price fall", "Input cost increase", "Labour shortage"],
+    "Probability": [4, 3, 4, 5, 2],
+    "Severity": [5, 4, 4, 3, 3]
+})
+
+risks["Risk Score"] = risks["Probability"] * risks["Severity"]
+risks.sort_values("Risk Score", ascending=False)
+```
+
+### Risk category
+
+```python
+
+def risk_category(score):
+    if score >= 16:
+        return "High"
+    elif score >= 8:
+        return "Medium"
+    else:
+        return "Low"
+
+risks["Category"] = risks["Risk Score"].apply(risk_category)
+risks
+```
+
+---
+
+## 11. Weather index insurance payout
+
+```python
+threshold_rainfall = 400
+actual_rainfall = 320
+payout_per_hectare = 200
+area = 50
+
+shortfall_rate = max(threshold_rainfall - actual_rainfall, 0) / threshold_rainfall
+payout = shortfall_rate * payout_per_hectare * area
+
+print("Shortfall rate:", round(shortfall_rate * 100, 2), "%")
+print("Total payout:", round(payout, 2))
+```
+
+### Piecewise rainfall payout schedule
+
+```python
+
+def rainfall_index_payout(normal_rainfall, actual_rainfall):
+    deficit = max(normal_rainfall - actual_rainfall, 0) / normal_rainfall
+    
+    if deficit < 0.10:
+        payout = 0
+    elif deficit <= 0.20:
+        payout = 1600
+    elif deficit <= 0.35:
+        payout = 3200
+    else:
+        payout = 3800
+    
+    return deficit, payout
+
+deficit, payout = rainfall_index_payout(100, 74)
+print("Deficit:", round(deficit * 100, 2), "%")
+print("Payout:", payout)
+```
+
+---
+
+## 12. Yield and revenue insurance
+
+```python
+acres = 60
+expected_yield = 2.8
+actual_yield = 1.9
+expected_price = 140
+actual_price = 125
+coverage_rate = 0.80
+deductible = 600
+premium = 1200
+payout_cap = 5500
+
+expected_revenue = acres * expected_yield * expected_price
+guaranteed_revenue = coverage_rate * expected_revenue
+actual_revenue = acres * actual_yield * actual_price
+
+shortfall = max(guaranteed_revenue - actual_revenue, 0)
+gross_indemnity = shortfall
+final_indemnity = min(max(gross_indemnity - deductible, 0), payout_cap)
+net_compensation = final_indemnity - premium
+
+print("Expected revenue:", round(expected_revenue, 2))
+print("Guaranteed revenue:", round(guaranteed_revenue, 2))
+print("Actual revenue:", round(actual_revenue, 2))
+print("Final indemnity:", round(final_indemnity, 2))
+print("Net compensation:", round(net_compensation, 2))
+```
+
+---
+
+## 13. Futures hedging
+
+### Full short hedge for a producer
+
+```python
+quantity = 200
+contract_size = 10
+initial_futures_price = 125
+harvest_spot_price = 105
+harvest_futures_price = 110
+
+contracts = quantity / contract_size
+spot_revenue = quantity * harvest_spot_price
+futures_gain_per_ton = initial_futures_price - harvest_futures_price
+futures_gain = futures_gain_per_ton * quantity
+hedged_revenue = spot_revenue + futures_gain
+
+print("Contracts:", contracts)
+print("Spot revenue:", spot_revenue)
+print("Futures gain:", futures_gain)
+print("Hedged revenue:", hedged_revenue)
+```
+
+### Basis risk
+
+Formula:
+
+$$
+Basis = Spot - Futures
+$$
+
+```python
+spot_0 = 120
+futures_0 = 125
+spot_T = 105
+futures_T = 110
+
+basis_0 = spot_0 - futures_0
+basis_T = spot_T - futures_T
+basis_change = basis_T - basis_0
+
+print("Initial basis:", basis_0)
+print("Final basis:", basis_T)
+print("Basis change:", basis_change)
+```
+
+### Partial hedge
+
+```python
+quantity = 5000
+hedge_ratio = 0.80
+futures_price = 8.70
+spot_price_T = 5.50
+
+hedged_quantity = quantity * hedge_ratio
+unhedged_quantity = quantity - hedged_quantity
+
+spot_revenue = quantity * spot_price_T
+futures_gain = (futures_price - spot_price_T) * hedged_quantity
+total_revenue = spot_revenue + futures_gain
+
+print("Hedged quantity:", hedged_quantity)
+print("Unhedged quantity:", unhedged_quantity)
+print("Spot revenue:", spot_revenue)
+print("Futures gain:", futures_gain)
+print("Total revenue:", total_revenue)
+```
+
+### Optimal hedge ratio
+
+Formula:
+
+$$
+h^* = \rho \frac{\sigma_S}{\sigma_F}
+$$
+
+```python
+rho = 0.85
+sigma_spot = 12
+sigma_futures = 10
+quantity = 200
+contract_size = 10
+
+h_star = rho * sigma_spot / sigma_futures
+optimal_contracts = h_star * quantity / contract_size
+
+print("Optimal hedge ratio:", round(h_star, 3))
+print("Optimal contracts:", round(optimal_contracts, 2))
+```
+
+---
+
+## 14. Warehouse receipt financing
+
+```python
+quantity_tons = 200
+price_per_ton = 240
+loan_to_value = 0.75
+annual_interest_rate = 0.08
+loan_duration_years = 0.5
+
+commodity_value = quantity_tons * price_per_ton
+loan_amount = commodity_value * loan_to_value
+repayment = loan_amount * (1 + annual_interest_rate * loan_duration_years)
+
+print("Commodity value:", commodity_value)
+print("Loan amount:", loan_amount)
+print("Repayment:", repayment)
+```
+
+---
+
+## 15. Government reserve and subsidy cost
+
+```python
+grain_released = 40000
+market_price = 300
+subsidized_price = 200
+
+government_revenue = grain_released * subsidized_price
+market_value = grain_released * market_price
+subsidy_cost = market_value - government_revenue
+
+print("Government revenue from subsidized sale:", government_revenue)
+print("Market value:", market_value)
+print("Implicit subsidy cost:", subsidy_cost)
+```
+
+---
+
+## 16. Disaster relief allocation
+
+```python
+total_fund = 50_000_000
+farmers = 100_000
+cash_share = 0.30
+input_share = 0.70
+
+cash_budget = total_fund * cash_share
+input_budget = total_fund * input_share
+cash_per_farmer = cash_budget / farmers
+input_support_per_farmer = input_budget / farmers
+
+print("Cash transfer budget:", cash_budget)
+print("Input subsidy budget:", input_budget)
+print("Cash per farmer:", cash_per_farmer)
+print("Input support per farmer:", input_support_per_farmer)
+```
+
+---
+
+## 17. Simple plots for teaching
+
+### NPV against discount rate
+
+```python
+import matplotlib.pyplot as plt
+
+rates = np.linspace(0.01, 0.20, 20)
+cash_flows = [-20000, 6000, 7000, 8000, 9000]
+npvs = [npv(r, cash_flows) for r in rates]
+
+plt.figure()
+plt.plot(rates * 100, npvs, marker="o")
+plt.axhline(0, linewidth=1)
+plt.xlabel("Discount rate (%)")
+plt.ylabel("NPV")
+plt.title("NPV sensitivity to discount rate")
+plt.show()
+```
+
+### Insurance payout schedule
+
+```python
+rainfall_deficits = np.linspace(0, 0.50, 51)
+payouts = []
+
+for d in rainfall_deficits:
+    actual = 100 * (1 - d)
+    _, payout = rainfall_index_payout(100, actual)
+    payouts.append(payout)
+
+plt.figure()
+plt.step(rainfall_deficits * 100, payouts, where="post")
+plt.xlabel("Rainfall deficit (%)")
+plt.ylabel("Payout")
+plt.title("Rainfall index insurance payout schedule")
+plt.show()
+```
+
+---
+
+## 18. Reading and writing Excel files
+
+```python
+import pandas as pd
+
+# Read an Excel file
+# df = pd.read_excel("data/farm_finance.xlsx")
+
+# Save a table to Excel
+ratios.to_excel("farm_ratios.xlsx", index=False)
+```
+
+::: {.callout-warning}
+## Common issue
+If Excel reading or writing fails, check that `openpyxl` is installed.
+
+```bash
+py -m pip install openpyxl
+```
+:::
+
+---
+
+## 19. Suggested student workflow
+
+1. Define the economic question.
+2. Write down the formula.
+3. Create input variables in Python.
+4. Calculate the result.
+5. Put the result in a table.
+6. Interpret the result in words.
+7. Check whether the answer makes economic sense.
+
+Example:
+
+```python
+# Question: Is a greenhouse investment financially feasible?
+
+initial_cost = 15000
+cash_flows = [-initial_cost, 4500, 5200, 5600, 6000, 6200]
+discount_rate = 0.08
+
+project_npv = npv(discount_rate, cash_flows)
+
+if project_npv > 0:
+    decision = "Accept"
+else:
+    decision = "Reject"
+
+print("NPV:", round(project_npv, 2))
+print("Decision:", decision)
+```
+
+---
+
+## 20. Common Python mistakes in this course
+
+::: {.callout-warning}
+## Mistake 1: Using percentages incorrectly
+Use `0.08`, not `8`, for 8%.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Mixing years and months
+If the interest rate is monthly, the number of periods must also be monthly.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Forgetting the sign of initial investment
+Initial investment is usually negative in NPV calculations.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Confusing futures gain and spot revenue
+For a producer using a short hedge, futures gain occurs when the futures price falls.
+:::
+
+::: {.callout-warning}
+## Mistake 5: Ignoring net compensation
+Insurance payout alone is not the final benefit. Premiums and deductibles matter.
+:::
+
+---
+
+## 21. Mini checklist before submitting code
+
+- Are all packages imported?
+- Are rates written as decimals?
+- Are units consistent?
+- Are formulas clearly stated?
+- Are outputs rounded where appropriate?
+- Is there an economic interpretation after the calculation?
+- Are tables and figures labelled clearly?
+
+---
+
+## Key takeaway
+
+Python is useful in agricultural finance because it allows students to move from formulas to transparent calculations. The goal is not complicated programming. The goal is clear financial reasoning, correct calculations, and proper interpretation.

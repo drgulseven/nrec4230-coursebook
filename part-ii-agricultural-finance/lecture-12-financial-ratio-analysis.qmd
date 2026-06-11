@@ -1,0 +1,521 @@
+---
+title: "Lecture 12: Financial Ratio Analysis"
+description: "NREC4230 Agricultural Finance lecture note on liquidity, solvency, profitability, efficiency, and repayment-capacity ratios for farm and agribusiness decisions."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Explain why financial ratios are useful in agricultural finance.
+2. Distinguish between liquidity, solvency, profitability, efficiency, and repayment-capacity ratios.
+3. Calculate common financial ratios from a balance sheet and income statement.
+4. Interpret whether a farm business appears financially strong or weak.
+5. Recognize the limitations of ratio analysis in seasonal agricultural businesses.
+
+---
+
+## 1. Why financial ratios matter
+
+Financial statements provide raw information. Financial ratios turn that information into indicators that can be compared across farms, years, and investment options.
+
+In agricultural finance, ratios help answer practical questions:
+
+- Can the farm pay short-term obligations?
+- Is the farm too dependent on debt?
+- Is the farm profitable enough to survive bad years?
+- Are assets being used efficiently?
+- Can the farmer repay a loan from operating income?
+
+::: {.callout-note}
+## Key idea
+A financial ratio is not a final answer. It is a signal that helps the analyst ask better questions about the farm business.
+:::
+
+---
+
+## 2. Main categories of financial ratios
+
+| Ratio group | Main question | Examples |
+|---|---|---|
+| Liquidity ratios | Can the farm meet short-term obligations? | Current ratio, working capital |
+| Solvency ratios | How much of the farm is financed by debt? | Debt-to-asset ratio, debt-to-equity ratio |
+| Profitability ratios | Is the farm generating enough profit? | Net profit margin, return on assets |
+| Efficiency ratios | How well are assets and inventory used? | Asset turnover, inventory turnover |
+| Repayment-capacity ratios | Can the farm service debt? | Debt service coverage ratio |
+
+These categories are connected. A farm may be profitable but illiquid. Another farm may have good liquidity but weak long-term solvency.
+
+---
+
+## 3. Data needed for ratio analysis
+
+Ratio analysis usually uses information from three financial statements.
+
+| Statement | What it shows | Ratio use |
+|---|---|---|
+| Balance sheet | Assets, liabilities, equity at one point in time | Liquidity and solvency |
+| Income statement | Revenue, expenses, profit over a period | Profitability |
+| Cash-flow statement | Cash inflows and outflows over a period | Repayment capacity |
+
+For farms, the timing of measurement matters. A farm just before harvest may look very different from the same farm just after selling output.
+
+::: {.callout-warning}
+## Common mistake
+Students often calculate ratios correctly but ignore seasonality. In agriculture, the date of the balance sheet matters.
+:::
+
+---
+
+## 4. Example farm financial statements
+
+Suppose an Omani greenhouse vegetable farm reports the following annual financial information.
+
+### Balance sheet
+
+| Item | Amount, OMR |
+|---|---:|
+| Cash | 3,000 |
+| Accounts receivable | 4,000 |
+| Inventory | 8,000 |
+| Current assets | 15,000 |
+| Machinery and equipment | 35,000 |
+| Greenhouse structure | 50,000 |
+| Total assets | 100,000 |
+| Accounts payable | 6,000 |
+| Short-term loan | 9,000 |
+| Current liabilities | 15,000 |
+| Long-term loan | 45,000 |
+| Total liabilities | 60,000 |
+| Owner's equity | 40,000 |
+
+### Income statement
+
+| Item | Amount, OMR |
+|---|---:|
+| Sales revenue | 80,000 |
+| Cost of goods sold | 45,000 |
+| Gross profit | 35,000 |
+| Operating expenses | 20,000 |
+| Interest expense | 3,000 |
+| Net income | 12,000 |
+
+### Debt service
+
+The farm must pay OMR 10,000 this year in principal and interest on its loans.
+
+---
+
+## 5. Liquidity ratios
+
+Liquidity measures the ability of the farm to meet short-term obligations.
+
+### 5.1 Current ratio
+
+$$
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}
+$$
+
+For the greenhouse farm:
+
+$$
+\text{Current Ratio} = \frac{15000}{15000} = 1.00
+$$
+
+A current ratio of 1.00 means current assets are exactly equal to current liabilities.
+
+### Interpretation
+
+| Current ratio | Possible interpretation |
+|---:|---|
+| Below 1.0 | Potential liquidity pressure |
+| Around 1.0 | Tight short-term position |
+| Above 1.5 | More comfortable liquidity position |
+
+A higher current ratio is generally safer, but too high a ratio may also mean that cash or inventory is not being used efficiently.
+
+### 5.2 Working capital
+
+$$
+\text{Working Capital} = \text{Current Assets} - \text{Current Liabilities}
+$$
+
+$$
+\text{Working Capital} = 15000 - 15000 = 0
+$$
+
+The farm has no working capital buffer.
+
+::: {.callout-tip}
+## Finance interpretation
+A farm with zero working capital may still operate, but it has little room to absorb delayed sales, pest shocks, or input-price increases.
+:::
+
+---
+
+## 6. Solvency ratios
+
+Solvency measures long-term financial stability and debt dependence.
+
+### 6.1 Debt-to-asset ratio
+
+$$
+\text{Debt-to-Asset Ratio} = \frac{\text{Total Liabilities}}{\text{Total Assets}}
+$$
+
+$$
+\text{Debt-to-Asset Ratio} = \frac{60000}{100000} = 0.60
+$$
+
+This means 60% of the farm's assets are financed by debt.
+
+### 6.2 Equity-to-asset ratio
+
+$$
+\text{Equity-to-Asset Ratio} = \frac{\text{Owner's Equity}}{\text{Total Assets}}
+$$
+
+$$
+\text{Equity-to-Asset Ratio} = \frac{40000}{100000} = 0.40
+$$
+
+This means 40% of the farm's assets are financed by the owner.
+
+### 6.3 Debt-to-equity ratio
+
+$$
+\text{Debt-to-Equity Ratio} = \frac{\text{Total Liabilities}}{\text{Owner's Equity}}
+$$
+
+$$
+\text{Debt-to-Equity Ratio} = \frac{60000}{40000} = 1.50
+$$
+
+The farm has OMR 1.50 of debt for every OMR 1.00 of equity.
+
+### Interpretation
+
+| Indicator | Interpretation for this farm |
+|---|---|
+| Debt-to-asset ratio = 0.60 | Relatively leveraged |
+| Equity-to-asset ratio = 0.40 | Owner still has meaningful equity |
+| Debt-to-equity ratio = 1.50 | Debt exceeds owner equity |
+
+::: {.callout-warning}
+## Common mistake
+A farm with valuable assets is not automatically safe. If most assets are financed by debt, solvency risk may still be high.
+:::
+
+---
+
+## 7. Profitability ratios
+
+Profitability measures whether the farm generates income from sales and assets.
+
+### 7.1 Gross profit margin
+
+$$
+\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Sales Revenue}}
+$$
+
+$$
+\text{Gross Profit Margin} = \frac{35000}{80000} = 0.4375 = 43.75\%
+$$
+
+This means the farm keeps 43.75% of sales revenue after covering direct production costs.
+
+### 7.2 Net profit margin
+
+$$
+\text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Sales Revenue}}
+$$
+
+$$
+\text{Net Profit Margin} = \frac{12000}{80000} = 0.15 = 15\%
+$$
+
+This means the farm keeps 15% of sales revenue as net income.
+
+### 7.3 Return on assets
+
+$$
+\text{Return on Assets} = \frac{\text{Net Income}}{\text{Total Assets}}
+$$
+
+$$
+\text{Return on Assets} = \frac{12000}{100000} = 0.12 = 12\%
+$$
+
+The farm earns 12% on its total asset base.
+
+### 7.4 Return on equity
+
+$$
+\text{Return on Equity} = \frac{\text{Net Income}}{\text{Owner's Equity}}
+$$
+
+$$
+\text{Return on Equity} = \frac{12000}{40000} = 0.30 = 30\%
+$$
+
+The farm earns 30% on the owner's invested equity.
+
+::: {.callout-note}
+## Leverage effect
+Return on equity can be high when debt is used successfully. But debt also increases risk when revenue falls.
+:::
+
+---
+
+## 8. Efficiency ratios
+
+Efficiency ratios measure how well the farm uses assets and inventory to generate sales.
+
+### 8.1 Asset turnover ratio
+
+$$
+\text{Asset Turnover} = \frac{\text{Sales Revenue}}{\text{Total Assets}}
+$$
+
+$$
+\text{Asset Turnover} = \frac{80000}{100000} = 0.80
+$$
+
+Each OMR 1 of assets generates OMR 0.80 of sales.
+
+### 8.2 Inventory turnover ratio
+
+$$
+\text{Inventory Turnover} = \frac{\text{Cost of Goods Sold}}{\text{Inventory}}
+$$
+
+$$
+\text{Inventory Turnover} = \frac{45000}{8000} = 5.625
+$$
+
+Inventory turns over about 5.63 times during the year.
+
+### Interpretation
+
+A higher inventory turnover may indicate efficient sales and low storage time. However, if inventory is too low, the farm may face supply disruptions.
+
+---
+
+## 9. Repayment-capacity ratio
+
+The most important ratio for lenders is often the debt service coverage ratio.
+
+### Debt service coverage ratio
+
+$$
+\text{DSCR} = \frac{\text{Net Operating Income Available for Debt Service}}{\text{Debt Service}}
+$$
+
+For a simplified class example, assume net income plus interest expense is available for debt service.
+
+$$
+\text{Income Available for Debt Service} = 12000 + 3000 = 15000
+$$
+
+$$
+\text{DSCR} = \frac{15000}{10000} = 1.50
+$$
+
+A DSCR of 1.50 means the farm generates 1.50 OMR for every 1 OMR of debt service.
+
+### Interpretation
+
+| DSCR | Possible interpretation |
+|---:|---|
+| Below 1.0 | Cash flow is insufficient for debt service |
+| Around 1.0 | Very tight repayment capacity |
+| Above 1.25 | More comfortable repayment capacity |
+| Above 1.50 | Stronger repayment capacity, depending on risk |
+
+::: {.callout-tip}
+## Lender perspective
+A lender will usually prefer a DSCR above 1.0 because agriculture has weather, price, and production risk. A small buffer may not be enough.
+:::
+
+---
+
+## 10. Complete ratio summary for the example farm
+
+| Ratio | Formula | Calculation | Result | Interpretation |
+|---|---|---:|---:|---|
+| Current ratio | Current assets / Current liabilities | 15,000 / 15,000 | 1.00 | Tight liquidity |
+| Working capital | Current assets - current liabilities | 15,000 - 15,000 | 0 | No short-term buffer |
+| Debt-to-asset | Total liabilities / total assets | 60,000 / 100,000 | 0.60 | 60% debt financed |
+| Debt-to-equity | Total liabilities / equity | 60,000 / 40,000 | 1.50 | Debt exceeds equity |
+| Gross margin | Gross profit / sales | 35,000 / 80,000 | 43.75% | Strong gross margin |
+| Net margin | Net income / sales | 12,000 / 80,000 | 15% | Positive profitability |
+| ROA | Net income / total assets | 12,000 / 100,000 | 12% | Assets generate profit |
+| ROE | Net income / equity | 12,000 / 40,000 | 30% | High equity return |
+| Asset turnover | Sales / total assets | 80,000 / 100,000 | 0.80 | Moderate asset use |
+| Inventory turnover | COGS / inventory | 45,000 / 8,000 | 5.63 | Inventory moves several times yearly |
+| DSCR | Income available / debt service | 15,000 / 10,000 | 1.50 | Acceptable repayment capacity |
+
+---
+
+## 11. Python example
+
+The same calculations can be done in Python.
+
+```{python}
+#| label: ratio-calculations
+#| echo: true
+#| output: true
+
+financials = {
+    "current_assets": 15000,
+    "current_liabilities": 15000,
+    "total_assets": 100000,
+    "total_liabilities": 60000,
+    "equity": 40000,
+    "sales": 80000,
+    "cogs": 45000,
+    "gross_profit": 35000,
+    "net_income": 12000,
+    "interest_expense": 3000,
+    "inventory": 8000,
+    "debt_service": 10000
+}
+
+ratios = {
+    "Current ratio": financials["current_assets"] / financials["current_liabilities"],
+    "Working capital": financials["current_assets"] - financials["current_liabilities"],
+    "Debt-to-asset ratio": financials["total_liabilities"] / financials["total_assets"],
+    "Debt-to-equity ratio": financials["total_liabilities"] / financials["equity"],
+    "Gross profit margin": financials["gross_profit"] / financials["sales"],
+    "Net profit margin": financials["net_income"] / financials["sales"],
+    "Return on assets": financials["net_income"] / financials["total_assets"],
+    "Return on equity": financials["net_income"] / financials["equity"],
+    "Asset turnover": financials["sales"] / financials["total_assets"],
+    "Inventory turnover": financials["cogs"] / financials["inventory"],
+    "DSCR": (financials["net_income"] + financials["interest_expense"]) / financials["debt_service"]
+}
+
+for name, value in ratios.items():
+    print(f"{name}: {value:.2f}")
+```
+
+---
+
+## 12. Stress test: what if revenue falls?
+
+Ratio analysis becomes more useful when combined with risk analysis.
+
+Suppose sales revenue falls by 20%, while cost of goods sold and operating expenses remain unchanged in the short run.
+
+| Item | Original | After 20% sales decline |
+|---|---:|---:|
+| Sales revenue | 80,000 | 64,000 |
+| Cost of goods sold | 45,000 | 45,000 |
+| Gross profit | 35,000 | 19,000 |
+| Operating expenses | 20,000 | 20,000 |
+| Interest expense | 3,000 | 3,000 |
+| Net income | 12,000 | -4,000 |
+
+The farm moves from profit to loss.
+
+### New net profit margin
+
+$$
+\text{Net Profit Margin} = \frac{-4000}{64000} = -0.0625 = -6.25\%
+$$
+
+### New DSCR
+
+$$
+\text{Income Available for Debt Service} = -4000 + 3000 = -1000
+$$
+
+$$
+\text{DSCR} = \frac{-1000}{10000} = -0.10
+$$
+
+This shows how quickly repayment capacity can collapse when price or yield shocks occur.
+
+::: {.callout-important}
+## Risk connection
+Financial ratio analysis should not be done only for the normal year. It should also be done under bad-year scenarios.
+:::
+
+---
+
+## 13. Oman application
+
+Consider a farm in Oman producing vegetables, dates, dairy, or poultry. Financial ratio analysis can help answer different practical questions.
+
+| Farm decision | Relevant ratios |
+|---|---|
+| Should the farmer take a seasonal loan? | Current ratio, working capital, DSCR |
+| Can the farm finance a greenhouse expansion? | Debt-to-asset, debt-to-equity, DSCR |
+| Is the farm using assets efficiently? | Asset turnover, inventory turnover |
+| Is production profitable enough? | Gross margin, net margin, ROA |
+| Is the farm vulnerable to price shocks? | Net margin, working capital, DSCR under stress test |
+
+For greenhouse farming, liquidity is especially important because input costs occur before harvest revenue is received. For livestock farms, feed-price shocks can quickly reduce profit margins. For date producers, storage and timing of sale can affect both liquidity and profitability.
+
+---
+
+## 14. Common mistakes
+
+::: {.callout-warning}
+## Mistake 1: Treating one ratio as enough
+No single ratio gives the full financial picture. Liquidity, solvency, profitability, efficiency, and repayment capacity should be evaluated together.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Ignoring the date of the balance sheet
+Agricultural businesses are seasonal. Ratios calculated before harvest may differ greatly from ratios calculated after sales.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Confusing profit with cash flow
+A farm can be profitable on paper but still face cash-flow problems if payments are delayed or inventories are high.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Thinking high debt is always bad
+Debt can support profitable investment. The issue is whether the farm can repay debt under realistic risk scenarios.
+:::
+
+---
+
+## 15. Practice questions
+
+### Short-answer questions
+
+1. What is the difference between liquidity and solvency?
+2. Why is working capital important in agriculture?
+3. What does a debt-to-asset ratio of 0.70 mean?
+4. Why can return on equity be high for a highly leveraged farm?
+5. Why should lenders care about DSCR?
+
+### Applied questions
+
+1. A farm has current assets of OMR 24,000 and current liabilities of OMR 16,000. Calculate the current ratio and working capital.
+2. A farm has total assets of OMR 150,000 and total liabilities of OMR 90,000. Calculate the debt-to-asset ratio and equity-to-asset ratio.
+3. A farm has sales of OMR 60,000 and net income of OMR 9,000. Calculate the net profit margin.
+4. A farm has net income of OMR 8,000, interest expense of OMR 2,000, and annual debt service of OMR 12,000. Calculate DSCR. Is repayment capacity comfortable?
+5. A farm's sales fall from OMR 100,000 to OMR 75,000 while costs remain almost unchanged. Which ratios are likely to weaken first?
+
+---
+
+## 16. Key takeaways
+
+- Financial ratios help convert accounting information into useful financial indicators.
+- Liquidity ratios measure short-term payment capacity.
+- Solvency ratios measure long-term debt dependence.
+- Profitability ratios measure whether the farm generates enough income.
+- Efficiency ratios measure how well assets and inventory are used.
+- DSCR is central for loan repayment analysis.
+- Agricultural ratio analysis must account for seasonality and risk.
+- A good financial analysis combines normal-year ratios with bad-year stress tests.
+
+---
+
+## Source note
+
+This lecture note is adapted for teaching purposes in NREC4230 from agricultural finance class materials, financial statement examples, formula sheets, and applied farm-finance calculations developed for the course.

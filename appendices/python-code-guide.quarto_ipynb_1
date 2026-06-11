@@ -1,0 +1,66 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Python Code Guide\"\n",
+        "---\n",
+        "\n",
+        "## Purpose\n",
+        "\n",
+        "This appendix will collect simple Python examples used in the course.\n",
+        "\n",
+        "## Example: Future value"
+      ],
+      "id": "77c7abcb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "pv = 1000\n",
+        "r = 0.08\n",
+        "n = 2\n",
+        "fv = pv * (1 + r) ** n\n",
+        "fv"
+      ],
+      "id": "6121727d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Example: Present value"
+      ],
+      "id": "6dc28b7a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "fv = 1000\n",
+        "r = 0.08\n",
+        "n = 2\n",
+        "pv = fv / (1 + r) ** n\n",
+        "pv"
+      ],
+      "id": "f247e353",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\o.golseven\\AppData\\Roaming\\Python\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

@@ -1,0 +1,1324 @@
+---
+title: "Practice Problems with Answers"
+description: "NREC4230 Agricultural Finance practice problems covering agricultural risk management, time value of money, accounting, ratios, investment appraisal, hedging, and insurance design."
+---
+
+## How to use this appendix
+
+This appendix provides practice problems for the full NREC4230 lecture-note sequence. The questions are grouped by topic and each problem includes an answer. Students should try each problem before opening the answer.
+
+::: {.callout-note}
+## Study advice
+For numerical questions, always write the formula, substitute values, calculate the result, and interpret the answer in one sentence.
+:::
+
+---
+
+# Part I. Agricultural Risk Management
+
+## A. Understanding agricultural risk
+
+### Problem 1. Classifying agricultural risk
+
+Classify each situation as production risk, market risk, financial risk, institutional risk, human risk, environmental risk, or constraint.
+
+1. A tomato farmer already knows that irrigation water is limited before planting.
+2. A sudden heatwave reduces greenhouse tomato yield.
+3. The market price of onions falls after harvest.
+4. A farmer cannot repay a seasonal loan after crop loss.
+5. A new import regulation changes the domestic price of maize.
+6. A farm worker leaves during the harvest period.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+| Situation | Classification | Reason |
+|---|---|---|
+| Known irrigation water limitation | Constraint | It is known before the decision is made. |
+| Sudden heatwave | Production risk | It affects biological production and yield. |
+| Onion price fall | Market risk | It affects output price and revenue. |
+| Loan repayment difficulty | Financial risk | It affects debt service capacity. |
+| New import regulation | Institutional risk | It comes from a policy or regulatory change. |
+| Worker leaves during harvest | Human risk | It affects labour availability and farm operations. |
+:::
+
+### Problem 2. Expected loss
+
+A vegetable farmer faces an 18% probability of a pest outbreak. If the outbreak occurs, the expected financial loss is OMR 4,200. Calculate the expected loss.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+\text{Expected Loss}=\text{Probability}\times \text{Loss if Event Occurs}
+$$
+
+$$
+\text{Expected Loss}=0.18\times 4200=756
+$$
+
+The expected loss is **OMR 756**. This does not mean the farmer will lose exactly OMR 756. It is the average expected value of the risk.
+:::
+
+### Problem 3. Systemic and idiosyncratic risk
+
+Classify each risk as systemic or idiosyncratic.
+
+1. Drought affects most farms in a region.
+2. One farmer's tractor breaks down.
+3. A national increase in fuel prices raises production costs.
+4. One farmer loses stored produce because of poor storage management.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+| Situation | Classification | Reason |
+|---|---|---|
+| Regional drought | Systemic risk | Many farmers are affected at the same time. |
+| Tractor breakdown | Idiosyncratic risk | The loss is specific to one farmer. |
+| National fuel price increase | Systemic risk | Many producers face the same input-cost shock. |
+| Poor storage management | Idiosyncratic risk | The loss is caused by one farmer's own storage problem. |
+:::
+
+---
+
+## B. On-farm and community-level risk tools
+
+### Problem 4. Climate-smart agriculture and profit
+
+A farmer adopts climate-smart agriculture practices. Yield increases from 3.2 tons per hectare to 4.4 tons per hectare. Production cost increases from OMR 420 per hectare to OMR 620 per hectare. The crop price is OMR 180 per ton.
+
+Calculate:
+
+1. Initial and final revenue per hectare.
+2. Initial and final profit per hectare.
+3. Change in profit.
+4. Percentage increase in yield.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Initial revenue:
+
+$$
+3.2\times 180=576
+$$
+
+Final revenue:
+
+$$
+4.4\times 180=792
+$$
+
+Initial profit:
+
+$$
+576-420=156
+$$
+
+Final profit:
+
+$$
+792-620=172
+$$
+
+Change in profit:
+
+$$
+172-156=16
+$$
+
+Percentage increase in yield:
+
+$$
+\frac{4.4-3.2}{3.2}\times 100=37.5\%
+$$
+
+The farmer's yield increases by **37.5%**, but profit increases by only **OMR 16 per hectare** because costs also increase.
+:::
+
+### Problem 5. Portfolio diversification
+
+A farmer allocates 70% of land to maize and 30% to legumes. Expected profit from maize is OMR 1,600 per hectare with standard deviation OMR 450. Expected profit from legumes is OMR 1,100 per hectare with standard deviation OMR 250. The correlation between the two returns is -0.25.
+
+Calculate:
+
+1. Expected portfolio profit.
+2. Portfolio variance.
+3. Portfolio standard deviation.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Expected portfolio profit:
+
+$$
+E(R_p)=0.70(1600)+0.30(1100)=1450
+$$
+
+Portfolio variance:
+
+$$
+\sigma_p^2=w_1^2\sigma_1^2+w_2^2\sigma_2^2+2w_1w_2\rho_{12}\sigma_1\sigma_2
+$$
+
+$$
+\sigma_p^2=(0.70^2)(450^2)+(0.30^2)(250^2)+2(0.70)(0.30)(-0.25)(450)(250)
+$$
+
+$$
+\sigma_p^2=99,225+5,625-11,812.50=93,037.50
+$$
+
+Portfolio standard deviation:
+
+$$
+\sigma_p=\sqrt{93,037.50}=305.02
+$$
+
+Expected portfolio profit is **OMR 1,450 per hectare** and portfolio standard deviation is about **OMR 305.02**. The negative correlation reduces total risk.
+:::
+
+### Problem 6. Income diversification
+
+A farm household earns OMR 7,000 from farming and OMR 2,000 from off-farm work in a normal year. A drought reduces farm income by 40%, but off-farm income is unchanged. Calculate total income after the drought and the percentage decline in total household income.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Normal total income:
+
+$$
+7000+2000=9000
+$$
+
+Farm income after drought:
+
+$$
+7000(1-0.40)=4200
+$$
+
+Total income after drought:
+
+$$
+4200+2000=6200
+$$
+
+Income decline:
+
+$$
+9000-6200=2800
+$$
+
+Percentage decline:
+
+$$
+\frac{2800}{9000}\times 100=31.11\%
+$$
+
+Total household income falls to **OMR 6,200**. The percentage decline is **31.11%**. Off-farm income reduces the household's vulnerability.
+:::
+
+---
+
+## C. Finance-related risk tools
+
+### Problem 7. Agricultural insurance payout
+
+A farmer insures a 50-acre wheat farm. Expected yield is 3 tons per acre and price is OMR 130 per ton. A bad season causes a 30% yield loss. The insurance policy covers 80% of the revenue loss and has an OMR 500 deductible.
+
+Calculate the insurance payout.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Expected revenue:
+
+$$
+50\times 3\times 130=19,500
+$$
+
+Revenue loss:
+
+$$
+19,500\times 0.30=5,850
+$$
+
+Covered loss:
+
+$$
+5,850\times 0.80=4,680
+$$
+
+Final payout after deductible:
+
+$$
+4,680-500=4,180
+$$
+
+The insurance payout is **OMR 4,180**.
+:::
+
+### Problem 8. Weather index insurance payout
+
+A farmer buys rainfall-index insurance. The rainfall threshold is 400 mm. Actual seasonal rainfall is 310 mm. The maximum payout is OMR 150 per hectare if rainfall is zero. The farm area is 60 hectares. The payout is proportional to the rainfall shortfall.
+
+Calculate the rainfall shortfall percentage and total payout.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Rainfall shortfall:
+
+$$
+400-310=90\text{ mm}
+$$
+
+Shortfall percentage:
+
+$$
+\frac{90}{400}=0.225=22.5\%
+$$
+
+Payout per hectare:
+
+$$
+150\times 0.225=33.75
+$$
+
+Total payout:
+
+$$
+33.75\times 60=2,025
+$$
+
+The rainfall shortfall is **22.5%** and the total payout is **OMR 2,025**.
+:::
+
+### Problem 9. Microfinance repayment
+
+A small farmer borrows OMR 800 from a microfinance institution at 12% annual simple interest for 9 months. Calculate total interest and total repayment.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Time in years:
+
+$$
+9/12=0.75
+$$
+
+Interest:
+
+$$
+800\times 0.12\times 0.75=72
+$$
+
+Total repayment:
+
+$$
+800+72=872
+$$
+
+The farmer pays **OMR 72** in interest and repays **OMR 872** in total.
+:::
+
+---
+
+## D. Market-related risk tools
+
+### Problem 10. Contract farming
+
+A farmer expects to harvest 12,000 kg of cucumbers. A buyer offers a contract price of OMR 0.210 per kg. At harvest, the market price falls to OMR 0.165 per kg.
+
+Calculate revenue with and without the contract, and the avoided revenue loss.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Revenue with contract:
+
+$$
+12,000\times 0.210=2,520
+$$
+
+Revenue without contract:
+
+$$
+12,000\times 0.165=1,980
+$$
+
+Avoided revenue loss:
+
+$$
+2,520-1,980=540
+$$
+
+The contract protects **OMR 540** of revenue.
+:::
+
+### Problem 11. Short futures hedge
+
+A wheat farmer expects to sell 12,000 kg of wheat. The farmer enters a short futures contract at OMR 0.420 per kg. At harvest, the spot price is OMR 0.350 per kg.
+
+Calculate:
+
+1. Revenue without hedging.
+2. Futures gain.
+3. Total revenue after hedging.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Revenue without hedging:
+
+$$
+12,000\times 0.350=4,200
+$$
+
+Futures gain:
+
+$$
+12,000\times (0.420-0.350)=840
+$$
+
+Total revenue after hedging:
+
+$$
+4,200+840=5,040
+$$
+
+The hedge increases revenue from **OMR 4,200** to **OMR 5,040**.
+:::
+
+### Problem 12. Warehouse receipt financing
+
+A cooperative stores 150 tons of maize in a licensed warehouse. The market price is OMR 180 per ton. The warehouse receipt allows the cooperative to borrow 70% of the stored value. The loan is repaid after 6 months with 9% annual simple interest.
+
+Calculate the loan amount and repayment amount.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Stored value:
+
+$$
+150\times 180=27,000
+$$
+
+Loan amount:
+
+$$
+27,000\times 0.70=18,900
+$$
+
+Interest:
+
+$$
+18,900\times 0.09\times 0.5=850.50
+$$
+
+Repayment:
+
+$$
+18,900+850.50=19,750.50
+$$
+
+The cooperative can borrow **OMR 18,900** and must repay **OMR 19,750.50** after 6 months.
+:::
+
+---
+
+## E. Government-based risk tools
+
+### Problem 13. Public foodgrain reserve subsidy
+
+A government releases 30,000 tons of wheat from public reserves during a food price shock. The market price is OMR 280 per ton, but the government sells the wheat at OMR 190 per ton.
+
+Calculate:
+
+1. Government sales revenue.
+2. Market value of the released wheat.
+3. Implicit subsidy cost.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Government sales revenue:
+
+$$
+30,000\times 190=5,700,000
+$$
+
+Market value:
+
+$$
+30,000\times 280=8,400,000
+$$
+
+Implicit subsidy cost:
+
+$$
+8,400,000-5,700,000=2,700,000
+$$
+
+The implicit subsidy cost is **OMR 2.7 million**.
+:::
+
+### Problem 14. Disaster assistance fund
+
+A disaster assistance fund has OMR 12 million to support 40,000 farmers. The program allocates 40% to direct cash transfers and 60% to input subsidies.
+
+Calculate the cash transfer per farmer and the input subsidy per farmer.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Cash-transfer budget:
+
+$$
+12,000,000\times 0.40=4,800,000
+$$
+
+Input-subsidy budget:
+
+$$
+12,000,000\times 0.60=7,200,000
+$$
+
+Cash transfer per farmer:
+
+$$
+\frac{4,800,000}{40,000}=120
+$$
+
+Input subsidy per farmer:
+
+$$
+\frac{7,200,000}{40,000}=180
+$$
+
+Each farmer receives **OMR 120** in cash transfer and **OMR 180** in input subsidy.
+:::
+
+### Problem 15. Productive safety net
+
+A rural employment program pays OMR 6 per day. A farmer works for 25 days during the off-season and also receives a food voucher worth OMR 45. Calculate total support.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Employment income:
+
+$$
+6\times 25=150
+$$
+
+Total support:
+
+$$
+150+45=195
+$$
+
+Total support is **OMR 195**.
+:::
+
+### Problem 16. Risk scoring for an ARM plan
+
+A farm uses a simple risk score:
+
+$$
+\text{Risk Score}=\text{Frequency Score}\times \text{Severity Score}
+$$
+
+Both scores range from 1 to 5. Rank the following risks from highest to lowest priority.
+
+| Risk | Frequency | Severity |
+|---|---:|---:|
+| Heat stress | 4 | 5 |
+| Output price fall | 3 | 4 |
+| Pest outbreak | 2 | 5 |
+| Labour shortage | 3 | 2 |
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+| Risk | Score | Priority |
+|---|---:|---:|
+| Heat stress | 4 × 5 = 20 | 1 |
+| Output price fall | 3 × 4 = 12 | 2 |
+| Pest outbreak | 2 × 5 = 10 | 3 |
+| Labour shortage | 3 × 2 = 6 | 4 |
+
+The highest priority is **heat stress** because it has the largest combined frequency and severity score.
+:::
+
+---
+
+# Part II. Agricultural Finance
+
+## F. Introduction to agricultural finance and institutions
+
+### Problem 17. Farm expansion financing
+
+A farmer wants to buy equipment costing OMR 30,000. The farmer can borrow at 5% annual simple interest for 4 years. Calculate total interest and total repayment.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Interest:
+
+$$
+30,000\times 0.05\times 4=6,000
+$$
+
+Total repayment:
+
+$$
+30,000+6,000=36,000
+$$
+
+Total interest is **OMR 6,000** and total repayment is **OMR 36,000**.
+:::
+
+### Problem 18. Credit decision and DSCR
+
+A farm has expected annual net operating income of OMR 9,000. Annual debt service is OMR 6,000. Calculate the debt service coverage ratio and interpret it.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+DSCR=\frac{\text{Net Operating Income}}{\text{Annual Debt Service}}
+$$
+
+$$
+DSCR=\frac{9000}{6000}=1.50
+$$
+
+The DSCR is **1.50**. This means the farm generates 1.5 times the cash flow required for annual debt service. This is generally safer than a DSCR close to 1.
+:::
+
+### Problem 19. Five Cs of credit
+
+A farmer has strong farm experience and good repayment history but has weak collateral and unstable annual cash flow. Which two credit dimensions are strong and which two are weak?
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Strong dimensions:
+
+- **Character**: good repayment history.
+- **Capacity or management quality**: strong farm experience.
+
+Weak dimensions:
+
+- **Collateral**: weak assets available as security.
+- **Capacity**: unstable cash flow weakens repayment ability.
+
+The lender may approve the loan only with a smaller amount, guarantee, insurance, or better repayment schedule.
+:::
+
+---
+
+## G. Time value of money
+
+### Problem 20. Future value with annual compounding
+
+A farmer deposits OMR 1,000 in a savings account earning 7% annual compound interest for 3 years. Calculate the future value.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+FV=PV(1+r)^n
+$$
+
+$$
+FV=1000(1.07)^3=1225.04
+$$
+
+The future value is **OMR 1,225.04**.
+:::
+
+### Problem 21. Present value
+
+A farmer expects to receive OMR 5,000 after 4 years. The discount rate is 8%. Calculate the present value.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+PV=\frac{FV}{(1+r)^n}
+$$
+
+$$
+PV=\frac{5000}{(1.08)^4}=3675.15
+$$
+
+The present value is **OMR 3,675.15**.
+:::
+
+### Problem 22. Future value of an ordinary annuity
+
+A farmer saves OMR 600 at the end of each year for 5 years. The interest rate is 6%. Calculate the future value of the annuity.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+FVA=PMT\left[\frac{(1+r)^n-1}{r}\right]
+$$
+
+$$
+FVA=600\left[\frac{(1.06)^5-1}{0.06}\right]=3382.26
+$$
+
+The future value of the annuity is **OMR 3,382.26**.
+:::
+
+### Problem 23. Loan amortization payment
+
+A farmer borrows OMR 10,000 at 10% annual interest. The loan will be repaid in 4 equal annual payments. Calculate the annual payment.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+PMT=PV\left[\frac{r(1+r)^n}{(1+r)^n-1}\right]
+$$
+
+$$
+PMT=10,000\left[\frac{0.10(1.10)^4}{(1.10)^4-1}\right]=3154.71
+$$
+
+The annual payment is **OMR 3,154.71**.
+:::
+
+### Problem 24. Effective annual rate
+
+A loan has an APR of 12% compounded monthly. Calculate the effective annual rate.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+EAR=\left(1+\frac{APR}{m}\right)^m-1
+$$
+
+$$
+EAR=\left(1+\frac{0.12}{12}\right)^{12}-1=0.1268
+$$
+
+The effective annual rate is **12.68%**.
+:::
+
+---
+
+## H. Accounting and financial statements
+
+### Problem 25. Journal entries
+
+Record the journal entries for the following farm transactions.
+
+1. Owner invests OMR 20,000 cash in the farm.
+2. Farm buys equipment for OMR 7,000 cash.
+3. Farm buys feed worth OMR 1,500 on credit.
+4. Farm sells produce for OMR 4,000 cash.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+| Transaction | Debit | Credit |
+|---|---|---|
+| Owner invests cash | Cash OMR 20,000 | Owner's equity OMR 20,000 |
+| Buy equipment for cash | Equipment OMR 7,000 | Cash OMR 7,000 |
+| Buy feed on credit | Feed expense or inventory OMR 1,500 | Accounts payable OMR 1,500 |
+| Sell produce for cash | Cash OMR 4,000 | Sales revenue OMR 4,000 |
+:::
+
+### Problem 26. Income statement
+
+A dairy farm has sales revenue of OMR 18,000, variable costs of OMR 9,000, fixed costs of OMR 3,000, and interest expense of OMR 1,000. Calculate net income.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+\text{Net Income}=\text{Revenue}-\text{Variable Costs}-\text{Fixed Costs}-\text{Interest Expense}
+$$
+
+$$
+\text{Net Income}=18,000-9,000-3,000-1,000=5,000
+$$
+
+Net income is **OMR 5,000**.
+:::
+
+### Problem 27. Balance sheet equation
+
+A farm has total assets of OMR 55,000 and total liabilities of OMR 22,000. Calculate owner equity and debt-to-asset ratio.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Owner equity:
+
+$$
+\text{Equity}=\text{Assets}-\text{Liabilities}=55,000-22,000=33,000
+$$
+
+Debt-to-asset ratio:
+
+$$
+\frac{22,000}{55,000}=0.40
+$$
+
+Owner equity is **OMR 33,000** and debt-to-asset ratio is **40%**.
+:::
+
+---
+
+## I. Financial ratio analysis
+
+### Problem 28. Liquidity, solvency, and profitability ratios
+
+A farm has current assets of OMR 14,000, current liabilities of OMR 7,000, total liabilities of OMR 35,000, owner equity of OMR 25,000, sales of OMR 50,000, and net profit of OMR 8,000.
+
+Calculate:
+
+1. Current ratio.
+2. Debt-to-equity ratio.
+3. Net profit margin.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Current ratio:
+
+$$
+\frac{14,000}{7,000}=2.00
+$$
+
+Debt-to-equity ratio:
+
+$$
+\frac{35,000}{25,000}=1.40
+$$
+
+Net profit margin:
+
+$$
+\frac{8,000}{50,000}\times 100=16\%
+$$
+
+The farm has a current ratio of **2.00**, debt-to-equity ratio of **1.40**, and net profit margin of **16%**.
+:::
+
+### Problem 29. Stress test
+
+A farm has expected sales of OMR 40,000 and expected costs of OMR 30,000. Suppose sales fall by 15% and costs rise by 10%. Calculate the new profit.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+New sales:
+
+$$
+40,000(1-0.15)=34,000
+$$
+
+New costs:
+
+$$
+30,000(1+0.10)=33,000
+$$
+
+New profit:
+
+$$
+34,000-33,000=1,000
+$$
+
+The new profit is **OMR 1,000**. The stress test shows that the farm remains profitable, but only slightly.
+:::
+
+---
+
+## J. Investment appraisal
+
+### Problem 30. Net present value
+
+A farmer considers buying a tractor for OMR 20,000. The tractor is expected to generate OMR 6,000 per year for 5 years. Salvage value at the end of year 5 is OMR 3,000. The discount rate is 9%. Calculate NPV.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+NPV=-20,000+\sum_{t=1}^{5}\frac{6000}{(1.09)^t}+\frac{3000}{(1.09)^5}
+$$
+
+The present value of annual cash flows is about OMR 23,337.48. The present value of salvage value is about OMR 1,950.22.
+
+$$
+NPV=-20,000+23,337.48+1,950.22=5,287.70
+$$
+
+The NPV is **OMR 5,287.70**. Since NPV is positive, the investment is financially acceptable under these assumptions.
+:::
+
+### Problem 31. Benefit-cost ratio
+
+A greenhouse project has present value of benefits equal to OMR 30,000 and present value of costs equal to OMR 24,000. Calculate BCR and interpret it.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+BCR=\frac{PV\text{ of Benefits}}{PV\text{ of Costs}}
+$$
+
+$$
+BCR=\frac{30,000}{24,000}=1.25
+$$
+
+The BCR is **1.25**. Each OMR 1 of cost generates OMR 1.25 of present-value benefits. Since BCR is greater than 1, the project is acceptable.
+:::
+
+### Problem 32. Payback period
+
+An irrigation project costs OMR 12,000. Expected annual cash inflows are OMR 3,000 in year 1, OMR 4,000 in year 2, OMR 5,000 in year 3, and OMR 6,000 in year 4. Calculate the payback period.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Cumulative cash inflows:
+
+| Year | Cash inflow | Cumulative cash inflow |
+|---:|---:|---:|
+| 1 | 3,000 | 3,000 |
+| 2 | 4,000 | 7,000 |
+| 3 | 5,000 | 12,000 |
+| 4 | 6,000 | 18,000 |
+
+The initial investment is fully recovered at the end of year 3. The payback period is **3 years**.
+:::
+
+### Problem 33. Choosing between NPV and IRR
+
+Project A has an IRR of 18% and NPV of OMR 1,500. Project B has an IRR of 14% and NPV of OMR 4,000. If the projects are mutually exclusive and the discount rate is 10%, which project should be preferred?
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+If the projects are mutually exclusive, the better choice is usually the project with the higher NPV because NPV measures the amount of value added.
+
+Project B should be preferred because its NPV is **OMR 4,000**, higher than Project A's NPV of **OMR 1,500**. Project A has a higher percentage return, but Project B adds more total value.
+:::
+
+---
+
+## K. Futures, hedging, basis risk, and spreads
+
+### Problem 34. Full hedge with basis risk
+
+A wheat producer expects to harvest 200 tons. Current spot price is OMR 122 per ton and 3-month futures price is OMR 125 per ton. At harvest, the spot price is OMR 105 and the futures price is OMR 110. The farmer fully hedges with short futures. Each futures contract covers 10 tons.
+
+Calculate:
+
+1. Number of contracts.
+2. Spot revenue at harvest.
+3. Futures gain.
+4. Total hedged revenue.
+5. Basis at time 0 and at harvest.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Number of contracts:
+
+$$
+\frac{200}{10}=20
+$$
+
+Spot revenue:
+
+$$
+200\times 105=21,000
+$$
+
+Futures gain:
+
+$$
+(125-110)\times 200=3,000
+$$
+
+Total hedged revenue:
+
+$$
+21,000+3,000=24,000
+$$
+
+Basis at time 0:
+
+$$
+S_0-F_0=122-125=-3
+$$
+
+Basis at harvest:
+
+$$
+S_T-F_T=105-110=-5
+$$
+
+The basis changed from -3 to -5. The effective price is OMR 120 per ton, so hedged revenue is OMR 24,000.
+:::
+
+### Problem 35. Partial hedge
+
+A cacao farmer expects to harvest 5,000 kg. The farmer hedges 80% of output using a short futures contract at OMR 8.7 per kg. At harvest, the spot price is OMR 5.5 per kg.
+
+Calculate:
+
+1. Revenue from physical sales.
+2. Futures gain.
+3. Total revenue after hedging.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Physical sales revenue:
+
+$$
+5,000\times 5.5=27,500
+$$
+
+Hedged quantity:
+
+$$
+5,000\times 0.80=4,000
+$$
+
+Futures gain:
+
+$$
+(8.7-5.5)\times 4,000=12,800
+$$
+
+Total revenue:
+
+$$
+27,500+12,800=40,300
+$$
+
+Total revenue after hedging is **OMR 40,300**. The hedge protects most of the farmer's income from the price fall.
+:::
+
+### Problem 36. Optimal hedge ratio
+
+Assume the correlation between spot and futures price changes is 0.75. The standard deviation of spot price changes is 18 and the standard deviation of futures price changes is 12. Expected production is 200 tons and each contract covers 10 tons.
+
+Calculate the optimal hedge ratio and number of contracts.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Optimal hedge ratio:
+
+$$
+h^*=\rho\frac{\sigma_S}{\sigma_F}
+$$
+
+$$
+h^*=0.75\times\frac{18}{12}=1.125
+$$
+
+Optimal hedged quantity:
+
+$$
+1.125\times 200=225\text{ tons}
+$$
+
+Number of contracts:
+
+$$
+\frac{225}{10}=22.5
+$$
+
+The farmer would use about **23 contracts** if rounding to the nearest whole contract. The hedge ratio is above 1 because spot prices are more volatile than futures prices.
+:::
+
+### Problem 37. Spread trading
+
+A trader buys a May soybean futures contract at 1,140 and sells a July soybean futures contract at 1,160. One week later, the trader closes the May contract at 1,155 and the July contract at 1,165.
+
+Calculate the net profit or loss.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+May long position:
+
+$$
+1,155-1,140=15
+$$
+
+July short position:
+
+$$
+1,160-1,165=-5
+$$
+
+Net result:
+
+$$
+15-5=10
+$$
+
+The trader earns a net profit of **10 price units**.
+:::
+
+---
+
+## L. Insurance design and basis risk
+
+### Problem 38. Revenue insurance payout
+
+A wheat farmer cultivates 60 acres. Expected yield is 2.8 tons per acre and expected price is OMR 140 per ton. Actual yield is 1.9 tons per acre and actual price is OMR 125 per ton. The policy guarantees 80% of expected revenue. Deductible is OMR 600, premium is OMR 1,200, and payout cap is OMR 5,500.
+
+Calculate:
+
+1. Expected revenue.
+2. Guaranteed revenue.
+3. Actual revenue.
+4. Gross indemnity.
+5. Final indemnity after deductible and cap.
+6. Net compensation after premium.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Expected revenue:
+
+$$
+60\times 2.8\times 140=23,520
+$$
+
+Guaranteed revenue:
+
+$$
+23,520\times 0.80=18,816
+$$
+
+Actual revenue:
+
+$$
+60\times 1.9\times 125=14,250
+$$
+
+Gross indemnity:
+
+$$
+18,816-14,250=4,566
+$$
+
+After deductible:
+
+$$
+4,566-600=3,966
+$$
+
+The payout cap is OMR 5,500, so it does not bind.
+
+Final indemnity is **OMR 3,966**.
+
+Net compensation after premium:
+
+$$
+3,966-1,200=2,766
+$$
+
+Net compensation is **OMR 2,766**.
+:::
+
+### Problem 39. Rainfall index insurance
+
+Normal rainfall is 100 units. Actual rainfall is 74 units. The insurance premium is OMR 700. The payout schedule is:
+
+| Rainfall deficit | Payout |
+|---|---:|
+| Less than 10% | 0 |
+| 10% to 20% | OMR 1,500 |
+| More than 20% to 35% | OMR 2,500 |
+| More than 35% | OMR 4,000 |
+
+Calculate the rainfall deficit, gross payout, and net compensation.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Rainfall deficit:
+
+$$
+\frac{100-74}{100}\times 100=26\%
+$$
+
+A 26% deficit falls in the **more than 20% to 35%** band.
+
+Gross payout:
+
+$$
+2,500
+$$
+
+Net compensation:
+
+$$
+2,500-700=1,800
+$$
+
+The gross payout is **OMR 2,500** and net compensation is **OMR 1,800**.
+:::
+
+### Problem 40. Basis risk in index insurance
+
+Two farmers are in the same region and face the same rainfall deficit of 26%. Farmer A has actual yield of 1.9 tons per acre. Farmer B has better irrigation and actual yield of 2.3 tons per acre. Both cultivate 60 acres and face a price of OMR 125 per ton. The revenue insurance policy from Problem 38 is available, and the rainfall index policy from Problem 39 is also available.
+
+Explain which policy has stronger basis risk.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Under the rainfall index policy, both farmers receive the same payout because they face the same rainfall outcome. The payout is OMR 2,500 before premium and OMR 1,800 after premium.
+
+Under revenue insurance, the payout changes because actual farm revenue changes.
+
+Farmer B's actual revenue:
+
+$$
+60\times 2.3\times 125=17,250
+$$
+
+Guaranteed revenue from Problem 38:
+
+$$
+18,816
+$$
+
+Gross indemnity:
+
+$$
+18,816-17,250=1,566
+$$
+
+After deductible:
+
+$$
+1,566-600=966
+$$
+
+Net after premium:
+
+$$
+966-1,200=-234
+$$
+
+The rainfall index policy has stronger basis risk because it gives the same payout to both farmers even though their actual farm-level losses differ. Revenue insurance is more closely linked to actual loss.
+:::
+
+---
+
+## M. Research and project application
+
+### Problem 41. Choosing a project topic
+
+A student wants to study agricultural finance but proposes the topic: "Climate change is bad for agriculture." Explain why this topic is too broad and rewrite it as a better NREC4230 project topic.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+The topic is too broad because it does not identify a specific financial decision, commodity, risk, method, or measurable outcome.
+
+A better topic would be:
+
+**"Financial feasibility of greenhouse cooling investment for tomato farms in Oman under heat-stress risk."**
+
+This topic is better because it has a clear investment decision, sector, location, and financial evaluation angle.
+:::
+
+### Problem 42. AI-aware project work
+
+A student uses AI to write the full literature review without checking the references. Identify two academic problems with this approach and suggest a better use of AI.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+Problems:
+
+1. The references may be inaccurate, fabricated, or not relevant.
+2. The student may submit text that they do not fully understand or cannot defend.
+
+Better use:
+
+AI can be used to improve structure, summarize verified articles, generate explanation drafts, or check clarity. The student must verify all sources, understand the content, and write the final argument in their own academic voice.
+:::
+
+### Problem 43. Interpreting a financial table
+
+A project table shows the following NPVs under three discount rates:
+
+| Discount rate | NPV |
+|---:|---:|
+| 6% | OMR 8,500 |
+| 10% | OMR 4,200 |
+| 14% | OMR -700 |
+
+Interpret the table in two sentences.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+The project is financially attractive at 6% and 10% because NPV is positive at those discount rates. At 14%, NPV becomes negative, which means the project is not financially acceptable if the cost of capital is that high.
+:::
+
+### Problem 44. Designing a small project table
+
+A student evaluates a dairy investment. List four columns that should appear in the main financial calculation table.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+A suitable table could include:
+
+| Year | Cash inflow | Cash outflow | Net cash flow |
+|---:|---:|---:|---:|
+
+Additional useful columns include discount factor, present value of net cash flow, cumulative cash flow, and notes.
+:::
+
+---
+
+# Final revision checklist
+
+Before the exam or project submission, students should be able to:
+
+- classify agricultural risks correctly
+- distinguish risk, uncertainty, trend, and constraint
+- calculate expected loss
+- explain diversification and correlation
+- calculate insurance and index-insurance payouts
+- calculate microfinance and loan repayments
+- explain contract farming, futures hedging, and warehouse receipt systems
+- calculate government subsidy and disaster support amounts
+- calculate FV, PV, annuities, amortization payments, APR, and EAR
+- prepare basic journal entries and financial statements
+- calculate liquidity, solvency, profitability, and repayment ratios
+- calculate NPV, BCR, payback period, and interpret IRR
+- calculate futures gains/losses, basis, hedge ratios, and spread profits
+- explain basis risk in index insurance
+- design a focused agricultural finance project topic
+
+::: {.callout-note}
+## End of appendix
+These practice problems are designed for revision, classroom discussion, and self-assessment. They are not a substitute for understanding the lecture notes.
+:::

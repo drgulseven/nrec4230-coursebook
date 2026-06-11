@@ -1,0 +1,474 @@
+---
+title: "Lecture 09: Time Value of Money I"
+description: "NREC4230 Agricultural Finance lecture note on future value, present value, discounting, compounding, FVIF, PVIF, and agricultural finance applications."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Explain why money today is worth more than money in the future.
+2. Calculate future value using simple and compound interest.
+3. Calculate present value by discounting future cash flows.
+4. Use FVIF and PVIF to simplify time value of money calculations.
+5. Apply time value of money to agricultural finance decisions.
+
+---
+
+## 1. Why time value of money matters
+
+Agricultural decisions often involve money paid or received at different points in time. A farmer may pay for seeds today, receive crop revenue after harvest, repay a loan next year, or invest in machinery that generates benefits for several years.
+
+Because these cash flows occur at different times, we cannot compare them directly without adjusting for time.
+
+::: {.callout-note}
+## Key idea
+One OMR today is worth more than one OMR next year because money today can be invested, used to reduce debt, or kept as liquidity against risk.
+:::
+
+The time value of money is important in agricultural finance because it helps answer questions such as:
+
+- Should a farmer buy machinery now or rent it?
+- Is a greenhouse investment profitable?
+- How much is a future crop payment worth today?
+- Which loan repayment option is cheaper?
+- How much should be saved today for a future investment?
+
+---
+
+## 2. Interest rate as the price of time
+
+The interest rate measures the reward for waiting or the cost of borrowing.
+
+For a lender, interest is compensation for:
+
+- delaying consumption
+- inflation
+- default risk
+- loss of liquidity
+- opportunity cost
+
+For a borrower, interest is the cost of using money before it has been earned.
+
+In agricultural finance, the interest rate may represent:
+
+- bank lending rate
+- cost of capital
+- opportunity cost of funds
+- discount rate used in investment appraisal
+- required rate of return
+
+---
+
+## 3. Simple interest
+
+Simple interest is calculated only on the original principal.
+
+$$
+I = PV \times r \times n
+$$
+
+where:
+
+| Symbol | Meaning |
+|---|---|
+| $I$ | Interest earned or paid |
+| $PV$ | Present value or initial principal |
+| $r$ | Interest rate per period |
+| $n$ | Number of periods |
+
+The future value under simple interest is:
+
+$$
+FV = PV \times (1 + rn)
+$$
+
+### Example 1: Simple interest loan
+
+A farmer borrows OMR 1,000 for 2 years at 6% simple annual interest.
+
+$$
+I = 1000 \times 0.06 \times 2 = 120
+$$
+
+$$
+FV = 1000 + 120 = 1120
+$$
+
+The farmer repays OMR 1,120 at the end of 2 years.
+
+::: {.callout-warning}
+## Common mistake
+Do not apply compound interest when the question explicitly says simple interest.
+:::
+
+---
+
+## 4. Compound interest
+
+Compound interest means that interest is added to the principal, and future interest is calculated on the new balance.
+
+The compound future value formula is:
+
+$$
+FV = PV(1+r)^n
+$$
+
+where:
+
+| Symbol | Meaning |
+|---|---|
+| $FV$ | Future value |
+| $PV$ | Present value |
+| $r$ | Interest rate per period |
+| $n$ | Number of periods |
+
+### Example 2: Compound interest saving
+
+A farmer deposits OMR 1,000 in a savings account earning 8% per year for 2 years.
+
+$$
+FV = 1000(1+0.08)^2
+$$
+
+$$
+FV = 1000(1.1664)=1166.40
+$$
+
+The investment grows to OMR 1,166.40.
+
+---
+
+## 5. Simple vs compound interest
+
+| Feature | Simple interest | Compound interest |
+|---|---|---|
+| Interest base | Original principal only | Principal plus accumulated interest |
+| Growth pattern | Linear | Exponential |
+| Formula | $FV = PV(1+rn)$ | $FV = PV(1+r)^n$ |
+| Common use | Short-term loans, simple calculations | Savings, investments, long-term finance |
+
+### Example 3: Comparing simple and compound interest
+
+A farmer invests OMR 2,000 for 3 years at 10%.
+
+Simple interest:
+
+$$
+FV = 2000(1+0.10 \times 3)=2600
+$$
+
+Compound interest:
+
+$$
+FV = 2000(1.10)^3=2662
+$$
+
+Compound interest gives a higher future value because interest earns interest.
+
+---
+
+## 6. Future value interest factor
+
+The future value formula can be written as:
+
+$$
+FV = PV \times FVIF_{r,n}
+$$
+
+where:
+
+$$
+FVIF_{r,n} = (1+r)^n
+$$
+
+$FVIF$ means **future value interest factor**.
+
+### Example 4: Using FVIF
+
+A farmer invests OMR 5,000 for 4 years at 7%.
+
+$$
+FVIF_{7\%,4} = (1.07)^4 = 1.3108
+$$
+
+$$
+FV = 5000 \times 1.3108 = 6554
+$$
+
+The future value is approximately OMR 6,554.
+
+---
+
+## 7. Present value and discounting
+
+Present value answers the reverse question: how much is a future amount worth today?
+
+The present value formula is:
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+Discounting converts future money into today’s value.
+
+::: {.callout-note}
+## Key idea
+Compounding moves money forward in time. Discounting moves money backward in time.
+:::
+
+### Example 5: Present value of future crop revenue
+
+A farmer expects to receive OMR 2,000 after 3 years. The discount rate is 6%.
+
+$$
+PV = \frac{2000}{(1.06)^3}
+$$
+
+$$
+PV = \frac{2000}{1.1910}=1679.24
+$$
+
+The present value is approximately OMR 1,679.24.
+
+---
+
+## 8. Present value interest factor
+
+The present value formula can be written as:
+
+$$
+PV = FV \times PVIF_{r,n}
+$$
+
+where:
+
+$$
+PVIF_{r,n} = \frac{1}{(1+r)^n}
+$$
+
+$PVIF$ means **present value interest factor**.
+
+### Example 6: Using PVIF
+
+A farmer will receive OMR 10,000 in 5 years. The discount rate is 8%.
+
+$$
+PVIF_{8\%,5} = \frac{1}{(1.08)^5}=0.6806
+$$
+
+$$
+PV = 10000 \times 0.6806 = 6806
+$$
+
+The future OMR 10,000 is worth approximately OMR 6,806 today.
+
+---
+
+## 9. Relationship between interest rate and present value
+
+Present value decreases when the discount rate increases.
+
+| Future amount | Years | Discount rate | Present value |
+|---:|---:|---:|---:|
+| OMR 1,000 | 3 | 3% | OMR 915.14 |
+| OMR 1,000 | 3 | 6% | OMR 839.62 |
+| OMR 1,000 | 3 | 10% | OMR 751.31 |
+
+The same future payment becomes less valuable today when the discount rate is higher.
+
+::: {.callout-tip}
+## Exam tip
+If the question asks what happens to present value when the discount rate increases, the answer is: present value decreases.
+:::
+
+---
+
+## 10. Relationship between time and present value
+
+Present value also decreases when the payment is further in the future.
+
+| Future amount | Discount rate | Years | Present value |
+|---:|---:|---:|---:|
+| OMR 1,000 | 6% | 1 | OMR 943.40 |
+| OMR 1,000 | 6% | 3 | OMR 839.62 |
+| OMR 1,000 | 6% | 5 | OMR 747.26 |
+
+The longer the delay, the lower the present value.
+
+---
+
+## 11. Agricultural example: delayed payment for produce
+
+A buyer offers a vegetable farmer two payment options:
+
+| Option | Payment |
+|---|---:|
+| A | OMR 4,500 today |
+| B | OMR 5,000 after one year |
+
+The farmer’s discount rate is 12%.
+
+Present value of Option B:
+
+$$
+PV = \frac{5000}{1.12}=4464.29
+$$
+
+Option A gives OMR 4,500 today. Option B is worth OMR 4,464.29 today.
+
+Therefore, Option A is slightly better in present value terms.
+
+::: {.callout-warning}
+## Common mistake
+Do not compare OMR 4,500 today with OMR 5,000 next year directly. Convert both to the same time period first.
+:::
+
+---
+
+## 12. Agricultural example: future machinery replacement
+
+A farmer expects to replace irrigation equipment in 4 years. The expected replacement cost is OMR 8,000. The farmer can earn 5% per year on savings.
+
+How much should be saved today?
+
+$$
+PV = \frac{8000}{(1.05)^4}
+$$
+
+$$
+PV = \frac{8000}{1.2155}=6581.65
+$$
+
+The farmer should save approximately OMR 6,581.65 today.
+
+---
+
+## 13. Agricultural example: investment growth
+
+A farmer saves OMR 3,000 today for a greenhouse project. The money earns 6% annually for 5 years.
+
+$$
+FV = 3000(1.06)^5
+$$
+
+$$
+FV = 3000(1.3382)=4014.68
+$$
+
+The savings grow to approximately OMR 4,014.68 after 5 years.
+
+---
+
+## 14. Python calculation example
+
+The following Python code calculates FV, PV, FVIF, and PVIF.
+
+```{python}
+#| eval: false
+PV = 1000
+r = 0.08
+n = 2
+
+FVIF = (1 + r) ** n
+FV = PV * FVIF
+
+PVIF = 1 / ((1 + r) ** n)
+PV_again = FV * PVIF
+
+print("FVIF:", round(FVIF, 4))
+print("Future Value:", round(FV, 2))
+print("PVIF:", round(PVIF, 4))
+print("Present Value:", round(PV_again, 2))
+```
+
+Expected output:
+
+```text
+FVIF: 1.1664
+Future Value: 1166.4
+PVIF: 0.8573
+Present Value: 1000.0
+```
+
+---
+
+## 15. Spreadsheet interpretation
+
+In Excel or Google Sheets, the same calculations can be done with formulas.
+
+| Task | Formula logic | Example |
+|---|---|---|
+| Future value | `=PV*(1+r)^n` | `=1000*(1+0.08)^2` |
+| Present value | `=FV/(1+r)^n` | `=1000/(1+0.08)^2` |
+| FVIF | `=(1+r)^n` | `=(1+0.08)^2` |
+| PVIF | `=1/(1+r)^n` | `=1/(1+0.08)^2` |
+
+Students should understand the financial logic before relying on spreadsheet functions.
+
+---
+
+## 16. Common mistakes
+
+::: {.callout-warning}
+## Mistake 1: Mixing percentage and decimal form
+Use 8% as 0.08 in formulas, not 8.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Using the wrong direction
+Use future value when moving money forward. Use present value when moving money backward.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Ignoring the number of periods
+If interest is annual and the investment lasts 5 years, then $n=5$. If interest is monthly, the number of periods must be monthly.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Comparing cash flows at different dates
+Convert all cash flows to the same point in time before comparing them.
+:::
+
+---
+
+## 17. Practice questions
+
+### Short-answer questions
+
+1. Why is OMR 1 today worth more than OMR 1 next year?
+2. What is the difference between simple interest and compound interest?
+3. What does FVIF measure?
+4. What does PVIF measure?
+5. What happens to present value when the discount rate increases?
+
+### Applied questions
+
+1. A farmer invests OMR 2,500 for 3 years at 7% compound interest. Calculate the future value.
+
+2. A farmer will receive OMR 6,000 after 4 years. The discount rate is 9%. Calculate the present value.
+
+3. A buyer offers OMR 3,000 today or OMR 3,400 after one year. If the discount rate is 10%, which option is better?
+
+4. A farmer borrows OMR 4,000 for 2 years at 5% simple interest. Calculate total repayment.
+
+5. A farmer saves OMR 1,200 today at 6% annual compound interest. How much will it become after 5 years?
+
+---
+
+## 18. Key takeaways
+
+- Time value of money is central to agricultural finance.
+- Future value moves money forward in time.
+- Present value discounts future money into today’s value.
+- Compound interest grows faster than simple interest.
+- FVIF and PVIF simplify calculations.
+- Higher discount rates reduce present value.
+- Longer waiting periods reduce present value.
+- Agricultural decisions involving loans, investments, delayed payments, and savings require time value of money calculations.
+
+---
+
+## Source note
+
+This lecture note is prepared for NREC4230 Agricultural Finance using course materials on agricultural finance, financial formulas, and time value of money applications.

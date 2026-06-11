@@ -1,0 +1,638 @@
+---
+title: "Lecture 14: Futures, Hedging, and Basis Risk"
+description: "NREC4230 Agricultural Finance lecture note on spot markets, futures markets, hedging, basis risk, partial hedging, and agricultural price-risk management."
+---
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1. Explain the difference between spot, forward, and futures markets.
+2. Describe how farmers use short futures positions to hedge price risk.
+3. Calculate revenues with and without a futures hedge.
+4. Explain basis and basis risk.
+5. Compare full hedging with partial hedging.
+6. Calculate an optimal hedge ratio and the number of futures contracts.
+7. Interpret futures hedging as a risk-management tool, not as a guaranteed profit strategy.
+
+---
+
+## 1. Why futures markets matter in agricultural finance
+
+Farmers usually make production decisions before they know the final selling price. A wheat, maize, dairy, date, or tomato producer may invest in land preparation, labour, irrigation, feed, fertilizer, storage, and transport months before harvest or sale. If prices fall before the product is sold, the farmer's revenue can decline sharply.
+
+Futures markets help manage this price risk. A futures contract allows a producer, trader, processor, or investor to lock in or hedge a future price exposure. In agricultural finance, futures markets are important because they connect:
+
+- production decisions
+- cash-flow planning
+- credit repayment capacity
+- risk management
+- food-system price expectations
+
+::: {.callout-note}
+## Key idea
+A hedge is not mainly designed to maximize profit. It is designed to reduce uncertainty about future revenue or future cost.
+:::
+
+---
+
+## 2. Spot, forward, and futures markets
+
+### Spot market
+
+A **spot market** is a market for immediate purchase or sale. The price is the current market price.
+
+Example: A farmer sells 20 tons of wheat today at OMR 115 per ton.
+
+### Forward contract
+
+A **forward contract** is a private agreement between two parties to buy or sell a commodity at a future date for a price agreed today.
+
+Example: A farmer agrees with a miller to sell 20 tons of wheat in three months at OMR 120 per ton.
+
+### Futures contract
+
+A **futures contract** is a standardized contract traded on an organized exchange. It specifies the commodity, contract size, maturity month, and other delivery terms.
+
+Example: A wheat futures contract may represent a standardized amount of wheat for delivery or settlement in a future month.
+
+| Feature | Forward contract | Futures contract |
+|---|---|---|
+| Trading place | Private agreement | Organized exchange |
+| Standardization | Customized | Standardized |
+| Counterparty risk | Higher | Lower due to clearinghouse |
+| Liquidity | Often lower | Usually higher |
+| Daily settlement | Usually no | Yes, marked to market |
+| Flexibility | High | Lower |
+| Transparency | Lower | Higher |
+
+---
+
+## 3. Hedging logic for farmers
+
+A farmer is naturally **long** the physical commodity because the farmer will own the crop at harvest. If the price falls, the farmer loses revenue.
+
+To reduce this risk, the farmer can take a **short futures position**.
+
+- The farmer sells futures today.
+- If the future price falls, the short futures position gains.
+- This gain partly or fully offsets the lower spot-market revenue.
+
+### Short hedge
+
+A **short hedge** is used by producers who plan to sell a commodity in the future.
+
+$$
+\text{Futures Gain for Short Hedge} = (F_0 - F_T) \times Q_h
+$$
+
+where:
+
+- $F_0$ is the initial futures price
+- $F_T$ is the futures price when the hedge is closed
+- $Q_h$ is the hedged quantity
+
+If $F_T < F_0$, the short hedge gains.
+
+If $F_T > F_0$, the short hedge loses.
+
+::: {.callout-tip}
+## Producer rule
+A farmer worried about falling prices uses a short hedge. A buyer worried about rising prices uses a long hedge.
+:::
+
+---
+
+## 4. No hedge versus full hedge
+
+Assume a wheat farmer expects to harvest 200 tons in three months.
+
+| Variable | Value |
+|---|---:|
+| Expected output | 200 tons |
+| Current spot price | OMR 123 per ton |
+| Three-month futures price | OMR 125 per ton |
+| Harvest spot price | OMR 105 per ton |
+| Harvest futures price | OMR 110 per ton |
+| Contract size | 10 tons |
+
+### No hedging
+
+If the farmer does not hedge, revenue depends only on the harvest spot price.
+
+$$
+\text{Revenue without hedge} = Q \times S_T
+$$
+
+$$
+= 200 \times 105 = 21{,}000
+$$
+
+The farmer receives OMR 21,000.
+
+### Full hedge
+
+A full hedge covers the entire expected output.
+
+$$
+\text{Number of contracts} = \frac{Q}{\text{Contract size}}
+$$
+
+$$
+= \frac{200}{10} = 20
+$$
+
+The farmer sells 20 futures contracts.
+
+Revenue from selling wheat in the spot market:
+
+$$
+200 \times 105 = 21{,}000
+$$
+
+Futures gain:
+
+$$
+(F_0 - F_T) \times Q = (125 - 110) \times 200 = 3{,}000
+$$
+
+Total revenue after hedge:
+
+$$
+21{,}000 + 3{,}000 = 24{,}000
+$$
+
+The hedge improves realized revenue from OMR 21,000 to OMR 24,000.
+
+::: {.callout-note}
+## Interpretation
+The spot price fell, which hurt the farmer. The futures price also fell, which created a gain on the short futures position.
+:::
+
+---
+
+## 5. If prices rise instead
+
+Hedging protects against downside risk, but it can also reduce the benefit from favorable price movements.
+
+Suppose the same farmer hedges at OMR 125 per ton, but at harvest:
+
+| Variable | Value |
+|---|---:|
+| Harvest spot price | OMR 135 per ton |
+| Harvest futures price | OMR 138 per ton |
+
+Spot revenue:
+
+$$
+200 \times 135 = 27{,}000
+$$
+
+Futures gain or loss:
+
+$$
+(125 - 138) \times 200 = -2{,}600
+$$
+
+Total revenue after hedge:
+
+$$
+27{,}000 - 2{,}600 = 24{,}400
+$$
+
+The farmer still earns more than in the low-price case, but less than the unhedged revenue of OMR 27,000.
+
+::: {.callout-warning}
+## Common mistake
+Students often say that hedging is always profitable. This is incorrect. Hedging reduces price risk, but it can also reduce upside gains when prices move favorably.
+:::
+
+---
+
+## 6. Basis and basis risk
+
+The **basis** is the difference between the spot price and the futures price.
+
+$$
+\text{Basis} = S - F
+$$
+
+where:
+
+- $S$ is the spot price
+- $F$ is the futures price
+
+Basis matters because spot and futures prices do not always move perfectly together.
+
+### Basis at time 0
+
+$$
+B_0 = S_0 - F_0
+$$
+
+Using the earlier example:
+
+$$
+B_0 = 123 - 125 = -2
+$$
+
+### Basis at harvest
+
+$$
+B_T = S_T - F_T
+$$
+
+$$
+B_T = 105 - 110 = -5
+$$
+
+The basis changed from $-2$ to $-5$.
+
+### Why basis risk matters
+
+Under a full hedge, the farmer's effective price is:
+
+$$
+\text{Effective Price} = S_T + (F_0 - F_T)
+$$
+
+This can be rearranged as:
+
+$$
+\text{Effective Price} = F_0 + B_T
+$$
+
+So the final hedged price depends on the initial futures price and the final basis.
+
+If the final basis is not known with certainty, the hedge is not perfect.
+
+::: {.callout-important}
+## Key idea
+Futures hedging removes much of the price-level risk, but it does not remove basis risk.
+:::
+
+---
+
+## 7. Worked example: basis risk
+
+A barley farmer hedges 100 tons.
+
+| Variable | Value |
+|---|---:|
+| Initial spot price, $S_0$ | OMR 118 per ton |
+| Initial futures price, $F_0$ | OMR 120 per ton |
+| Harvest spot price, $S_T$ | OMR 112 per ton |
+| Harvest futures price, $F_T$ | OMR 113 per ton |
+
+Basis at time 0:
+
+$$
+B_0 = 118 - 120 = -2
+$$
+
+Basis at harvest:
+
+$$
+B_T = 112 - 113 = -1
+$$
+
+The basis strengthened from $-2$ to $-1$.
+
+Spot revenue:
+
+$$
+112 \times 100 = 11{,}200
+$$
+
+Futures gain:
+
+$$
+(120 - 113) \times 100 = 700
+$$
+
+Total hedged revenue:
+
+$$
+11{,}200 + 700 = 11{,}900
+$$
+
+Effective price:
+
+$$
+\frac{11{,}900}{100} = 119
+$$
+
+The farmer did not lock in exactly OMR 120. The realized effective price was OMR 119 because the final basis was $-1$.
+
+---
+
+## 8. Partial hedging
+
+A full hedge covers all expected output. A partial hedge covers only part of expected output.
+
+A farmer may use partial hedging because:
+
+- output quantity is uncertain
+- futures contract sizes do not match production exactly
+- the farmer wants some upside if prices rise
+- the farmer does not want to post too much margin
+- basis risk is high
+- liquidity is limited
+
+### Example: 80% hedge
+
+A cacao farmer expects to harvest 5,000 kg. The farmer hedges 80% using short futures at OMR 8.7 per kg.
+
+| Variable | Value |
+|---|---:|
+| Expected harvest | 5,000 kg |
+| Hedge ratio | 80% |
+| Hedged quantity | 4,000 kg |
+| Futures price today | OMR 8.7 per kg |
+
+#### Case A: price falls
+
+At harvest, spot price is OMR 5.5 per kg.
+
+Spot revenue:
+
+$$
+5{,}000 \times 5.5 = 27{,}500
+$$
+
+Futures gain:
+
+$$
+(8.7 - 5.5) \times 4{,}000 = 12{,}800
+$$
+
+Total revenue:
+
+$$
+27{,}500 + 12{,}800 = 40{,}300
+$$
+
+#### Case B: price rises
+
+At harvest, spot price is OMR 10.0 per kg.
+
+Spot revenue:
+
+$$
+5{,}000 \times 10.0 = 50{,}000
+$$
+
+Futures loss:
+
+$$
+(8.7 - 10.0) \times 4{,}000 = -5{,}200
+$$
+
+Total revenue:
+
+$$
+50{,}000 - 5{,}200 = 44{,}800
+$$
+
+::: {.callout-note}
+## Interpretation
+Partial hedging protects most of the farmer's income when prices fall, but still allows some benefit from price increases on the unhedged quantity.
+:::
+
+---
+
+## 9. Optimal hedge ratio
+
+A hedge ratio tells us what share of the physical exposure should be hedged.
+
+A simple full hedge ratio is:
+
+$$
+h = 1
+$$
+
+A partial hedge might use:
+
+$$
+h = 0.50, 0.70, \text{or } 0.80
+$$
+
+In a more formal risk-minimization setting, the optimal hedge ratio is:
+
+$$
+h^* = \rho_{SF} \frac{\sigma_S}{\sigma_F}
+$$
+
+where:
+
+- $\rho_{SF}$ is the correlation between spot price changes and futures price changes
+- $\sigma_S$ is the standard deviation of spot price changes
+- $\sigma_F$ is the standard deviation of futures price changes
+
+### Example
+
+Assume:
+
+| Variable | Value |
+|---|---:|
+| Correlation between spot and futures price changes | 0.90 |
+| Standard deviation of spot price changes | 12 |
+| Standard deviation of futures price changes | 10 |
+
+Then:
+
+$$
+h^* = 0.90 \times \frac{12}{10} = 1.08
+$$
+
+This means the minimum-variance hedge is 108% of the physical exposure. In practice, a farmer may round down to avoid over-hedging, especially if output quantity is uncertain.
+
+### Number of contracts
+
+$$
+N^* = \frac{h^* Q}{\text{Contract Size}}
+$$
+
+If $Q = 200$ tons and contract size is 10 tons:
+
+$$
+N^* = \frac{1.08 \times 200}{10} = 21.6
+$$
+
+The farmer may use 21 or 22 contracts, depending on risk tolerance and policy.
+
+---
+
+## 10. Python example
+
+The following code calculates hedged revenue, basis, and contract numbers.
+
+```{python}
+#| label: futures-hedge-example
+#| echo: true
+
+Q = 200
+contract_size = 10
+
+S0 = 123
+F0 = 125
+ST = 105
+FT = 110
+
+contracts = Q / contract_size
+spot_revenue = Q * ST
+futures_gain = (F0 - FT) * Q
+hedged_revenue = spot_revenue + futures_gain
+
+basis_0 = S0 - F0
+basis_T = ST - FT
+effective_price = hedged_revenue / Q
+
+print("Contracts:", contracts)
+print("Spot revenue:", spot_revenue)
+print("Futures gain:", futures_gain)
+print("Hedged revenue:", hedged_revenue)
+print("Basis at time 0:", basis_0)
+print("Basis at harvest:", basis_T)
+print("Effective price:", effective_price)
+```
+
+---
+
+## 11. Futures versus speculation
+
+Hedging and speculation are different.
+
+| Activity | Main purpose | Example |
+|---|---|---|
+| Hedging | Reduce an existing risk | Farmer shorts futures to protect crop price |
+| Speculation | Take risk to earn profit | Trader buys futures expecting prices to rise |
+| Arbitrage | Exploit price mispricing | Trader buys cheap contract and sells expensive equivalent |
+
+Farmers may use futures markets as hedgers. They already face price risk from production. The futures position is used to offset that existing exposure.
+
+::: {.callout-warning}
+## Common mistake
+A farmer who shorts futures to protect a crop is not simply "betting against the market." The farmer is reducing an existing exposure.
+:::
+
+---
+
+## 12. Spread trading
+
+A spread trade involves buying one futures contract and selling another related futures contract. Spread trades are common in commodity markets.
+
+Example:
+
+- Buy May wheat futures
+- Sell July wheat futures
+
+The trader is not mainly betting on the absolute wheat price. The trader is betting on the price difference between two contracts.
+
+### Simple spread example
+
+| Contract | Initial action | Initial price | Closing price | Profit or loss |
+|---|---|---:|---:|---:|
+| May contract | Buy | 1140 | 1155 | +15 |
+| July contract | Sell | 1160 | 1165 | -5 |
+
+Net profit:
+
+$$
+15 - 5 = 10
+$$
+
+Spread trading is usually more relevant for traders than small farmers, but it helps students understand how futures prices across maturities are linked.
+
+---
+
+## 13. Oman applications
+
+Oman does not have a deep domestic agricultural futures market for most local products. However, futures-market logic is still useful for agricultural finance in Oman because:
+
+- imported wheat, maize, soybean meal, sugar, and edible oils are linked to global commodity prices
+- livestock and poultry feed costs are affected by international grain and oilseed markets
+- food importers face exchange-rate and commodity-price risk
+- farm investment decisions depend on expected future prices
+- banks need to understand borrower exposure to input and output price volatility
+
+### Example: feed cost risk
+
+A dairy farm in Oman may not trade futures directly, but its feed supplier may face global maize and soybean meal price risk. If feed prices rise, the farm's operating cost increases and loan repayment capacity weakens.
+
+### Example: wheat import risk
+
+A food importer may use international futures or forward contracts to reduce the cost uncertainty of future wheat purchases.
+
+---
+
+## 14. Common mistakes
+
+::: {.callout-warning}
+## Mistake 1: Confusing spot and futures prices
+The spot price is for immediate transaction. The futures price is for a future contract.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Using a long hedge for a producer
+A producer who will sell output later usually uses a short hedge, not a long hedge.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Forgetting the futures gain or loss
+Total hedged revenue equals spot revenue plus futures gain or loss.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Assuming the hedge locks the exact futures price
+Basis risk means the final effective price may differ from the initial futures price.
+:::
+
+::: {.callout-warning}
+## Mistake 5: Ignoring contract size
+The number of contracts must be based on the hedged quantity divided by the contract size.
+:::
+
+---
+
+## 15. Practice questions
+
+### Short-answer questions
+
+1. Explain the difference between spot, forward, and futures markets.
+2. Why does a farmer usually use a short futures position for hedging?
+3. What is basis?
+4. Why does basis risk make hedging imperfect?
+5. Why might a farmer prefer partial hedging instead of full hedging?
+
+### Calculation questions
+
+1. A farmer expects to harvest 120 tons of maize. The futures contract size is 10 tons. How many contracts are required for a full hedge?
+
+2. A farmer sells futures at OMR 140 per ton. At harvest, the futures price is OMR 125 per ton. The farmer hedged 80 tons. Calculate the futures gain.
+
+3. A farmer sells 100 tons of barley at a spot price of OMR 90 per ton. The farmer also gains OMR 1,500 from a short futures hedge. Calculate total revenue and effective price.
+
+4. Initial spot price is OMR 118 and initial futures price is OMR 121. At harvest, spot price is OMR 110 and futures price is OMR 113. Calculate the basis at time 0 and at harvest.
+
+5. The correlation between spot and futures price changes is 0.85. The standard deviation of spot price changes is 14 and the standard deviation of futures price changes is 12. Calculate the optimal hedge ratio.
+
+---
+
+## 16. Key takeaways
+
+- Futures markets help farmers and agribusinesses manage price risk.
+- A farmer who will sell output later usually uses a short hedge.
+- Hedged revenue equals spot revenue plus futures gain or loss.
+- Hedging reduces downside price risk but may reduce upside gains.
+- Basis is the difference between spot and futures prices.
+- Basis risk makes futures hedging imperfect.
+- Partial hedging allows the farmer to reduce risk while keeping some exposure to favorable price movements.
+- The optimal hedge ratio depends on the correlation between spot and futures price changes and their relative volatility.
+- In Oman, futures-market logic is especially relevant for imported food commodities, feed costs, and agribusiness risk management.
+
+---
+
+## Source note
+
+This lecture note is prepared for NREC4230 Agricultural Finance using the course's agricultural finance materials, futures and hedging examples, and agricultural risk-management applications.

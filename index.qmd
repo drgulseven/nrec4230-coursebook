@@ -1,0 +1,91 @@
+---
+title: "NREC4230: Agricultural Finance"
+description: "Local Quarto coursebook for NREC4230 Agricultural Finance, covering agricultural risk management and agricultural finance."
+---
+
+# NREC4230: Agricultural Finance
+
+This local coursebook supports **NREC4230 Agricultural Finance**. It is organized as a practical teaching resource for agricultural risk management, financial decision making, and applied farm finance.
+
+The course has two connected parts:
+
+| Part | Focus | Main outcome |
+|---|---|---|
+| [Part I: Agricultural Risk Management](part-i-agricultural-risk-management/index.qmd) | Risk sources, ARM tools, insurance, markets, government support | Students learn how agricultural risks are identified, classified, and managed |
+| [Part II: Agricultural Finance](part-ii-agricultural-finance/index.qmd) | Time value of money, institutions, accounting, ratios, investment appraisal, hedging, insurance design | Students learn how financial tools support farm and agribusiness decisions |
+
+::: {.callout-note}
+## Course logic
+Part I explains **why risk matters** in agriculture. Part II explains **how financial tools are used** to evaluate decisions, manage risk, and support investment.
+:::
+
+## Course map
+
+```{mermaid}
+flowchart LR
+  A[NREC4230 Agricultural Finance] --> B[Part I Agricultural Risk Management]
+  A --> C[Part II Agricultural Finance]
+  B --> B1[Risk concepts]
+  B --> B2[On-farm tools]
+  B --> B3[Finance-related tools]
+  B --> B4[Market tools]
+  B --> B5[Government tools]
+  B --> B6[Integrated ARM plan]
+  C --> C1[Finance foundations]
+  C --> C2[Institutions and credit]
+  C --> C3[TVM and annuities]
+  C --> C4[Accounting and ratios]
+  C --> C5[Investment appraisal]
+  C --> C6[Hedging and insurance design]
+  C --> C7[Project application]
+```
+
+## Lecture notes
+
+### Part I: Agricultural Risk Management
+
+| Lecture | Topic |
+|---:|---|
+| [01](part-i-agricultural-risk-management/lecture-01-understanding-agricultural-risk.qmd) | Understanding Agricultural Risk |
+| [02](part-i-agricultural-risk-management/lecture-02-on-farm-risk-management-tools.qmd) | On-Farm Risk Management Tools |
+| [03](part-i-agricultural-risk-management/lecture-03-finance-related-risk-management-tools.qmd) | Finance-Related Risk Management Tools |
+| [04](part-i-agricultural-risk-management/lecture-04-market-related-risk-management-tools.qmd) | Market-Related Risk Management Tools |
+| [05](part-i-agricultural-risk-management/lecture-05-government-based-risk-management-tools.qmd) | Government-Based Risk Management Tools |
+| [06](part-i-agricultural-risk-management/lecture-06-integrated-arm-plan-for-oman.qmd) | Integrated ARM Plan for Oman |
+
+### Part II: Agricultural Finance
+
+| Lecture | Topic |
+|---:|---|
+| [07](part-ii-agricultural-finance/lecture-07-introduction-to-agricultural-finance.qmd) | Introduction to Agricultural Finance |
+| [08](part-ii-agricultural-finance/lecture-08-financial-institutions-and-intermediation.qmd) | Financial Institutions and Intermediation |
+| [09](part-ii-agricultural-finance/lecture-09-time-value-of-money-i.qmd) | Time Value of Money I |
+| [10](part-ii-agricultural-finance/lecture-10-time-value-of-money-ii.qmd) | Time Value of Money II |
+| [11](part-ii-agricultural-finance/lecture-11-agricultural-accounting.qmd) | Agricultural Accounting |
+| [12](part-ii-agricultural-finance/lecture-12-financial-ratio-analysis.qmd) | Financial Ratio Analysis |
+| [13](part-ii-agricultural-finance/lecture-13-investment-appraisal.qmd) | Investment Appraisal |
+| [14](part-ii-agricultural-finance/lecture-14-futures-hedging-and-basis-risk.qmd) | Futures, Hedging, and Basis Risk |
+| [15](part-ii-agricultural-finance/lecture-15-agricultural-insurance-design.qmd) | Agricultural Insurance Design |
+| [16](part-ii-agricultural-finance/lecture-16-project-and-research-application.qmd) | Project and Research Application |
+
+## Appendices
+
+| Appendix | Purpose |
+|---|---|
+| [Formula Sheet](appendices/formulas.qmd) | Main formulas used in agricultural finance and risk management |
+| [Glossary](appendices/glossary.qmd) | Key terms used across the course |
+| [Practice Problems](appendices/practice-problems.qmd) | Practice questions with answers |
+| [Python Code Guide](appendices/python-code-guide.qmd) | Python examples for calculations, tables, and graphs |
+
+## Recommended study path
+
+Students should first read the relevant lecture note, then review the formula sheet, then solve the practice problems. Python examples are optional but recommended for students interested in applied analysis.
+
+::: {.callout-tip}
+## For local use
+Use `quarto preview` while editing individual pages. Use `quarto render` when the full local coursebook is ready for checking.
+:::
+
+## Source note
+
+These lecture notes are adapted for NREC4230 teaching purposes from course materials, FAO/PARM agricultural risk management materials, and agricultural finance examples developed for the course.

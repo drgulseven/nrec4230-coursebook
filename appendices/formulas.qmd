@@ -1,0 +1,1347 @@
+---
+title: "Appendix: Formula Sheet"
+description: "NREC4230 Agricultural Finance formula sheet for time value of money, agricultural accounting, financial ratios, investment appraisal, risk management, futures hedging, insurance, and public risk tools."
+---
+
+## Purpose
+
+This appendix collects the main formulas used in **NREC4230 Agricultural Finance**. It is designed as a revision sheet for students and as a reference page for the local Quarto coursebook.
+
+::: {.callout-note}
+## How to use this sheet
+Use the formulas together with the lecture notes. Always define units clearly: OMR, tons, kg, acres, hectares, years, months, or contract size.
+:::
+
+---
+
+## 1. Basic notation
+
+| Symbol | Meaning |
+|---|---|
+| $PV$ | Present value |
+| $FV$ | Future value |
+| $r$ | Interest rate or discount rate per period |
+| $n$ | Number of periods |
+| $PMT$ | Equal payment per period |
+| $I$ | Interest amount |
+| $m$ | Number of compounding periods per year |
+| $C_t$ | Cash flow in period $t$ |
+| $B_t$ | Benefit in period $t$ |
+| $K_t$ | Cost in period $t$ |
+| $Q$ | Quantity produced or traded |
+| $P$ | Price |
+| $S_t$ | Spot price at time $t$ |
+| $F_t$ | Futures price at time $t$ |
+| $h$ | Hedge ratio |
+| $N$ | Number of futures contracts |
+| $q_c$ | Contract size |
+
+---
+
+## 2. Simple interest
+
+Simple interest is calculated only on the original principal.
+
+$$
+I = PV \times r \times n
+$$
+
+$$
+FV = PV + I
+$$
+
+Therefore:
+
+$$
+FV = PV(1 + rn)
+$$
+
+### Example interpretation
+
+If a farmer borrows OMR 1,000 at 6% simple annual interest for 2 years:
+
+$$
+I = 1000 \times 0.06 \times 2 = 120
+$$
+
+$$
+FV = 1000 + 120 = 1120
+$$
+
+---
+
+## 3. Compound future value
+
+Compound interest adds interest to the principal, and future interest is earned on both.
+
+$$
+FV = PV(1+r)^n
+$$
+
+This was one of the main formulas in the attached financial formula sheet.
+
+### Future value interest factor
+
+$$
+FVIF(r,n) = (1+r)^n
+$$
+
+$$
+FV = PV \times FVIF(r,n)
+$$
+
+### Rearranged form
+
+If $FV$ is known and $PV$ is unknown:
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+---
+
+## 4. Present value and discounting
+
+Present value discounts a future amount back to today.
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+This was also included in the attached formula sheet.
+
+### Present value interest factor
+
+$$
+PVIF(r,n) = \frac{1}{(1+r)^n}
+$$
+
+$$
+PV = FV \times PVIF(r,n)
+$$
+
+### Discounting interpretation
+
+A higher discount rate reduces present value.
+
+::: {.callout-warning}
+## Common mistake
+Do not multiply by $(1+r)^n$ when the question asks for present value. Present value requires discounting, not compounding.
+:::
+
+---
+
+## 5. Future value of an ordinary annuity
+
+An ordinary annuity has equal payments at the **end** of each period.
+
+$$
+FVA = PMT \times \frac{(1+r)^n - 1}{r}
+$$
+
+This formula was included in the attached formula sheet.
+
+### Future value annuity factor
+
+$$
+FVIFA(r,n) = \frac{(1+r)^n - 1}{r}
+$$
+
+$$
+FVA = PMT \times FVIFA(r,n)
+$$
+
+---
+
+## 6. Present value of an ordinary annuity
+
+The present value of an ordinary annuity is:
+
+$$
+PVA = PMT \times \frac{1 - (1+r)^{-n}}{r}
+$$
+
+This formula was included in the attached formula sheet.
+
+### Present value annuity factor
+
+$$
+PVIFA(r,n) = \frac{1 - (1+r)^{-n}}{r}
+$$
+
+$$
+PVA = PMT \times PVIFA(r,n)
+$$
+
+---
+
+## 7. Deferred or partial annuity
+
+Sometimes payments start after a delay or occur only between selected periods.
+
+If payments of $PMT$ are made from period $t_1$ to period $t_2$, where $t_1 < t_2$, then:
+
+$$
+PV = PMT \times \frac{1 - (1+r)^{-(t_2-t_1+1)}}{r} \times (1+r)^{-(t_1-1)}
+$$
+
+This is the cleaned LaTeX version of the deferred or partial annuity formula in the attached formula sheet.
+
+### Interpretation
+
+The formula has two steps:
+
+1. Value the annuity at one period before the first payment.
+2. Discount that value back to today.
+
+---
+
+## 8. Annuity due
+
+An annuity due has equal payments at the **beginning** of each period.
+
+### Future value of annuity due
+
+$$
+FVA_{due} = PMT \times \frac{(1+r)^n - 1}{r} \times (1+r)
+$$
+
+### Present value of annuity due
+
+$$
+PVA_{due} = PMT \times \frac{1 - (1+r)^{-n}}{r} \times (1+r)
+$$
+
+::: {.callout-tip}
+## Exam tip
+An annuity due is one period earlier than an ordinary annuity. That is why we multiply the ordinary annuity value by $(1+r)$.
+:::
+
+---
+
+## 9. Loan amortization
+
+For a loan with equal periodic payments:
+
+$$
+PMT = \frac{PV \times r}{1 - (1+r)^{-n}}
+$$
+
+Equivalently:
+
+$$
+PMT = \frac{PV}{PVIFA(r,n)}
+$$
+
+### Interest and principal in each period
+
+$$
+\text{Interest Payment}_t = \text{Outstanding Balance}_{t-1} \times r
+$$
+
+$$
+\text{Principal Payment}_t = PMT - \text{Interest Payment}_t
+$$
+
+$$
+\text{Outstanding Balance}_t = \text{Outstanding Balance}_{t-1} - \text{Principal Payment}_t
+$$
+
+### Total interest paid
+
+$$
+\text{Total Interest} = (PMT \times n) - PV
+$$
+
+---
+
+## 10. Annual Percentage Rate and Effective Annual Rate
+
+### Annual Percentage Rate
+
+$$
+APR = r \times m
+$$
+
+where $r$ is the periodic interest rate and $m$ is the number of periods per year. This formula was included in the attached formula sheet.
+
+### Effective Annual Rate
+
+$$
+EAR = \left(1 + \frac{APR}{m}\right)^m - 1
+$$
+
+If the periodic rate is already given as $r$:
+
+$$
+EAR = (1+r)^m - 1
+$$
+
+::: {.callout-warning}
+## Common mistake
+APR is a quoted annual rate. EAR is the true annual rate after compounding.
+:::
+
+---
+
+## 11. Compounding frequency
+
+When interest is compounded $m$ times per year:
+
+$$
+FV = PV\left(1 + \frac{r}{m}\right)^{mn}
+$$
+
+where $r$ is the nominal annual rate and $n$ is the number of years.
+
+### Continuous compounding
+
+For advanced reference:
+
+$$
+FV = PV \times e^{rn}
+$$
+
+$$
+PV = FV \times e^{-rn}
+$$
+
+---
+
+## 12. Cash-flow valuation
+
+For a sequence of future cash flows:
+
+$$
+PV = \sum_{t=1}^{n} \frac{C_t}{(1+r)^t}
+$$
+
+If there is an initial investment $I_0$:
+
+$$
+NPV = -I_0 + \sum_{t=1}^{n} \frac{C_t}{(1+r)^t}
+$$
+
+Decision rule:
+
+$$
+NPV > 0 \Rightarrow \text{Accept the project}
+$$
+
+$$
+NPV < 0 \Rightarrow \text{Reject the project}
+$$
+
+---
+
+## 13. Net present worth
+
+In agricultural project analysis, net present value is often called net present worth.
+
+$$
+NPW = \sum_{t=0}^{n} \frac{B_t - K_t}{(1+r)^t}
+$$
+
+where $B_t$ is benefit and $K_t$ is cost in period $t$.
+
+Decision rule:
+
+$$
+NPW > 0 \Rightarrow \text{Project is financially feasible}
+$$
+
+---
+
+## 14. Benefit-Cost Ratio
+
+The benefit-cost ratio compares discounted benefits with discounted costs.
+
+$$
+BCR = \frac{\text{Present Value of Benefits}}{\text{Present Value of Costs}}
+$$
+
+More explicitly:
+
+$$
+BCR = \frac{\sum_{t=0}^{n} \frac{B_t}{(1+r)^t}}{\sum_{t=0}^{n} \frac{K_t}{(1+r)^t}}
+$$
+
+This formula was included in the attached formula sheet.
+
+Decision rule:
+
+$$
+BCR > 1 \Rightarrow \text{Benefits exceed costs}
+$$
+
+---
+
+## 15. Internal Rate of Return
+
+The internal rate of return is the discount rate that makes NPV equal to zero.
+
+$$
+0 = -I_0 + \sum_{t=1}^{n} \frac{C_t}{(1+IRR)^t}
+$$
+
+Decision rule:
+
+$$
+IRR > \text{Cost of Capital} \Rightarrow \text{Accept the project}
+$$
+
+::: {.callout-warning}
+## Common mistake
+IRR should not be used alone when projects differ greatly in size or timing. NPV is usually the safer decision rule.
+:::
+
+---
+
+## 16. Payback period
+
+For equal annual cash flows:
+
+$$
+\text{Payback Period} = \frac{\text{Initial Investment}}{\text{Annual Net Cash Flow}}
+$$
+
+For unequal cash flows, add annual cash flows until the initial investment is recovered.
+
+### Discounted payback period
+
+Use discounted cash flows:
+
+$$
+\text{Discounted Cash Flow}_t = \frac{C_t}{(1+r)^t}
+$$
+
+---
+
+## 17. Accounting Rate of Return
+
+$$
+ARR = \frac{\text{Average Annual Accounting Profit}}{\text{Initial Investment}} \times 100
+$$
+
+Sometimes average investment is used instead:
+
+$$
+ARR = \frac{\text{Average Annual Accounting Profit}}{\text{Average Investment}} \times 100
+$$
+
+---
+
+## 18. Break-even cash flow for an investment
+
+If a project requires initial investment $I_0$ and produces equal annual cash flow for $n$ years, the break-even annual cash flow is:
+
+$$
+C^* = \frac{I_0}{PVIFA(r,n)}
+$$
+
+If expected annual cash flow is greater than $C^*$, the project has positive NPV.
+
+---
+
+## 19. Accounting equation
+
+$$
+\text{Assets} = \text{Liabilities} + \text{Owner's Equity}
+$$
+
+Rearranged:
+
+$$
+\text{Owner's Equity} = \text{Assets} - \text{Liabilities}
+$$
+
+---
+
+## 20. Income statement formulas
+
+$$
+\text{Gross Profit} = \text{Revenue} - \text{Cost of Goods Sold}
+$$
+
+$$
+\text{Operating Profit} = \text{Gross Profit} - \text{Operating Expenses}
+$$
+
+$$
+\text{Net Profit} = \text{Total Revenue} - \text{Total Expenses}
+$$
+
+For a farm enterprise:
+
+$$
+\text{Net Farm Income} = \text{Farm Revenue} - \text{Farm Operating Costs} - \text{Depreciation} - \text{Interest}
+$$
+
+---
+
+## 21. Cash-flow statement formulas
+
+$$
+\text{Net Cash Flow} = \text{Cash Inflows} - \text{Cash Outflows}
+$$
+
+$$
+\text{Ending Cash Balance} = \text{Beginning Cash Balance} + \text{Net Cash Flow}
+$$
+
+---
+
+## 22. Liquidity ratios
+
+### Current ratio
+
+$$
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}
+$$
+
+### Quick ratio
+
+$$
+\text{Quick Ratio} = \frac{\text{Current Assets} - \text{Inventory}}{\text{Current Liabilities}}
+$$
+
+### Working capital
+
+$$
+\text{Working Capital} = \text{Current Assets} - \text{Current Liabilities}
+$$
+
+---
+
+## 23. Solvency ratios
+
+### Debt-to-equity ratio
+
+$$
+\text{Debt-to-Equity Ratio} = \frac{\text{Total Liabilities}}{\text{Owner's Equity}}
+$$
+
+### Debt ratio
+
+$$
+\text{Debt Ratio} = \frac{\text{Total Liabilities}}{\text{Total Assets}}
+$$
+
+### Equity ratio
+
+$$
+\text{Equity Ratio} = \frac{\text{Owner's Equity}}{\text{Total Assets}}
+$$
+
+---
+
+## 24. Profitability ratios
+
+### Gross profit margin
+
+$$
+\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Revenue}} \times 100
+$$
+
+### Net profit margin
+
+$$
+\text{Net Profit Margin} = \frac{\text{Net Profit}}{\text{Revenue}} \times 100
+$$
+
+### Return on assets
+
+$$
+ROA = \frac{\text{Net Profit}}{\text{Total Assets}} \times 100
+$$
+
+### Return on equity
+
+$$
+ROE = \frac{\text{Net Profit}}{\text{Owner's Equity}} \times 100
+$$
+
+---
+
+## 25. Efficiency and management ratios
+
+### Inventory turnover
+
+$$
+\text{Inventory Turnover} = \frac{\text{Cost of Goods Sold}}{\text{Average Inventory}}
+$$
+
+### Asset turnover
+
+$$
+\text{Asset Turnover} = \frac{\text{Revenue}}{\text{Total Assets}}
+$$
+
+### Receivables turnover
+
+$$
+\text{Receivables Turnover} = \frac{\text{Credit Sales}}{\text{Average Accounts Receivable}}
+$$
+
+---
+
+## 26. Repayment capacity
+
+### Debt Service Coverage Ratio
+
+$$
+DSCR = \frac{\text{Net Operating Income}}{\text{Total Debt Service}}
+$$
+
+Decision interpretation:
+
+$$
+DSCR > 1 \Rightarrow \text{Income is sufficient to cover debt service}
+$$
+
+$$
+DSCR < 1 \Rightarrow \text{Debt repayment is financially stressed}
+$$
+
+### Maximum affordable debt service
+
+If the lender requires a minimum DSCR:
+
+$$
+\text{Maximum Debt Service} = \frac{\text{Net Operating Income}}{\text{Required DSCR}}
+$$
+
+---
+
+## 27. Expected value and risk
+
+### Expected value
+
+$$
+E(X) = \sum_{i=1}^{n} p_i x_i
+$$
+
+where $p_i$ is the probability of outcome $i$ and $x_i$ is the value of outcome $i$.
+
+### Expected loss
+
+$$
+\text{Expected Loss} = \text{Probability of Event} \times \text{Loss if Event Occurs}
+$$
+
+### Variance
+
+$$
+Var(X) = \sum_{i=1}^{n} p_i \left(x_i - E(X)\right)^2
+$$
+
+### Standard deviation
+
+$$
+SD(X) = \sqrt{Var(X)}
+$$
+
+---
+
+## 28. Portfolio diversification in agriculture
+
+For two farm activities, such as maize and soybean:
+
+### Expected portfolio return
+
+$$
+E(R_p) = w_1E(R_1) + w_2E(R_2)
+$$
+
+### Portfolio variance
+
+$$
+\sigma_p^2 = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2
+$$
+
+### Portfolio standard deviation
+
+$$
+\sigma_p = \sqrt{\sigma_p^2}
+$$
+
+where:
+
+| Symbol | Meaning |
+|---|---|
+| $w_1, w_2$ | Portfolio weights |
+| $\sigma_1, \sigma_2$ | Standard deviations of returns |
+| $\rho_{12}$ | Correlation between returns |
+
+::: {.callout-note}
+## Interpretation
+Diversification reduces risk more when correlation is low, zero, or negative.
+:::
+
+---
+
+## 29. Crop revenue and profit
+
+### Revenue
+
+$$
+\text{Revenue} = \text{Yield} \times \text{Area} \times \text{Price}
+$$
+
+### Profit
+
+$$
+\text{Profit} = \text{Revenue} - \text{Cost}
+$$
+
+### Change in revenue
+
+$$
+\Delta \text{Revenue} = \text{Revenue}_{new} - \text{Revenue}_{old}
+$$
+
+### Percentage change
+
+$$
+\%\Delta X = \frac{X_{new} - X_{old}}{X_{old}} \times 100
+$$
+
+---
+
+## 30. Agricultural insurance payout
+
+A general indemnity formula is:
+
+$$
+\text{Indemnity} = \max(0, \text{Covered Loss} - \text{Deductible})
+$$
+
+If a payout cap applies:
+
+$$
+\text{Final Payout} = \min(\text{Indemnity}, \text{Payout Cap})
+$$
+
+Net compensation after premium:
+
+$$
+\text{Net Compensation} = \text{Final Payout} - \text{Premium}
+$$
+
+---
+
+## 31. Yield insurance
+
+Expected output:
+
+$$
+Q_e = \text{Expected Yield} \times \text{Area}
+$$
+
+Actual output:
+
+$$
+Q_a = \text{Actual Yield} \times \text{Area}
+$$
+
+Yield loss:
+
+$$
+\text{Yield Loss} = Q_e - Q_a
+$$
+
+Revenue loss from yield decline:
+
+$$
+\text{Revenue Loss} = (Q_e - Q_a) \times P
+$$
+
+Covered loss:
+
+$$
+\text{Covered Loss} = \text{Coverage Rate} \times \text{Revenue Loss}
+$$
+
+Payout:
+
+$$
+\text{Payout} = \max(0, \text{Covered Loss} - \text{Deductible})
+$$
+
+---
+
+## 32. Revenue insurance
+
+Expected revenue:
+
+$$
+R_e = Q_e \times P_e
+$$
+
+Actual revenue:
+
+$$
+R_a = Q_a \times P_a
+$$
+
+Guaranteed revenue:
+
+$$
+R_g = \text{Guarantee Rate} \times R_e
+$$
+
+Gross indemnity:
+
+$$
+\text{Gross Indemnity} = \max(0, R_g - R_a)
+$$
+
+Final payout:
+
+$$
+\text{Final Payout} = \min\left[\max(0, \text{Gross Indemnity} - \text{Deductible}), \text{Payout Cap}\right]
+$$
+
+---
+
+## 33. Weather index insurance
+
+### Rainfall deficit percentage
+
+$$
+\text{Rainfall Deficit \%} = \frac{\text{Normal Rainfall} - \text{Actual Rainfall}}{\text{Normal Rainfall}} \times 100
+$$
+
+### Proportional payout
+
+If payout is proportional to shortfall:
+
+$$
+\text{Payout} = \text{Maximum Payout} \times \frac{\text{Rainfall Deficit \%}}{100}
+$$
+
+If area is included:
+
+$$
+\text{Total Payout} = \text{Payout per ha} \times \text{Area Insured} \times \frac{\text{Rainfall Deficit \%}}{100}
+$$
+
+### Piecewise payout schedule
+
+A rainfall index contract often uses bands:
+
+$$
+\text{Payout} =
+\begin{cases}
+0, & d < d_1 \\
+P_1, & d_1 \le d < d_2 \\
+P_2, & d_2 \le d < d_3 \\
+P_{max}, & d \ge d_3
+\end{cases}
+$$
+
+where $d$ is the rainfall deficit percentage.
+
+---
+
+## 34. Basis risk in index insurance
+
+Basis risk is the mismatch between actual farm loss and index-based payout.
+
+A simple expression is:
+
+$$
+\text{Basis Risk Gap} = \text{Actual Farm Loss} - \text{Index Payout}
+$$
+
+If the gap is positive, the farmer is under-compensated.
+
+If the gap is negative, the farmer receives more than actual measured loss.
+
+---
+
+## 35. Contract farming revenue
+
+If a farmer signs a contract for quantity $Q$ at contract price $P_c$:
+
+$$
+\text{Contract Revenue} = Q \times P_c
+$$
+
+If the harvest spot price is $P_s$:
+
+$$
+\text{Revenue Without Contract} = Q \times P_s
+$$
+
+Protection from price fall:
+
+$$
+\text{Avoided Loss} = Q(P_c - P_s)
+$$
+
+when $P_c > P_s$.
+
+---
+
+## 36. Futures hedging
+
+### Spot market revenue
+
+$$
+\text{Spot Revenue} = Q \times S_T
+$$
+
+where $S_T$ is the spot price at harvest.
+
+### Short futures hedge gain or loss
+
+A producer usually uses a short hedge.
+
+$$
+\text{Futures Gain/Loss} = Q_h(F_0 - F_T)
+$$
+
+where:
+
+| Symbol | Meaning |
+|---|---|
+| $Q_h$ | Hedged quantity |
+| $F_0$ | Futures price when hedge is opened |
+| $F_T$ | Futures price when hedge is closed |
+
+### Total hedged revenue
+
+$$
+\text{Total Hedged Revenue} = Q S_T + Q_h(F_0 - F_T)
+$$
+
+If the full quantity is hedged, then $Q_h = Q$.
+
+---
+
+## 37. Partial hedging
+
+If the farmer hedges proportion $h$ of expected output:
+
+$$
+Q_h = hQ
+$$
+
+Total revenue becomes:
+
+$$
+\text{Total Revenue} = Q S_T + hQ(F_0 - F_T)
+$$
+
+where $0 \le h \le 1$.
+
+---
+
+## 38. Basis in futures markets
+
+Basis is the difference between spot and futures prices:
+
+$$
+\text{Basis}_t = S_t - F_t
+$$
+
+Initial basis:
+
+$$
+b_0 = S_0 - F_0
+$$
+
+Harvest basis:
+
+$$
+b_T = S_T - F_T
+$$
+
+Change in basis:
+
+$$
+\Delta b = b_T - b_0
+$$
+
+### Hedged price for a short hedge
+
+For a short hedge:
+
+$$
+\text{Effective Price} = S_T + (F_0 - F_T)
+$$
+
+This can be rewritten as:
+
+$$
+\text{Effective Price} = F_0 + b_T
+$$
+
+::: {.callout-note}
+## Interpretation
+A short hedge locks in the initial futures price plus the final basis. Basis risk remains because $b_T$ is not known when the hedge is opened.
+:::
+
+---
+
+## 39. Number of futures contracts
+
+For a full hedge:
+
+$$
+N = \frac{Q}{q_c}
+$$
+
+For a partial hedge:
+
+$$
+N = \frac{hQ}{q_c}
+$$
+
+where $q_c$ is the contract size.
+
+If $N$ is not an integer, round carefully based on practical hedge design.
+
+---
+
+## 40. Optimal hedge ratio
+
+The minimum-variance hedge ratio is:
+
+$$
+h^* = \rho_{SF}\frac{\sigma_S}{\sigma_F}
+$$
+
+where:
+
+| Symbol | Meaning |
+|---|---|
+| $\rho_{SF}$ | Correlation between spot and futures price changes |
+| $\sigma_S$ | Standard deviation of spot price changes |
+| $\sigma_F$ | Standard deviation of futures price changes |
+
+Optimal number of contracts:
+
+$$
+N^* = \frac{h^*Q}{q_c}
+$$
+
+---
+
+## 41. Futures spread trading
+
+For a calendar spread with one long contract and one short contract:
+
+### Long futures profit
+
+$$
+\Pi_{long} = F_{sell} - F_{buy}
+$$
+
+### Short futures profit
+
+$$
+\Pi_{short} = F_{sell\,initial} - F_{buy\,closing}
+$$
+
+### Net spread profit
+
+$$
+\Pi_{spread} = \Pi_{long} + \Pi_{short}
+$$
+
+For multiple contracts:
+
+$$
+\Pi_{total} = \Pi_{spread} \times \text{Contract Size} \times \text{Number of Contracts}
+$$
+
+---
+
+## 42. Warehouse receipt system
+
+### Value of stored commodity
+
+$$
+\text{Commodity Value} = Q \times P
+$$
+
+### Loan amount using warehouse receipt
+
+$$
+\text{Loan Amount} = \text{Loan-to-Value Ratio} \times \text{Commodity Value}
+$$
+
+### Simple interest on warehouse receipt loan
+
+$$
+\text{Interest} = \text{Loan Amount} \times r \times t
+$$
+
+### Repayment amount
+
+$$
+\text{Repayment} = \text{Loan Amount} + \text{Interest}
+$$
+
+### Net proceeds after delayed sale
+
+$$
+\text{Net Proceeds} = QP_T - \text{Repayment} - \text{Storage Cost}
+$$
+
+---
+
+## 43. Public foodgrain reserves
+
+### Government expenditure at subsidized price
+
+$$
+\text{Government Expenditure} = Q_{released} \times P_{subsidized}
+$$
+
+### Market value of released grain
+
+$$
+\text{Market Value} = Q_{released} \times P_{market}
+$$
+
+### Implicit subsidy cost
+
+$$
+\text{Subsidy Cost} = Q_{released}(P_{market} - P_{subsidized})
+$$
+
+---
+
+## 44. Disaster assistance allocation
+
+### Total cash transfer budget
+
+$$
+\text{Cash Transfer Budget} = \text{Total Fund} \times \text{Cash Transfer Share}
+$$
+
+### Cash transfer per farmer
+
+$$
+\text{Cash Transfer per Farmer} = \frac{\text{Cash Transfer Budget}}{\text{Number of Farmers}}
+$$
+
+### Input subsidy budget
+
+$$
+\text{Input Subsidy Budget} = \text{Total Fund} \times \text{Input Subsidy Share}
+$$
+
+### Input subsidy per farmer
+
+$$
+\text{Input Subsidy per Farmer} = \frac{\text{Input Subsidy Budget}}{\text{Number of Farmers}}
+$$
+
+---
+
+## 45. Social protection and safety nets
+
+### Employment guarantee income
+
+$$
+\text{Employment Income} = \text{Daily Wage} \times \text{Number of Work Days}
+$$
+
+### Total household support
+
+$$
+\text{Total Support} = \text{Cash Transfer} + \text{Food Voucher Value} + \text{Employment Income}
+$$
+
+---
+
+## 46. Risk scoring matrix
+
+A simple classroom risk score can be calculated as:
+
+$$
+\text{Risk Score} = \text{Frequency Score} \times \text{Severity Score}
+$$
+
+If vulnerability is included:
+
+$$
+\text{Adjusted Risk Score} = \text{Frequency} \times \text{Severity} \times \text{Vulnerability}
+$$
+
+---
+
+## 47. Exchange rate and triangular arbitrage
+
+For three currencies A, B, and C, an implied cross rate can be compared with the quoted cross rate.
+
+If rates are quoted as:
+
+$$
+A/B \quad \text{and} \quad B/C
+$$
+
+then the implied rate is:
+
+$$
+A/C = (A/B) \times (B/C)
+$$
+
+Arbitrage signal:
+
+$$
+\text{Quoted } A/C \ne \text{Implied } A/C
+$$
+
+Profit is possible before transaction costs if the conversion cycle ends with more than the starting amount.
+
+::: {.callout-warning}
+## Common mistake
+Always check the direction of exchange rates. Multiplying when you should divide gives the wrong arbitrage result.
+:::
+
+---
+
+## 48. Price changes and returns
+
+### Absolute price change
+
+$$
+\Delta P = P_1 - P_0
+$$
+
+### Percentage price change
+
+$$
+\%\Delta P = \frac{P_1 - P_0}{P_0} \times 100
+$$
+
+### Simple return
+
+$$
+R = \frac{P_1 - P_0 + D}{P_0}
+$$
+
+where $D$ is income received during the holding period, such as dividend, coupon, or rental payment.
+
+---
+
+## 49. Inflation adjustment
+
+### Real value
+
+$$
+\text{Real Value} = \frac{\text{Nominal Value}}{1+\pi}
+$$
+
+where $\pi$ is the inflation rate.
+
+### Fisher approximation
+
+$$
+r_{real} \approx r_{nominal} - \pi
+$$
+
+### Exact Fisher equation
+
+$$
+1 + r_{real} = \frac{1+r_{nominal}}{1+\pi}
+$$
+
+Therefore:
+
+$$
+r_{real} = \frac{1+r_{nominal}}{1+\pi} - 1
+$$
+
+---
+
+## 50. Quick decision rules
+
+| Method | Decision rule |
+|---|---|
+| NPV or NPW | Accept if positive |
+| BCR | Accept if greater than 1 |
+| IRR | Accept if greater than cost of capital |
+| Payback | Prefer shorter payback, but do not ignore profitability |
+| Current ratio | Higher means stronger short-term liquidity, but very high may indicate idle assets |
+| Debt ratio | Higher means greater solvency risk |
+| DSCR | Must usually be above 1, often above lender threshold |
+| Insurance | Compare net compensation, not only gross payout |
+| Futures hedge | Compare hedged revenue with unhedged revenue and check basis risk |
+| Warehouse receipt | Delayed-sale gain must exceed interest and storage costs |
+
+---
+
+## 51. Minimal Python formulas
+
+These examples can be used in the Python appendix or copied into lecture notes.
+
+```{python}
+# Future value and present value
+PV = 1000
+r = 0.08
+n = 2
+FV = PV * (1 + r)**n
+PV_back = FV / (1 + r)**n
+FV, PV_back
+```
+
+```{python}
+# Loan payment
+PV = 10000
+r = 0.12
+n = 5
+PMT = PV * r / (1 - (1 + r)**(-n))
+total_interest = PMT * n - PV
+PMT, total_interest
+```
+
+```{python}
+# Short futures hedge
+Q = 200
+S_T = 105
+F_0 = 125
+F_T = 110
+hedged_revenue = Q * S_T + Q * (F_0 - F_T)
+hedged_revenue
+```
+
+---
+
+## 52. Common formula mistakes
+
+::: {.callout-warning}
+## Mistake 1: Mixing annual and monthly rates
+If payments are monthly, the interest rate must also be monthly.
+:::
+
+::: {.callout-warning}
+## Mistake 2: Forgetting premiums in insurance comparison
+Compare net compensation after premium, not only payout.
+:::
+
+::: {.callout-warning}
+## Mistake 3: Confusing futures gain with spot revenue
+Total hedged revenue is spot revenue plus futures gain or loss.
+:::
+
+::: {.callout-warning}
+## Mistake 4: Ignoring basis risk
+A hedge may reduce price risk but still leave basis risk.
+:::
+
+::: {.callout-warning}
+## Mistake 5: Using BCR and NPV inconsistently
+A project can have a high BCR but a small total value. Always interpret project scale.
+:::
+
+---
+
+## Source note
+
+This formula sheet is based on NREC4230 lecture materials, the attached **Basic_Financial_Formulas.docx** file, and the agricultural finance and risk-management examples used in the course.

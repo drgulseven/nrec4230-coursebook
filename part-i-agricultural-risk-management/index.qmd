@@ -1,0 +1,25 @@
+---
+title: "Part I: Agricultural Risk Management"
+---
+
+## Overview
+
+Part I introduces agricultural risk management as a practical framework for identifying, assessing, and managing risks faced by farmers, agribusinesses, consumers, and governments.
+
+The lecture notes follow four groups of tools:
+
+| Tool group | Tools covered |
+|---|---|
+| On-farm and community-level tools | Climate-smart agriculture, agricultural diversification, asset and income strategies |
+| Finance-related tools | Agricultural insurance, weather index insurance, agricultural finance and microfinance |
+| Market-related tools | Contract farming, commodity exchanges and futures markets, warehouse receipt systems |
+| Government-based tools | Public foodgrain reserves, disaster assistance programs, social protection and safety nets |
+
+## Lectures
+
+1. Understanding Agricultural Risk
+2. On-Farm Risk Management Tools
+3. Finance-Related Risk Management Tools
+4. Market-Related Risk Management Tools
+5. Government-Based Risk Management Tools
+6. Integrated ARM Plan for Oman

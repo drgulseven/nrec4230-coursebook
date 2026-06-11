@@ -1,0 +1,31 @@
+/* NREC4230 local coursebook styles */
+
+:root {
+  --nrec-dark: #1f3a3d;
+  --nrec-soft: #eef6f5;
+  --nrec-border: #d8e8e6;
+}
+
+h1, h2, h3 {
+  color: var(--nrec-dark);
+}
+
+.callout {
+  border-radius: 8px;
+}
+
+.table {
+  font-size: 0.95rem;
+}
+
+.sidebar-title {
+  font-weight: 700;
+}
+
+.course-note {
+  background: var(--nrec-soft);
+  border: 1px solid var(--nrec-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}

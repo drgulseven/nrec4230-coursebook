@@ -1,0 +1,827 @@
+---
+title: "Glossary"
+description: "NREC4230 Agricultural Finance glossary covering agricultural risk management, time value of money, accounting, ratios, investment appraisal, futures, hedging, and insurance design."
+---
+
+## How to use this glossary
+
+This glossary defines the key terms used in **NREC4230: Agricultural Finance**. It covers two connected parts of the course:
+
+1. **Agricultural Risk Management**, including risk types, ARM tools, insurance, markets, and public intervention.
+2. **Agricultural Finance**, including time value of money, accounting, ratios, investment appraisal, hedging, and insurance design.
+
+Use it as a revision aid while reading the lecture notes and solving practice problems.
+
+::: {.callout-note}
+## Study advice
+Do not memorize definitions mechanically. For each term, ask: *What decision does this concept help the farmer, lender, insurer, trader, or government make?*
+:::
+
+---
+
+## A
+
+### Accounting equation
+
+The basic relationship behind the balance sheet:
+
+$$
+\text{Assets} = \text{Liabilities} + \text{Equity}
+$$
+
+In farm finance, it shows how farm assets are financed by debt and owner capital.
+
+### Accounts payable
+
+Money the farm business owes to suppliers, lenders, workers, or other parties. For example, unpaid fertilizer bills are accounts payable.
+
+### Accounts receivable
+
+Money owed to the farm business by buyers or customers. For example, milk sold on credit creates accounts receivable.
+
+### Accrual accounting
+
+An accounting method that records revenues when earned and expenses when incurred, even if cash has not yet been received or paid.
+
+### Adverse selection
+
+A problem in insurance or credit markets where high-risk clients are more likely to participate than low-risk clients. In agricultural insurance, farmers with higher expected losses may be more willing to buy insurance.
+
+### Agricultural diversification
+
+A farm-level risk management strategy that spreads production across multiple crops, livestock, or enterprises to reduce dependence on a single income source.
+
+### Agricultural finance
+
+The management of financial resources in agriculture, including credit, investment, savings, insurance, repayment, and financial decision-making by farmers and agribusinesses.
+
+### Agricultural insurance
+
+A financial risk-transfer tool that compensates farmers for specified losses, such as crop failure, livestock loss, or revenue shortfall, in return for premium payments.
+
+### Agricultural Risk Management (ARM)
+
+The process of identifying, assessing, reducing, transferring, and coping with risks that affect farms, agribusinesses, food systems, and rural households.
+
+### Amortization
+
+The gradual repayment of a loan through scheduled payments that cover both interest and principal.
+
+### Amortization schedule
+
+A table showing each loan payment, interest portion, principal portion, and remaining loan balance over time.
+
+### Annuity
+
+A series of equal payments made at regular intervals. Farm loan repayments and annual savings plans are common examples.
+
+### Annuity due
+
+An annuity where payments occur at the beginning of each period. Lease payments are often structured this way.
+
+### Annual Percentage Rate (APR)
+
+The stated annual interest rate before adjusting for compounding frequency. APR may understate the true borrowing cost if compounding occurs more than once per year.
+
+### Asset
+
+A resource owned or controlled by the farm business that has economic value. Examples include land, machinery, livestock, inventory, cash, and irrigation systems.
+
+### Asset diversification
+
+A risk management strategy where a household holds different kinds of assets, such as livestock, savings, equipment, and food stocks, to improve resilience.
+
+---
+
+## B
+
+### Balance sheet
+
+A financial statement showing assets, liabilities, and equity at a specific date. It reports the financial position of the farm.
+
+### Basis
+
+The difference between spot price and futures price:
+
+$$
+\text{Basis} = \text{Spot Price} - \text{Futures Price}
+$$
+
+### Basis risk
+
+The risk that the futures price, index, or reference value used in a contract does not move perfectly with the farmer's actual loss or local price.
+
+### Benefit-cost ratio (BCR)
+
+An investment appraisal measure:
+
+$$
+\text{BCR} = \frac{\text{Present Value of Benefits}}{\text{Present Value of Costs}}
+$$
+
+A BCR greater than 1 suggests that discounted benefits exceed discounted costs.
+
+### Borrower
+
+A person or business that receives funds and agrees to repay them according to the loan contract.
+
+### Break-even analysis
+
+A calculation that identifies the output, price, or cash flow level needed for a project to cover its costs.
+
+---
+
+## C
+
+### Call option
+
+A contract giving the holder the right, but not the obligation, to buy an asset or commodity at a specified price.
+
+### Capital
+
+Financial or physical resources used in production. In agriculture, capital includes cash, land improvements, tractors, greenhouses, and irrigation equipment.
+
+### Cash accounting
+
+An accounting method that records revenues when cash is received and expenses when cash is paid.
+
+### Cash flow
+
+The movement of cash into and out of a farm business. Cash flow matters because a profitable farm may still face repayment problems if cash arrives late.
+
+### Cash-flow statement
+
+A financial statement that summarizes cash inflows and outflows from operating, investing, and financing activities.
+
+### Climate-smart agriculture (CSA)
+
+Agricultural practices designed to increase productivity, build resilience to climate change, and reduce environmental impact where possible.
+
+### Collateral
+
+An asset pledged by a borrower to secure a loan. If the borrower defaults, the lender may claim the collateral.
+
+### Commodity exchange
+
+An organized market where standardized commodities or commodity contracts are traded. It can support price discovery, hedging, and market transparency.
+
+### Compound interest
+
+Interest calculated on both the original principal and accumulated interest:
+
+$$
+FV = PV(1+r)^n
+$$
+
+### Compounding frequency
+
+How often interest is added to the principal. More frequent compounding usually increases future value and the effective annual rate.
+
+### Constraint
+
+A known limitation that affects decision-making before uncertainty is realized. For example, lack of irrigation is a constraint, not a random risk.
+
+### Contract farming
+
+An agreement between farmers and buyers before production or harvest, often specifying price, quantity, quality, delivery terms, or input support.
+
+### Correlation
+
+A measure of how two variables move together. Diversification works best when farm activities have low, zero, or negative correlation.
+
+### Cost of capital
+
+The required rate of return or discount rate used to evaluate investments. It reflects the opportunity cost of funds.
+
+### Credit
+
+The provision of funds, goods, or services now in exchange for repayment later.
+
+### Credit risk
+
+The risk that a borrower will fail to repay a loan as agreed.
+
+### Current ratio
+
+A liquidity measure:
+
+$$
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}
+$$
+
+---
+
+## D
+
+### Debt
+
+Money borrowed by the farm business that must be repaid.
+
+### Debt service
+
+The total amount required to pay interest and principal on debt during a period.
+
+### Debt service coverage ratio (DSCR)
+
+A repayment capacity measure:
+
+$$
+\text{DSCR} = \frac{\text{Net Operating Income}}{\text{Debt Service}}
+$$
+
+A DSCR above 1 means operating income is sufficient to cover debt payments.
+
+### Debt-to-equity ratio
+
+A solvency measure:
+
+$$
+\text{Debt-to-Equity Ratio} = \frac{\text{Total Liabilities}}{\text{Total Equity}}
+$$
+
+Higher values indicate greater financial leverage.
+
+### Deductible
+
+The part of an insured loss that the farmer must bear before the insurance payout is made.
+
+### Default
+
+Failure to meet the legal obligations of a loan contract, especially failure to repay on time.
+
+### Disaster assistance
+
+Public or donor support provided before, during, or after disasters to reduce losses, support recovery, and protect livelihoods.
+
+### Discount rate
+
+The rate used to convert future cash flows into present value.
+
+### Discounting
+
+The process of calculating the current value of future money:
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+### Diversification
+
+A risk management strategy that spreads activities, assets, or income sources to reduce dependence on one outcome.
+
+### Dividend
+
+A distribution of profit to owners or shareholders. In farm cooperatives, members may receive patronage dividends or surplus distributions.
+
+---
+
+## E
+
+### Effective Annual Rate (EAR)
+
+The true annual interest rate after accounting for compounding:
+
+$$
+EAR = \left(1+\frac{APR}{m}\right)^m - 1
+$$
+
+where $m$ is the number of compounding periods per year.
+
+### Efficient frontier
+
+The set of investment or farm-enterprise portfolios that provide the highest expected return for a given level of risk, or the lowest risk for a given expected return.
+
+### Equity
+
+The owner's claim on farm assets after liabilities are deducted:
+
+$$
+\text{Equity} = \text{Assets} - \text{Liabilities}
+$$
+
+### Exposure
+
+The degree to which a farmer, household, asset, or production system is located in or connected to a risky situation.
+
+### Expected loss
+
+The probability-weighted value of a potential loss:
+
+$$
+\text{Expected Loss} = \text{Probability of Event} \times \text{Loss if Event Occurs}
+$$
+
+---
+
+## F
+
+### Financial intermediation
+
+The process by which financial institutions connect savers and borrowers. Banks, microfinance institutions, leasing companies, and insurance providers are financial intermediaries.
+
+### Financial risk
+
+Risk arising from borrowing, interest rates, repayment pressure, liquidity shortages, or financial structure.
+
+### Fixed cost
+
+A cost that does not change directly with output in the short run. Examples include land rent, insurance fees, and some machinery costs.
+
+### Foodgrain reserve
+
+A public stock of staple grain held to support food security, emergency response, or price stabilization.
+
+### Forward contract
+
+A private agreement to buy or sell a commodity at a future date at a price agreed today. Forward contracts are customizable but usually carry counterparty risk.
+
+### Full hedge
+
+A hedge that covers the entire expected output or exposure. For example, hedging all 200 tons of expected wheat output.
+
+### Future value (FV)
+
+The value of money at a future date after interest is earned:
+
+$$
+FV = PV(1+r)^n
+$$
+
+### Future Value Interest Factor (FVIF)
+
+The compound growth factor:
+
+$$
+FVIF = (1+r)^n
+$$
+
+### Futures contract
+
+A standardized exchange-traded contract to buy or sell a commodity at a future date. Futures are commonly used for hedging price risk.
+
+### Futures option
+
+An option contract based on a futures contract. It gives the right, but not the obligation, to take a futures position.
+
+---
+
+## G
+
+### Gross profit
+
+Revenue minus cost of goods sold or direct production costs.
+
+### Gross profit margin
+
+A profitability ratio:
+
+$$
+\text{Gross Profit Margin} = \frac{\text{Gross Profit}}{\text{Revenue}}
+$$
+
+---
+
+## H
+
+### Hedge
+
+A financial or contractual position taken to reduce risk from unfavorable price movements.
+
+### Hedge ratio
+
+The proportion of exposure covered by the hedge. A hedge ratio of 0.80 means 80% of the expected output is hedged.
+
+### Hedging effectiveness
+
+The degree to which a hedge reduces income or price variability.
+
+### Human risk
+
+Risk related to labour, health, management, migration, skills, or household circumstances.
+
+---
+
+## I
+
+### Idiosyncratic risk
+
+Risk affecting a single farmer, household, or firm rather than the whole region. For example, one farmer's machinery breakdown.
+
+### Income statement
+
+A financial statement showing revenues, expenses, and profit over a period.
+
+### Indemnity
+
+The payment made by an insurer to compensate for a covered loss.
+
+### Index insurance
+
+Insurance where payouts are based on an external index such as rainfall, temperature, area yield, or vegetation conditions, rather than direct farm-level loss assessment.
+
+### Input cost risk
+
+The risk that the cost of inputs such as fertilizer, feed, seeds, fuel, or labour increases unexpectedly.
+
+### Insurance premium
+
+The amount paid by the insured farmer to buy insurance coverage.
+
+### Internal Rate of Return (IRR)
+
+The discount rate that makes the net present value of an investment equal to zero:
+
+$$
+NPV = 0
+$$
+
+An investment is generally acceptable if IRR exceeds the required rate of return.
+
+### Inventory
+
+Goods held for production or sale, such as feed, seeds, fertilizer, harvested crops, or stored grain.
+
+### Investment appraisal
+
+The process of evaluating whether a farm investment is financially worthwhile using tools such as NPV, IRR, BCR, ARR, and payback period.
+
+---
+
+## L
+
+### Leverage
+
+The use of borrowed funds to finance assets or investments. Leverage can increase returns but also increases financial risk.
+
+### Liability
+
+An obligation owed by the farm business, such as loans, unpaid bills, wages payable, or taxes payable.
+
+### Liquidity
+
+The ability of a farm business to meet short-term obligations. Cash and easily sold inventories improve liquidity.
+
+### Loan amortization
+
+The repayment of a loan over time through regular payments that reduce the outstanding balance.
+
+### Loan principal
+
+The original amount borrowed, excluding interest.
+
+---
+
+## M
+
+### Market risk
+
+Risk arising from changes in output prices, input prices, market access, buyer behavior, or demand conditions.
+
+### Microfinance
+
+Small-scale financial services, including loans, savings, insurance, and transfers, designed for households or firms with limited access to formal banking.
+
+### Moral hazard
+
+A problem where insured or protected parties may behave less carefully because they do not bear the full cost of losses.
+
+---
+
+## N
+
+### Net compensation
+
+Insurance payout after deducting premium and, where applicable, deductibles:
+
+$$
+\text{Net Compensation} = \text{Indemnity} - \text{Premium}
+$$
+
+### Net income
+
+Revenue minus total expenses.
+
+### Net Present Value (NPV)
+
+The present value of benefits minus the present value of costs:
+
+$$
+NPV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} - C_0
+$$
+
+A positive NPV means the investment adds value at the chosen discount rate.
+
+### Net Present Worth (NPW)
+
+Another term for NPV, commonly used in agricultural project appraisal.
+
+### Net profit margin
+
+A profitability ratio:
+
+$$
+\text{Net Profit Margin} = \frac{\text{Net Profit}}{\text{Revenue}}
+$$
+
+---
+
+## O
+
+### Operating activities
+
+Cash flows related to normal farm operations, including sales revenue, input purchases, wages, and operating expenses.
+
+### Opportunity cost
+
+The value of the best alternative that is given up when a decision is made.
+
+### Optimal hedge ratio
+
+The hedge ratio that minimizes revenue or price risk, often calculated as:
+
+$$
+h^* = \rho \frac{\sigma_S}{\sigma_F}
+$$
+
+where $\rho$ is the correlation between spot and futures price changes, $\sigma_S$ is the standard deviation of spot price changes, and $\sigma_F$ is the standard deviation of futures price changes.
+
+### Ordinary annuity
+
+An annuity where payments occur at the end of each period. Standard loan repayments are usually treated as ordinary annuities.
+
+---
+
+## P
+
+### Partial hedge
+
+A hedge that covers only part of the expected output or exposure. It reduces downside risk while allowing some benefit from favorable price movements.
+
+### Payback period
+
+The time required to recover the initial investment:
+
+$$
+\text{Payback Period} = \frac{\text{Initial Investment}}{\text{Annual Cash Inflow}}
+$$
+
+### Payout cap
+
+The maximum indemnity an insurance contract will pay.
+
+### Policy risk
+
+Risk created by changes in laws, regulations, subsidies, tariffs, import rules, export restrictions, or public programs.
+
+### Portfolio variance
+
+The risk of a combined portfolio of activities. For two activities:
+
+$$
+\sigma_p^2 = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2
+$$
+
+### Present value (PV)
+
+The current value of a future cash flow:
+
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+
+### Present Value Interest Factor (PVIF)
+
+The discount factor:
+
+$$
+PVIF = \frac{1}{(1+r)^n}
+$$
+
+### Price discovery
+
+The process by which market prices are determined through supply, demand, expectations, and trading activity.
+
+### Production risk
+
+Risk affecting output quantity or quality, such as drought, pests, disease, salinity, heat stress, or equipment failure.
+
+### Public foodgrain reserves
+
+Government-held food stocks used to stabilize markets, support food security, or respond to emergencies.
+
+### Put option
+
+A contract giving the holder the right, but not the obligation, to sell an asset or commodity at a specified price.
+
+---
+
+## R
+
+### Rainfall deficit
+
+The shortfall of observed rainfall relative to normal rainfall:
+
+$$
+\text{Rainfall Deficit Percentage} = \frac{\text{Normal Rainfall} - \text{Actual Rainfall}}{\text{Normal Rainfall}} \times 100
+$$
+
+### Repayment capacity
+
+The ability of a borrower to repay debt from farm income and available cash flow.
+
+### Return on assets (ROA)
+
+A profitability ratio:
+
+$$
+ROA = \frac{\text{Net Income}}{\text{Total Assets}}
+$$
+
+### Return on equity (ROE)
+
+A profitability ratio:
+
+$$
+ROE = \frac{\text{Net Income}}{\text{Equity}}
+$$
+
+### Revenue insurance
+
+Insurance that compensates farmers when actual revenue falls below a guaranteed revenue level.
+
+### Risk
+
+A possible adverse event or outcome whose probability, frequency, or impact can be partly assessed.
+
+### Risk averse
+
+A decision-maker who prefers a safer outcome over a risky outcome with the same expected value.
+
+### Risk coping
+
+Actions taken after a shock occurs to manage losses and recover. Examples include emergency aid, savings withdrawal, or asset sales.
+
+### Risk exposure
+
+The degree to which a farmer, household, or asset is subject to a hazard.
+
+### Risk mitigation
+
+Actions taken before a shock to reduce its probability or impact. Examples include irrigation, disease control, diversification, and storage.
+
+### Risk neutral
+
+A decision-maker who focuses on expected value and is indifferent to risk itself.
+
+### Risk reduction
+
+Measures that lower the likelihood or size of a loss before it occurs.
+
+### Risk seeking
+
+A decision-maker who is willing to accept higher risk for the chance of higher returns.
+
+### Risk sharing
+
+The distribution of risk across multiple parties, such as farmers, insurers, government, cooperatives, or traders.
+
+### Risk transfer
+
+Moving part of a risk to another party. Insurance and futures contracts are common examples.
+
+### Rotating Savings and Credit Association (ROSCA)
+
+An informal financial arrangement where members contribute regularly and take turns receiving the collected fund.
+
+---
+
+## S
+
+### Sensitivity analysis
+
+Testing how results change when assumptions change. In investment appraisal, common sensitivity variables include price, yield, discount rate, cost, and output level.
+
+### Severity
+
+The size of loss if a risk event occurs.
+
+### Short futures hedge
+
+A hedge used by producers who expect to sell a commodity later and want protection against falling prices. The farmer sells futures now and buys them back later.
+
+### Simple interest
+
+Interest calculated only on the original principal:
+
+$$
+I = PRT
+$$
+
+### Social protection
+
+Public programs such as cash transfers, food assistance, or employment schemes designed to protect vulnerable households.
+
+### Solvency
+
+The ability of a farm business to meet long-term obligations and remain financially viable.
+
+### Spot market
+
+A market where commodities are bought and sold for immediate delivery or near-immediate settlement.
+
+### Spread trading
+
+A trading strategy involving simultaneous long and short positions in related contracts, such as different delivery months of the same commodity.
+
+### Standard deviation
+
+A statistical measure of variability. In finance and risk analysis, higher standard deviation usually indicates higher uncertainty.
+
+### Systemic risk
+
+Risk affecting many farmers, firms, or households at the same time. Drought, regional disease outbreaks, and national price shocks are systemic risks.
+
+---
+
+## T
+
+### Time value of money
+
+The principle that money today is worth more than the same nominal amount in the future because it can earn returns and because future payments are uncertain.
+
+### Trend
+
+A long-term pattern or direction of change. A trend can influence risk, but it is not the same as a random shock.
+
+### Triangular arbitrage
+
+A trading strategy that exploits inconsistent exchange rates among three currencies. It is more relevant to financial markets than farm production, but useful for understanding no-arbitrage pricing logic.
+
+---
+
+## U
+
+### Uncertainty
+
+A situation where future outcomes are not fully known. Risk is often measurable uncertainty; pure uncertainty is harder to quantify.
+
+### Underwriting
+
+The process by which an insurer assesses risk and decides contract terms, premium, and coverage.
+
+---
+
+## V
+
+### Variable cost
+
+A cost that changes with the level of production, such as feed, seeds, fertilizer, water, packaging, or hired labour.
+
+### Vulnerability
+
+The ability or inability of a farmer, household, or system to cope with losses. A farmer with no savings, no irrigation, and no insurance is more vulnerable.
+
+---
+
+## W
+
+### Warehouse receipt
+
+A document issued by a certified warehouse confirming that a specified quantity and quality of commodity has been stored.
+
+### Warehouse receipt system (WRS)
+
+A system where stored commodities are documented by warehouse receipts that can be used as collateral for credit or as proof of ownership.
+
+### Weather index insurance
+
+Insurance that pays based on a weather indicator such as rainfall, temperature, or vegetation index rather than direct measurement of farm loss.
+
+### Working capital
+
+Short-term funds used to finance daily farm operations. It is often calculated as:
+
+$$
+\text{Working Capital} = \text{Current Assets} - \text{Current Liabilities}
+$$
+
+---
+
+## Quick revision table
+
+| Topic area | Core terms to master |
+|---|---|
+| Risk foundations | risk, uncertainty, constraint, trend, exposure, vulnerability, severity, frequency |
+| ARM tools | CSA, diversification, insurance, microfinance, futures, WRS, foodgrain reserves, safety nets |
+| TVM | PV, FV, PVIF, FVIF, annuity, APR, EAR, discount rate |
+| Accounting | assets, liabilities, equity, income statement, balance sheet, cash flow |
+| Ratios | liquidity, solvency, profitability, DSCR, debt-to-equity |
+| Investment appraisal | NPV, IRR, BCR, ARR, payback, sensitivity analysis |
+| Futures and hedging | spot price, futures price, basis, basis risk, hedge ratio, short hedge, spread trading |
+| Insurance design | premium, indemnity, deductible, payout cap, basis risk, index insurance |
+
+---
+
+## Source note
+
+This glossary is prepared for **NREC4230: Agricultural Finance** and is aligned with the course lecture notes on agricultural risk management, agricultural finance, investment appraisal, futures markets, and insurance design.
