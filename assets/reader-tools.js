@@ -41,9 +41,11 @@
     saveSettings(settings);
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initReaderTools() {
     var root = document.querySelector("[data-reader-tools]");
     if (!root) return;
+    if (root.dataset.readerToolsReady === "true") return;
+    root.dataset.readerToolsReady = "true";
 
     var toggle = root.querySelector("[data-reader-toggle]");
     var menu = root.querySelector("[data-reader-menu]");
@@ -88,5 +90,11 @@
     });
 
     applySettings(settings, sizeButtons, styleButtons);
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReaderTools);
+  } else {
+    initReaderTools();
+  }
 })();
