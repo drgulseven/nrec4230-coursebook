@@ -95,4 +95,8 @@ format:
     toc-location: right
     number-sections: false
     smooth-scroll: true
-    css: styles.css
+    css:
+      - styles.css
+      - assets/reader-tools.css
+    include-after-body:
+      - assets/reader-tools.html
