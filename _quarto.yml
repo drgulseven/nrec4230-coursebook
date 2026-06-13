@@ -9,6 +9,7 @@ execute:
 
 website:
   title: "NREC4230 Agricultural Finance"
+  site-url: "https://nrec4230.osmangulseven.com"
   description: "Local Quarto coursebook for NREC4230 Agricultural Finance."
   navbar:
     title: "NREC4230"
